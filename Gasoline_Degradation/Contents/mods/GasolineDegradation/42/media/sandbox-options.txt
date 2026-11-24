@@ -1,0 +1,46 @@
+VERSION = 1,
+
+option GasolineDegradation.Enabled = {
+    type = boolean, default = true,
+    page = GasolineDegradation, translation = GasolineDegradation.Enabled,
+}
+
+option GasolineDegradation.StartDay = {
+    type = integer, min = 0, max = 3650, default = 0,
+    page = GasolineDegradation, translation = GasolineDegradation.StartDay,
+}
+
+option GasolineDegradation.DaysToFullDegradation = {
+    type = integer, min = 7, max = 3650, default = 200,
+    page = GasolineDegradation, translation = GasolineDegradation.DaysToFullDegradation,
+}
+
+option GasolineDegradation.ContainerMinLiters = {
+    type = double, min = 0, max = 100, default = 0.5,
+    page = GasolineDegradation, translation = GasolineDegradation.ContainerMinLiters,
+}
+
+option GasolineDegradation.VehicleMinLiters = {
+    type = double, min = 0, max = 100, default = 1.0,
+    page = GasolineDegradation, translation = GasolineDegradation.VehicleMinLiters,
+}
+
+option GasolineDegradation.AccessDelay = {
+    type = boolean, default = true,
+    page = GasolineDegradation, translation = GasolineDegradation.AccessDelay,
+}
+
+option GasolineDegradation.AccessDelayDays = {
+    type = integer, min = 0, max = 365, default = 14,
+    page = GasolineDegradation, translation = GasolineDegradation.AccessDelayDays,
+}
+
+option GasolineDegradation.AffectGasPumps = {
+    type = boolean, default = true,
+    page = GasolineDegradation, translation = GasolineDegradation.AffectGasPumps,
+}
+
+option GasolineDegradation.CheckIntervalMinutes = {
+    type = integer, min = 1, max = 1440, default = 1,
+    page = GasolineDegradation, translation = GasolineDegradation.CheckIntervalMinutes,
+}

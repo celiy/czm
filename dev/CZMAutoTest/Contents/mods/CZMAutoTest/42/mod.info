@@ -1,0 +1,6 @@
+name=CZM Auto Test
+id=CZMAutoTest
+description=Development-only harness: starts a world by itself, runs checks for the czm mods, prints results to the console and quits. Never publish.
+author=Celi Herstal
+modversion=0.1.0
+versionMin=42.20

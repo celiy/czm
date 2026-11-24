@@ -1,0 +1,21 @@
+{
+    "Sandbox_GasolineDegradation": "Degradação da Gasolina",
+    "Sandbox_GasolineDegradation.Enabled": "Gasolina degrada",
+    "Sandbox_GasolineDegradation.Enabled_tooltip": "A gasolina em veículos, bombas de posto e qualquer recipiente que a guarde estraga e some aos poucos com o tempo.",
+    "Sandbox_GasolineDegradation.StartDay": "Dia de início",
+    "Sandbox_GasolineDegradation.StartDay_tooltip": "Quantos dias depois do início do jogo a gasolina começa a degradar. 0: desde o primeiro dia. IMPORTANTE: se você adicionar este mod em um save que já está em andamento, defina \"Dia de início\" para o dia em que o save está agora. Senão, a degradação é contada desde o dia 0 do mundo e é aplicada a toda a gasolina quando você voltar.",
+    "Sandbox_GasolineDegradation.DaysToFullDegradation": "Dias para a gasolina degradar",
+    "Sandbox_GasolineDegradation.DaysToFullDegradation_tooltip": "Dias para a gasolina de um recipiente cair para 5 por cento do que tinha (um galão cheio de 10 L chega a 0,5 L). Degrada de forma contínua: todo dia cada recipiente perde a mesma parte do que sobrou, não importa quando a gasolina foi achada. Padrão 200: um galão cheio fica com uns 6,4 L depois de 1 mês e 2,6 L depois de 3 meses.",
+    "Sandbox_GasolineDegradation.ContainerMinLiters": "Mínimo de litros em recipientes",
+    "Sandbox_GasolineDegradation.ContainerMinLiters_tooltip": "Galões, outros recipientes e bombas de posto com essa quantidade ou menos não degradam, e a degradação nunca os leva abaixo disso. 0: a gasolina some por completo.",
+    "Sandbox_GasolineDegradation.VehicleMinLiters": "Mínimo de litros em veículos",
+    "Sandbox_GasolineDegradation.VehicleMinLiters_tooltip": "Tanques de veículos com essa quantidade ou menos não degradam, e a degradação nunca os leva abaixo disso. 0: a gasolina some por completo.",
+    "Sandbox_GasolineDegradation.AccessDelay": "Atraso para itens usados recentemente",
+    "Sandbox_GasolineDegradation.AccessDelay_tooltip": "Veículos, bombas e containers com os quais você interagiu recentemente mantêm a gasolina por um tempo antes de degradar. A gasolina que você carrega (inventário e mochilas) não degrada, e mantém o atraso por um tempo depois que você a larga.",
+    "Sandbox_GasolineDegradation.AccessDelayDays": "Duração do atraso (dias)",
+    "Sandbox_GasolineDegradation.AccessDelayDays_tooltip": "Dias depois da última interação com um veículo, bomba ou container até a gasolina voltar a degradar. Interagir de novo reinicia o atraso. Dirigir ou ficar dentro do veículo, abastecer ou sifonar, e abrir a janela de loot de um container contam como interação.",
+    "Sandbox_GasolineDegradation.AffectGasPumps": "Bombas de posto degradam",
+    "Sandbox_GasolineDegradation.AffectGasPumps_tooltip": "A gasolina das bombas dos postos também degrada. Não tem efeito se os postos tiverem gasolina infinita.",
+    "Sandbox_GasolineDegradation.CheckIntervalMinutes": "Intervalo de checagem (minutos no jogo)",
+    "Sandbox_GasolineDegradation.CheckIntervalMinutes_tooltip": "De quanto em quanto tempo os veículos, bombas e itens no chão carregados são atualizados. Não muda a velocidade da degradação, só a frequência em que ela é aplicada. Padrão 1 (todo minuto do jogo); aumente se notar lentidão."
+}

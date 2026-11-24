@@ -1,0 +1,21 @@
+{
+    "Sandbox_GasolineDegradation": "Gasoline Degradation",
+    "Sandbox_GasolineDegradation.Enabled": "Gasoline degrades",
+    "Sandbox_GasolineDegradation.Enabled_tooltip": "Gasoline in vehicles, gas pumps and any container that holds it slowly goes bad and disappears over time.",
+    "Sandbox_GasolineDegradation.StartDay": "Start day",
+    "Sandbox_GasolineDegradation.StartDay_tooltip": "How many days after the game starts before gasoline begins to degrade. 0: from the first day. IMPORTANT: if you add this mod to a save that is already in progress, set \"Start day\" to the day the save is on right now. Otherwise the degradation is counted from day 0 of the world and is applied to all the gasoline when you return.",
+    "Sandbox_GasolineDegradation.DaysToFullDegradation": "Days for gasoline to degrade",
+    "Sandbox_GasolineDegradation.DaysToFullDegradation_tooltip": "Days for the gasoline in a container to drop to 5 percent of what it had (a full 10 L can down to 0.5 L). It degrades continuously: every day each container loses the same share of what is left, no matter when the gasoline was found. Default 200: a full can holds about 6.4 L after 1 month and 2.6 L after 3 months.",
+    "Sandbox_GasolineDegradation.ContainerMinLiters": "Minimum liters in containers",
+    "Sandbox_GasolineDegradation.ContainerMinLiters_tooltip": "Gas cans, other containers and gas pumps with this much gasoline or less are not degraded, and degradation never takes them below it. 0: gasoline disappears completely.",
+    "Sandbox_GasolineDegradation.VehicleMinLiters": "Minimum liters in vehicles",
+    "Sandbox_GasolineDegradation.VehicleMinLiters_tooltip": "Vehicle gas tanks with this much gasoline or less are not degraded, and degradation never takes them below it. 0: gasoline disappears completely.",
+    "Sandbox_GasolineDegradation.AccessDelay": "Delay for recently used",
+    "Sandbox_GasolineDegradation.AccessDelay_tooltip": "Vehicles, gas pumps and containers you interacted with recently keep their gasoline for a while before it degrades. Gasoline you carry (inventory and bags) does not degrade at all, and keeps the delay for a while after you put it down.",
+    "Sandbox_GasolineDegradation.AccessDelayDays": "Delay length (days)",
+    "Sandbox_GasolineDegradation.AccessDelayDays_tooltip": "Days after you last interacted with a vehicle, pump or container before its gasoline starts degrading again. Interacting again restarts the delay. Driving or sitting in a vehicle, refueling or siphoning, and opening a container's loot window count as interacting.",
+    "Sandbox_GasolineDegradation.AffectGasPumps": "Gas pumps degrade",
+    "Sandbox_GasolineDegradation.AffectGasPumps_tooltip": "Gasoline in gas station pumps degrades too. Has no effect when gas stations have infinite gas.",
+    "Sandbox_GasolineDegradation.CheckIntervalMinutes": "Check interval (in-game minutes)",
+    "Sandbox_GasolineDegradation.CheckIntervalMinutes_tooltip": "How often loaded vehicles, gas pumps and floor items are updated. Does not change how fast gasoline degrades, only how often it is applied. Default 1 (every in-game minute); raise it if you notice slowdowns."
+}

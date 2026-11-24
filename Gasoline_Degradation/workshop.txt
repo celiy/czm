@@ -1,0 +1,16 @@
+version=1
+title=Gasoline Degradation
+description=[b]IMPORTANT:[/b] if you add this mod to a save that is already in progress, set "Start day" to the day the save is on right now. Otherwise the degradation is counted from day 0 of the world and is applied to all the gasoline when you return.
+description=
+description=Gasoline slowly degrades over time in vehicles, gas pumps and any container that holds it, so stockpiling early matters and late-game fuel is scarce.
+description=
+description=[b]Features[/b]
+description=[list]
+description=[*] Global: affects vehicle tanks, gas pumps, gas cans and any other container holding gasoline, including other mods' that use the vanilla fluid and vehicle systems.
+description=[*] Fully configurable in sandbox options: start day, days until fully degraded, curve shape, minimum liters for containers and vehicles, pumps on/off.
+description=[*] Safe to add or remove mid-save. Adding starts the clock from that day; removing leaves the save intact.
+description=[/list]
+description=
+description=Default: a full 10 L gas can drops to about 2 L after 3 months and everything is down to the minimum after 6 months.
+tags=Build 42;Realistic;Vehicles;Balance
+visibility=public

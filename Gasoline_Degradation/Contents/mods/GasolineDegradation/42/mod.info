@@ -1,0 +1,9 @@
+name=Gasoline Degradation
+id=GasolineDegradation
+description=Gasoline slowly degrades over time in vehicles, gas pumps and any container that holds it. Stockpile early, because it won't last forever. IMPORTANT: if you add this mod to a save that is already in progress, set "Start day" to the day the save is on right now. Otherwise the degradation is counted from day 0 of the world and is applied to all the gasoline when you return.
+category=realism
+poster=poster.png
+icon=icon.png
+author=Celi Herstal
+modversion=1.0.0
+versionMin=42.20
