@@ -42,6 +42,10 @@ Everything here was read from the game's own scripts and code. The collection's 
 
 ## The model
 
+### Defaults changed on 2026-11-25 (user)
+
+Chance at the end / loot cut / share of the looting done at the peak, per tier: High 90 / 88.9 / 50, Medium 80 / 87.5 / 42.9, Low 70 / 85.7 / 33.3. They give the targets: loot left on day 7 = 60 / 70 / 80%, minimum loot at the end = 20 / 30 / 40%. The peak share is now one option per tier (`HighPeakShare`, `MediumPeakShare`, `LowPeakShare`), because the targets need a different one for each. Loot left on days 0 / 7 / 30 / 60 / 90 / 180 / 360: High 100 / 60 / 46 / 35 / 29 / 22 / 20, Medium 100 / 70 / 56 / 45 / 39 / 32 / 30, Low 100 / 80 / 66 / 55 / 49 / 42 / 40. The older tables below (95/95, 75/75, 60/50, one peak share of 44) are the previous defaults. The number tests were last run in game with those; the new defaults were only checked offline.
+
 ### Priority tiers
 
 | Tier | Meaning | Looted chance (at the end) | Loot cut if looted | Default rooms (editable) |

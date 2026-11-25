@@ -20,9 +20,19 @@ option ImmersiveLootedBuildings.EndDay = {
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.EndDay,
 }
 
-option ImmersiveLootedBuildings.PeakShare = {
-    type = integer, min = 0, max = 100, default = 44,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.PeakShare,
+option ImmersiveLootedBuildings.HighPeakShare = {
+    type = double, min = 0, max = 100, default = 50,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighPeakShare,
+}
+
+option ImmersiveLootedBuildings.MediumPeakShare = {
+    type = double, min = 0, max = 100, default = 42.9,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumPeakShare,
+}
+
+option ImmersiveLootedBuildings.LowPeakShare = {
+    type = double, min = 0, max = 100, default = 33.3,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowPeakShare,
 }
 
 option ImmersiveLootedBuildings.Slowdown = {
@@ -41,32 +51,32 @@ option ImmersiveLootedBuildings.InitialShare = {
 }
 
 option ImmersiveLootedBuildings.HighChance = {
-    type = integer, min = 0, max = 100, default = 95,
+    type = integer, min = 0, max = 100, default = 90,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighChance,
 }
 
 option ImmersiveLootedBuildings.HighCut = {
-    type = integer, min = 0, max = 100, default = 95,
+    type = double, min = 0, max = 100, default = 88.9,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighCut,
 }
 
 option ImmersiveLootedBuildings.MediumChance = {
-    type = integer, min = 0, max = 100, default = 75,
+    type = integer, min = 0, max = 100, default = 80,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumChance,
 }
 
 option ImmersiveLootedBuildings.MediumCut = {
-    type = integer, min = 0, max = 100, default = 75,
+    type = double, min = 0, max = 100, default = 87.5,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumCut,
 }
 
 option ImmersiveLootedBuildings.LowChance = {
-    type = integer, min = 0, max = 100, default = 60,
+    type = integer, min = 0, max = 100, default = 70,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowChance,
 }
 
 option ImmersiveLootedBuildings.LowCut = {
-    type = integer, min = 0, max = 100, default = 50,
+    type = double, min = 0, max = 100, default = 85.7,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowCut,
 }
 

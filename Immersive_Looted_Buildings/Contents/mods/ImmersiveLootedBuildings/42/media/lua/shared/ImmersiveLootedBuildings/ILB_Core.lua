@@ -132,13 +132,13 @@ local function exactCurve(t, pts)
 end
 
 -- f(t): share of the final looting done by day t.
-function ILB.curve(t)
+function ILB.curve(t, tier)
     local c = ILB.config()
     if c.curve then return exactCurve(t, c.curve) end
     local S = ILB.opt("StartDay", 0)
     local P = math.max(S, ILB.opt("PeakDay", 7))
     local E = math.max(P, ILB.opt("EndDay", 360))
-    local Fp = ILB.opt("PeakShare", 44) / 100
+    local Fp = ILB.opt((tier or "High") .. "PeakShare", 50) / 100
     local k = ILB.opt("Slowdown", 6.4)
     local I = ILB.opt("InitialShare", 0) / 100
     local g = baseCurve(t, S, P, E, Fp, k)
@@ -226,7 +226,7 @@ end
 -- The threshold u is compared with: C x f(t), corrected for the share the
 -- game already looted so the total equals the tier curve.
 function ILB.threshold(tier, day, def, square)
-    local target = ILB.tierChance(tier) * ILB.curve(day)
+    local target = ILB.tierChance(tier) * ILB.curve(day, tier)
     local v = (def and square) and ILB.vanillaShare(def, square) or 0
     if v <= 0 then return target end
     if v >= 1 then return 0 end

@@ -145,7 +145,8 @@ grep -hE "(GasolineDegradation|PerishableFoods|ImmersiveLootedBuildings).*(attem
 
 # Only the first finished run counts (older harness versions restarted after quitting).
 # A pass needs at least one check, no failure, and no timeout or setup error.
-if grep -m1 'CZM-TEST\] DONE' "$LOG" | grep -E 'pass=[1-9][0-9]* fail=0' | grep -qvE 'timeout|error'; then
+DONE_LINE="$(grep -m1 'CZM-TEST\] DONE' "$LOG" || true)"
+if [[ "$DONE_LINE" =~ pass=[1-9][0-9]*\ fail=0 ]] && ! [[ "$DONE_LINE" =~ timeout|error|died ]]; then
     echo "ALL PASSED"; exit 0
 fi
 echo "FAILED or incomplete" >&2

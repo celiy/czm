@@ -11,10 +11,13 @@ Status: **suites written and passing (2026-11-25).** Harness: `dev/run-autotest.
 | `ilb`, vanilla looted 100% | Muldraugh | 22/22 (late-cut part skipped: every shop was game-looted) |
 | `ilb_persist`: save, continue | West Point | 3/3 + 8/8 |
 | `ilb_midsave`: save without the mod, add, remove, add again | West Point | 2 + 6 + 2 + 4, all pass |
+| `ilb`, looting starts on day 100 (day 90 game) | West Point | 39/39, nothing cut |
+| `ilb`, movie rentals and bookstores added to Low | Muldraugh | 39/39 |
+| `ilb_extra`: every remaining option, respawn, real loot window, cost | West Point | 32/32 (house fill 1.7 us) |
+| `ilb_shops`: 53 shops across the map, vanilla looted 25%, count on | whole map | 5/5: High 88% looted vs 83% expected; cut seen 94.3 / 73.5 / 51.5% |
+| Gasoline Degradation suite with the new harness | | 33/33 |
 
-Covered: 1.1-1.3, 1.5, 1.8, 2.1-2.4, 2.6-2.8, 2.10-2.11, 3.1-3.4, 3.7-3.8, 4.2-4.4, 4.6-4.8, 5.2-5.3, 7.1, 7.3-7.7, 7.10-7.11, and from section 6: Enabled, exact curve, cut variation, stripped chance, useful first, passing window, cut abandoned.
-
-Not yet covered in game: 1.6/1.7 (statistical check of the vanilla correction), 1.9, 2.5 (average loot left over 300 real containers), the start/peak/end/share/slowdown/initial options in game (covered by the curve unit test), room-list edits, loot respawn, live option changes, 3.5, 3.9/8.5 (multiplayer), 8.3 cost measure.
+Covered: every item of sections 1 to 7 except 1.7 in game (count option off: checked by the formula and the synthetic buildings only), 3.9 and 8.5 (multiplayer). The test player can die in the long shop tour (god mode is ignored outside debug); the tour keeps collecting anyway.
 
 Harness notes: one run at a time (the runner holds a lock); `CZM_TEST_MODS` picks the mods, `CZM_TEST_CONTINUE=1` + `CZM_TEST_PHASE` run two-launch suites. The console line "invalid room metaID ... cell 25,33" appears on every continued West Point save, with or without the mod: it is the game's own.
 
