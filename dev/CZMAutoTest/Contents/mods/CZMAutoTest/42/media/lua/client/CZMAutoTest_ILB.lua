@@ -144,7 +144,7 @@ end
 -- mod's per-building random number is the only thing taken from the mod.
 -- ---------------------------------------------------------------------------
 
-local TIER_C = { High = { 0.90, 0.889 }, Medium = { 0.80, 0.875 }, Low = { 0.70, 0.857 } }
+local TIER_C = { High = { 0.70, 1.0 }, Medium = { 0.50, 1.0 }, Low = { 0.30, 1.0 } }
 
 -- Independent copy of the curve (DESIGN.md, "When looting happens").
 local function oracleF(t, S, P, E, Fp, k, I, tier)
