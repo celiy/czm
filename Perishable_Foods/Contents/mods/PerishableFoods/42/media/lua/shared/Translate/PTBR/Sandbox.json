@@ -1,0 +1,7 @@
+{
+    "Sandbox_PerishableFoods": "Alimentos Perecíveis",
+    "Sandbox_PerishableFoods.Enabled": "Comidas e bebidas estragam",
+    "Sandbox_PerishableFoods.Enabled_tooltip": "Comidas e bebidas que nunca estragavam no jogo (leite, suco, refrigerante, biscoitos, chocolate, geleias, molhos...) agora estragam, cada uma no seu prazo. Álcool fechado, açúcar, sal e temperos secos nunca estragam. Geladeira e freezer desaceleram. Itens que você já tem começam frescos na primeira vez que o mod os vê, então adicionar o mod a um save não estraga tudo de uma vez.",
+    "Sandbox_PerishableFoods.ShelfLifeMultiplier": "Validade (porcentagem)",
+    "Sandbox_PerishableFoods.ShelfLifeMultiplier_tooltip": "Multiplica todos os prazos. 100: como projetado (leite 2 meses, suco 1 mês, biscoito 1 mês, doce 1 ano). 50: estraga duas vezes mais rápido. 200: dura o dobro."
+}

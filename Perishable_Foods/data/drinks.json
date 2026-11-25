@@ -1,0 +1,162 @@
+{
+  "BeerBottle": {
+    "group": "never"
+  },
+  "BeerCan": {
+    "group": "never"
+  },
+  "BeerImported": {
+    "group": "never"
+  },
+  "Brandy": {
+    "group": "never"
+  },
+  "Champagne": {
+    "group": "never"
+  },
+  "Cider": {
+    "group": "never"
+  },
+  "CoffeeLiquer": {
+    "group": "never"
+  },
+  "Curacao": {
+    "group": "never"
+  },
+  "Gin": {
+    "group": "never"
+  },
+  "Grenadine": {
+    "group": "never"
+  },
+  "JuiceBox": {
+    "days": 120,
+    "group": "juice_box"
+  },
+  "JuiceBoxApple": {
+    "days": 120,
+    "group": "juice_box"
+  },
+  "JuiceBoxFruitpunch": {
+    "days": 120,
+    "group": "juice_box"
+  },
+  "JuiceBoxOrange": {
+    "days": 120,
+    "group": "juice_box"
+  },
+  "JuiceCranberry": {
+    "days": 30,
+    "group": "juice"
+  },
+  "JuiceFruitpunch": {
+    "days": 30,
+    "group": "juice"
+  },
+  "JuiceGrape": {
+    "days": 30,
+    "group": "juice"
+  },
+  "JuiceLemon": {
+    "days": 30,
+    "group": "juice"
+  },
+  "JuiceOrange": {
+    "days": 30,
+    "group": "juice"
+  },
+  "JuiceTomato": {
+    "days": 30,
+    "group": "juice"
+  },
+  "Milk": {
+    "days": 60,
+    "group": "milk"
+  },
+  "MilkBottle": {
+    "days": 60,
+    "group": "milk"
+  },
+  "MilkChocolate_Personalsized": {
+    "days": 60,
+    "group": "milk"
+  },
+  "Milk_Personalsized": {
+    "days": 60,
+    "group": "milk"
+  },
+  "Pop": {
+    "days": 365,
+    "group": "soda"
+  },
+  "Pop2": {
+    "days": 365,
+    "group": "soda"
+  },
+  "Pop3": {
+    "days": 365,
+    "group": "soda"
+  },
+  "PopBottle": {
+    "days": 365,
+    "group": "soda"
+  },
+  "PopBottleRare": {
+    "days": 365,
+    "group": "soda"
+  },
+  "Port": {
+    "group": "never"
+  },
+  "Rum": {
+    "group": "never"
+  },
+  "Scotch": {
+    "group": "never"
+  },
+  "Sherry": {
+    "group": "never"
+  },
+  "SimpleSyrup": {
+    "group": "never"
+  },
+  "SodaCan": {
+    "days": 365,
+    "group": "soda"
+  },
+  "Tequila": {
+    "group": "never"
+  },
+  "Vermouth": {
+    "group": "never"
+  },
+  "Vodka": {
+    "group": "never"
+  },
+  "Whiskey": {
+    "group": "never"
+  },
+  "Wine": {
+    "group": "never"
+  },
+  "Wine2": {
+    "group": "never"
+  },
+  "Wine2Open": {
+    "days": 14,
+    "group": "alcohol_open"
+  },
+  "WineAged": {
+    "group": "never"
+  },
+  "WineBox": {
+    "group": "never"
+  },
+  "WineOpen": {
+    "days": 14,
+    "group": "alcohol_open"
+  },
+  "WineScrewtop": {
+    "group": "never"
+  }
+}

@@ -1,0 +1,11 @@
+VERSION = 1,
+
+option PerishableFoods.Enabled = {
+    type = boolean, default = true,
+    page = PerishableFoods, translation = PerishableFoods.Enabled,
+}
+
+option PerishableFoods.ShelfLifeMultiplier = {
+    type = integer, min = 10, max = 1000, default = 100,
+    page = PerishableFoods, translation = PerishableFoods.ShelfLifeMultiplier,
+}

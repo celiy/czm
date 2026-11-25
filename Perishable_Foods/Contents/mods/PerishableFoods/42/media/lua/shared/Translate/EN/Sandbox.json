@@ -1,0 +1,7 @@
+{
+    "Sandbox_PerishableFoods": "Perishable Foods",
+    "Sandbox_PerishableFoods.Enabled": "Food and drinks spoil",
+    "Sandbox_PerishableFoods.Enabled_tooltip": "Food and drinks that never spoiled in vanilla (milk, juice, pop, biscuits, chocolate, jams, sauces...) now spoil, each with its own shelf life. Sealed alcohol, sugar, salt and dry spices never spoil. Fridges and freezers slow it down. Items you already have start fresh the first time the mod sees them, so adding the mod to a save does not rot everything at once.",
+    "Sandbox_PerishableFoods.ShelfLifeMultiplier": "Shelf life (percent)",
+    "Sandbox_PerishableFoods.ShelfLifeMultiplier_tooltip": "Scales every shelf life. 100: as designed (milk 2 months, opened juice 1 month, biscuits 1 month, candy 1 year). 50: spoils twice as fast. 200: lasts twice as long."
+}

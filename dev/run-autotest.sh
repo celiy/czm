@@ -55,6 +55,7 @@ VERSION = 1,
 mods
 {
     mod = GasolineDegradation,
+    mod = PerishableFoods,
     mod = CZMAutoTest,
 }
 
@@ -71,11 +72,14 @@ if [ -f "$OPTS" ]; then
            -e 's/^showFirstTimeSearchTutorial=.*/showFirstTimeSearchTutorial=false/' \
            -e 's/^showFirstTimeSneakTutorial=.*/showFirstTimeSneakTutorial=false/' "$OPTS"
 fi
-echo "world=${CZM_TEST_WORLD:-czm-autotest}" > "$CACHE/Lua/czm_autotest.txt"
+printf 'world=%s\nmode=%s\napo=%s\n' "${CZM_TEST_WORLD:-czm-autotest}" "${CZM_TEST_MODE:-gasoline}" "${CZM_TEST_APO:-1}" > "$CACHE/Lua/czm_autotest.txt"
 
 echo "Game:    $GAME"
 echo "Profile: $CACHE"
 echo "Starting the game (timeout ${TIMEOUT}s)..."
+
+# A stale console from an earlier run must never be mistaken for this run's result.
+rm -f "$CACHE/console.txt" "$CACHE/launcher.out"
 
 "$GAME/projectzomboid.sh" -cachedir="$CACHE" >"$CACHE/launcher.out" 2>&1 &
 PID=$!
@@ -102,6 +106,10 @@ for _ in $(seq 1 60); do pgrep -f "cachedir=$CACHE" >/dev/null || break; sleep 1
 pgrep -f "cachedir=$CACHE" | xargs -r kill 2>/dev/null || true
 
 echo
+if grep -q "Steam must be running" "$CACHE/launcher.out" 2>/dev/null; then
+    echo "The game did not start: Steam is not running. Start Steam and run this again." >&2
+    exit 4
+fi
 echo "---- results ----"
 if [ ! -f "$LOG" ]; then echo "No console.txt was written; the game did not start." >&2; exit 2; fi
 grep -h 'CZM-TEST\]' "$LOG" | sed 's/^.*\(\[CZM-TEST\]\)/\1/' || true

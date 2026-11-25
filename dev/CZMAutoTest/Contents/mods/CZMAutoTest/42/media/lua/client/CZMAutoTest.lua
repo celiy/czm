@@ -10,15 +10,22 @@
 
 local TAG = "[CZM-TEST] "
 local WORLD = "czm-autotest"
+MODE = "gasoline"
 
--- The trigger file may name another world: "world=<name>" on its first line.
+-- The trigger file holds "key=value" lines: world=<name>, mode=<suite>, apo=<months since apocalypse>.
+APO = 1
 do
     local ok, reader = pcall(getFileReader, "czm_autotest.txt", false)
     if ok and reader then
         local line = reader:readLine()
+        while line do
+            local k, v = line:match("^(%w+)=(%S+)")
+            if k == "world" then WORLD = v
+            elseif k == "mode" then MODE = v
+            elseif k == "apo" then APO = tonumber(v) or 1 end
+            line = reader:readLine()
+        end
         reader:close()
-        local name = line and line:match("^world=(%S+)")
-        if name then WORLD = name end
     end
 end
 local SPAWN = { x = 8283, y = 12262, z = 0 }
@@ -62,7 +69,8 @@ local function startWorld()
     SandboxVars.Helicopter = 1
     SandboxVars.MetaEvent = 1
     SandboxVars.StarterKit = false
-    SandboxVars.TimeSinceApo = 1
+    SandboxVars.TimeSinceApo = APO
+    SandboxVars.ElecShutModifier = 5000 -- power stays on, so fridges and freezers work in tests
     SandboxVars.GasolineDegradation = SandboxVars.GasolineDegradation or {}
     local o = SandboxVars.GasolineDegradation
     o.Enabled = true
@@ -464,7 +472,11 @@ local function setupSteps()
 end
 
 local function runTests()
-    local ok, err = pcall(setupSteps)
+    local builder = setupSteps
+    if MODE ~= "gasoline" and CZM_TEST_SUITES and CZM_TEST_SUITES[MODE] then
+        builder = function() CZM_TEST_SUITES[MODE]({ queue = queue, check = check, finish = finish, state = state, jumpDays = jumpDays, near = near, TAG = TAG }) end
+    end
+    local ok, err = pcall(builder)
     if not ok then
         state.fail = state.fail + 1
         print(TAG .. "FAIL could not build steps: " .. tostring(err))

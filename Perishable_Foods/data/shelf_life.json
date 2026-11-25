@@ -1,0 +1,708 @@
+{
+  "Allsorts": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "BBQSauce": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "BalsamicVinegar": {
+    "freshDays": 365,
+    "group": "oil",
+    "rottenDays": 420
+  },
+  "BasilDried": {
+    "group": "never"
+  },
+  "BeefJerky": {
+    "freshDays": 180,
+    "group": "jerky",
+    "rottenDays": 240
+  },
+  "BlackSageDried": {
+    "group": "never"
+  },
+  "Butter": {
+    "freshDays": 60,
+    "group": "butter",
+    "rottenDays": 80
+  },
+  "CandyCaramels": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "CandyCorn": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "CandyFruitSlices": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "CandyGummyfish": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "CandyMolasses": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "CandyNovapops": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "CandyPackage": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Candycane": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Capers": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "Cereal": {
+    "freshDays": 180,
+    "group": "cereal",
+    "rottenDays": 240
+  },
+  "ChamomileDried": {
+    "group": "never"
+  },
+  "ChivesDried": {
+    "group": "never"
+  },
+  "ChocoCakes": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "Chocolate": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "ChocolateChips": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "ChocolateCoveredCoffeeBeans": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_Butterchunkers": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_Candy": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_Crackle": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_Deux": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_GalacticDairy": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_HeartBox": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_RoysPBPucks": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_Smirkers": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "Chocolate_SnikSnak": {
+    "freshDays": 365,
+    "group": "chocolate",
+    "rottenDays": 420
+  },
+  "CilantroDried": {
+    "group": "never"
+  },
+  "Cinnamon": {
+    "group": "never"
+  },
+  "CinnamonRoll": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "CocoaPowder": {
+    "freshDays": 365,
+    "group": "powder",
+    "rottenDays": 420
+  },
+  "Coffee2": {
+    "freshDays": 365,
+    "group": "powder",
+    "rottenDays": 420
+  },
+  "ComfreyDried": {
+    "group": "never"
+  },
+  "CommonMallowDried": {
+    "group": "never"
+  },
+  "CookieChocolateChip": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "CookieJelly": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "CookiesChocolate": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "CookiesOatmeal": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "CookiesShortbread": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "CookiesSugar": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "Cornflour2": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Cornmeal2": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Crackers": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "Crisps": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "Crisps2": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "Crisps3": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "Crisps4": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "CrispyRiceSquare": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "DehydratedMeatStick": {
+    "freshDays": 180,
+    "group": "jerky",
+    "rottenDays": 240
+  },
+  "Dogfood": {
+    "freshDays": 365,
+    "group": "dogfood",
+    "rottenDays": 420
+  },
+  "DriedApricots": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "DriedBlackBeans": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "DriedChickpeas": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "DriedKidneyBeans": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "DriedLentils": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "DriedSplitPeas": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "DriedWhiteBeans": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "Flour2": {
+    "freshDays": 365,
+    "group": "flour",
+    "rottenDays": 420
+  },
+  "Gingerbreadman": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "GrahamCrackers": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "GranolaBar": {
+    "freshDays": 180,
+    "group": "cereal",
+    "rottenDays": 240
+  },
+  "Gum": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "GummyBears": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "GummyWorms": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "HardCandies": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "HiHis": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "Honey": {
+    "group": "never"
+  },
+  "HopsDried": {
+    "group": "never"
+  },
+  "HotDrink": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkClay": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkCopper": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkGold": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkMetal": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkRed": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkSilver": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkSpiffo": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkTea": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkTeaCeramic": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkTumbler": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "HotDrinkWhite": {
+    "freshDays": 7,
+    "group": "hotdrink",
+    "rottenDays": 10
+  },
+  "Hotsauce": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "JamFruit": {
+    "freshDays": 365,
+    "group": "jam",
+    "rottenDays": 420
+  },
+  "JamMarmalade": {
+    "freshDays": 365,
+    "group": "jam",
+    "rottenDays": 420
+  },
+  "JellyBeans": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Jujubes": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Ketchup": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "LavenderPetalsDried": {
+    "group": "never"
+  },
+  "LicoriceBlack": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "LicoriceRed": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Lollipop": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Macaroni": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "MapleSyrup": {
+    "group": "never"
+  },
+  "Margarine": {
+    "freshDays": 60,
+    "group": "butter",
+    "rottenDays": 80
+  },
+  "MarigoldDried": {
+    "group": "never"
+  },
+  "Marinara": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "Marshmallows": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "MintCandy": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "MintHerbDried": {
+    "group": "never"
+  },
+  "Modjeska": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Mustard": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "OilOlive": {
+    "freshDays": 365,
+    "group": "oil",
+    "rottenDays": 420
+  },
+  "OilVegetable": {
+    "freshDays": 365,
+    "group": "oil",
+    "rottenDays": 420
+  },
+  "Olives": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "OreganoDried": {
+    "group": "never"
+  },
+  "ParsleyDried": {
+    "group": "never"
+  },
+  "Pasta": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "PeanutButter": {
+    "freshDays": 365,
+    "group": "peanutbutter",
+    "rottenDays": 420
+  },
+  "Peanuts": {
+    "freshDays": 365,
+    "group": "peanutbutter",
+    "rottenDays": 420
+  },
+  "Pepper": {
+    "group": "never"
+  },
+  "PepperHabaneroDried": {
+    "group": "never"
+  },
+  "PepperJalapenoDried": {
+    "group": "never"
+  },
+  "Peppermint": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Pickles": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "PlantainDried": {
+    "group": "never"
+  },
+  "Plonkies": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "Popcorn": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "PorkRinds": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "PowderedGarlic": {
+    "group": "never"
+  },
+  "PowderedOnion": {
+    "group": "never"
+  },
+  "Pretzel": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "QuaggaCakes": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "Rice": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "RicePaper": {
+    "freshDays": 365,
+    "group": "pasta",
+    "rottenDays": 420
+  },
+  "RiceVinegar": {
+    "freshDays": 365,
+    "group": "oil",
+    "rottenDays": 420
+  },
+  "RockCandy": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "RosePetalsDried": {
+    "group": "never"
+  },
+  "RosemaryDried": {
+    "group": "never"
+  },
+  "SageDried": {
+    "group": "never"
+  },
+  "Salt": {
+    "group": "never"
+  },
+  "ScoutCookies": {
+    "freshDays": 30,
+    "group": "biscuit",
+    "rottenDays": 45
+  },
+  "SeasoningSalt": {
+    "group": "never"
+  },
+  "Seasoning_Basil": {
+    "group": "never"
+  },
+  "Seasoning_Chives": {
+    "group": "never"
+  },
+  "Seasoning_Cilantro": {
+    "group": "never"
+  },
+  "Seasoning_Oregano": {
+    "group": "never"
+  },
+  "Seasoning_Parsley": {
+    "group": "never"
+  },
+  "Seasoning_Rosemary": {
+    "group": "never"
+  },
+  "Seasoning_Sage": {
+    "group": "never"
+  },
+  "Seasoning_Thyme": {
+    "group": "never"
+  },
+  "SesameOil": {
+    "freshDays": 365,
+    "group": "oil",
+    "rottenDays": 420
+  },
+  "SnoGlobes": {
+    "freshDays": 365,
+    "group": "candy",
+    "rottenDays": 420
+  },
+  "Soysauce": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "Sugar": {
+    "group": "never"
+  },
+  "SugarBeetSugarPot": {
+    "group": "never"
+  },
+  "SugarBrown": {
+    "group": "never"
+  },
+  "SugarCubes": {
+    "group": "never"
+  },
+  "SugarPacket": {
+    "group": "never"
+  },
+  "Teabag2": {
+    "freshDays": 365,
+    "group": "powder",
+    "rottenDays": 420
+  },
+  "ThymeDried": {
+    "group": "never"
+  },
+  "TomatoPaste": {
+    "freshDays": 365,
+    "group": "sauce",
+    "rottenDays": 420
+  },
+  "TortillaChips": {
+    "freshDays": 365,
+    "group": "snack",
+    "rottenDays": 420
+  },
+  "WildGarlicDried": {
+    "group": "never"
+  },
+  "cheese_powdered": {
+    "freshDays": 365,
+    "group": "powder",
+    "rottenDays": 420
+  }
+}

@@ -1,0 +1,8 @@
+name=Perishable Foods
+id=PerishableFoods
+description=Food and drinks that never spoil in vanilla now go bad, each with a realistic shelf life. Sealed and preserved items keep, opened ones spoil, and fridges and freezers slow it down. IMPORTANT: when you add this mod to a save that is already in progress, food and drinks you already own start fresh the first time the mod sees them, and loot in places you have not visited yet is aged from the day you add it, so nothing rots retroactively.
+author=Celi Herstal
+modversion=0.0.1
+versionMin=42.20
+poster=poster.png
+icon=icon.png

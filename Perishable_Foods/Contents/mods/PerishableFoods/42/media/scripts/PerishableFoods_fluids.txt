@@ -1,0 +1,23 @@
+module Base
+{
+    fluid SpoiledDrink
+    {
+        ColorReference = Sienna,
+        DisplayName = Fluid_Name_SpoiledDrink,
+        Categories
+        {
+            Beverage,
+            Hazardous,
+        }
+        Properties
+        {
+            ThirstChange = -10.0,
+        }
+        Poison
+        {
+            maxEffect = Medium,
+            minAmount = 1.0,
+            diluteRatio = 0.2,
+        }
+    }
+}
