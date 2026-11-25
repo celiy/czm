@@ -11,9 +11,12 @@
 local TAG = "[CZM-TEST] "
 local WORLD = "czm-autotest"
 MODE = "gasoline"
+CONTINUE = false -- continue=1: load the saved world instead of creating it
+PHASE = nil -- phase=<name>: passed to the suite (two-launch tests)
 
 -- The trigger file holds "key=value" lines: world=<name>, mode=<suite>, apo=<months since apocalypse>.
 APO = 1
+SPAWN_OVERRIDE = nil
 do
     local ok, reader = pcall(getFileReader, "czm_autotest.txt", false)
     if ok and reader then
@@ -22,13 +25,26 @@ do
             local k, v = line:match("^(%w+)=(%S+)")
             if k == "world" then WORLD = v
             elseif k == "mode" then MODE = v
-            elseif k == "apo" then APO = tonumber(v) or 1 end
+            elseif k == "apo" then APO = tonumber(v) or 1
+            elseif k == "continue" then CONTINUE = (v == "1")
+            elseif k == "phase" then PHASE = v
+            elseif k == "sb" then
+                -- sandbox overrides: Key:Value;Page.Key:Value
+                SANDBOX_OVERRIDES = SANDBOX_OVERRIDES or {}
+                for pair in v:gmatch("[^;]+") do
+                    local key, val = pair:match("^([%w%.]+):(.*)$")
+                    if key then SANDBOX_OVERRIDES[#SANDBOX_OVERRIDES + 1] = { key, val } end
+                end
+            elseif k == "spawn" then
+                local sx, sy = v:match("^(%d+),(%d+)$")
+                if sx then SPAWN_OVERRIDE = { x = tonumber(sx), y = tonumber(sy), z = 0 } end
+            end
             line = reader:readLine()
         end
         reader:close()
     end
 end
-local SPAWN = { x = 8283, y = 12262, z = 0 }
+local SPAWN = SPAWN_OVERRIDE or { x = 8283, y = 12262, z = 0 }
 
 local state = { armed = nil, started = false, frames = 0, done = false, pass = 0, fail = 0, ingame = false, ingameFrames = 0 }
 
@@ -37,8 +53,11 @@ local function armed()
     state.armed = false
     local ok, reader = pcall(getFileReader, "czm_autotest.txt", false)
     if ok and reader then
+        -- A finished run leaves "finished" in the file, so the game does not
+        -- start the test again when quitting returns to the main menu.
+        local first = reader:readLine()
         reader:close()
-        state.armed = true
+        state.armed = first ~= "finished"
     end
     return state.armed
 end
@@ -57,6 +76,11 @@ local function finish(why)
     if state.done then return end
     state.done = true
     print(string.format("%sDONE pass=%d fail=%d %s", TAG, state.pass, state.fail, why or ""))
+    pcall(function()
+        local w = getFileWriter("czm_autotest.txt", true, false)
+        w:write("finished\n")
+        w:close()
+    end)
     getCore():quit()
 end
 
@@ -64,6 +88,13 @@ end
 
 local function startWorld()
     local ms = MainScreen.instance
+    pcall(function() getCore():setOptionPauseOnFocusloss(false) end)
+    if CONTINUE then
+        -- Load the save an earlier run made (its mods.txt was written by the runner).
+        print(TAG .. "continuing saved world " .. WORLD)
+        MainScreen.continueLatestSave("Sandbox", WORLD)
+        return
+    end
     print(TAG .. "starting test world at " .. SPAWN.x .. "," .. SPAWN.y)
     ms:setDefaultSandboxVars()
     SandboxVars.Helicopter = 1
@@ -81,6 +112,19 @@ local function startWorld()
     o.ContainerMinLiters = 0.5
     o.VehicleMinLiters = 1.0
     o.CheckIntervalMinutes = 1
+    for _, o in ipairs(SANDBOX_OVERRIDES or {}) do
+        local key, raw = o[1], o[2]
+        local val = raw
+        if raw == "true" then val = true elseif raw == "false" then val = false elseif tonumber(raw) then val = tonumber(raw) end
+        local page, name = key:match("^(%w+)%.(%w+)$")
+        if page then
+            SandboxVars[page] = SandboxVars[page] or {}
+            SandboxVars[page][name] = val
+        else
+            SandboxVars[key] = val
+        end
+        print(TAG .. "sandbox override " .. key .. " = " .. tostring(val))
+    end
     pcall(function() getSandboxOptions():updateFromLua() end)
     pcall(function() WorldGenParams.INSTANCE:setSeedString(WORLD) end)
     local okDesc = pcall(function() ms.desc = SurvivorFactory.CreateSurvivor(SurvivorType.Neutral, false) end)
@@ -474,7 +518,7 @@ end
 local function runTests()
     local builder = setupSteps
     if MODE ~= "gasoline" and CZM_TEST_SUITES and CZM_TEST_SUITES[MODE] then
-        builder = function() CZM_TEST_SUITES[MODE]({ queue = queue, check = check, finish = finish, state = state, jumpDays = jumpDays, near = near, TAG = TAG }) end
+        builder = function() CZM_TEST_SUITES[MODE]({ queue = queue, check = check, finish = finish, state = state, jumpDays = jumpDays, near = near, TAG = TAG, phase = PHASE, continued = CONTINUE }) end
     end
     local ok, err = pcall(builder)
     if not ok then
@@ -489,13 +533,16 @@ end
 Events.OnPostUIDraw.Add(function()
     if state.done or not armed() then return end
     if state.ingame then
+        -- The game pauses when its window loses focus (the user works in
+        -- another window while tests run): never let a test sit paused.
+        if isGamePaused() then setGameSpeed(1) end
         state.ingameFrames = state.ingameFrames + 1
         if state.ingameFrames == 300 then -- let the world settle
             runTests()
         elseif state.ingameFrames > 300 then
             runSteps()
         end
-        if state.ingameFrames > 9000 then
+        if state.ingameFrames > 40000 then -- long suites (towns) need it
             print(TAG .. "FAIL timed out")
             finish("timeout")
         end

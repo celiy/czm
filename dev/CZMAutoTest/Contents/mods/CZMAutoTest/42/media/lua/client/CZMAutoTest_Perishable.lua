@@ -528,3 +528,463 @@ CZM_TEST_SUITES.perishable_apo = function(t)
         t.finish()
     end)
 end
+
+----------------------------------------------------------------------------
+-- Gasoline: sitting in a vehicle keeps its gas during the delay
+----------------------------------------------------------------------------
+
+CZM_TEST_SUITES.gasoline_seat = function(t)
+    local GD = GasolineDegradation
+    local ctx = {}
+    local function minutes(n)
+        for _ = 1, n do triggerEvent("EveryOneMinute") end
+    end
+    t.queue(1, function()
+        t.check("gasoline mod loaded", GD ~= nil and GD.touchVehicle ~= nil)
+        local player = getSpecificPlayer(0)
+        ctx.player = player
+        local px, py, pz = math.floor(player:getX()), math.floor(player:getY()), math.floor(player:getZ())
+        ctx.car = addVehicleDebug("Base.CarNormal", IsoDirections.N, nil, getCell():getGridSquare(px, py - 4, pz))
+        t.check("test car spawned", ctx.car ~= nil)
+    end)
+    t.queue(60, function()
+        local tank = ctx.car:getPartById("GasTank")
+        ctx.tank = tank
+        ctx.cap = tank:getContainerCapacity()
+        tank:setContainerContentAmount(ctx.cap)
+        ctx.enter = ctx.car:enter(0, ctx.player)
+        t.check("player sits in the driver seat", ctx.enter and ctx.car:getCharacter(0) == ctx.player)
+        minutes(12) -- the sitting check runs every 10 game minutes
+        ctx.acc = ctx.car:getModData()[GD.ACCESS_KEY]
+        t.check("sitting in the car starts its delay", ctx.acc ~= nil and math.abs(ctx.acc - getGameTime():getWorldAgeHours() / 24) < 0.02,
+            string.format("access=%s now=%.3f", tostring(ctx.acc), getGameTime():getWorldAgeHours() / 24))
+    end)
+    t.queue(1, function()
+        -- A seated player counts as use every 10 game minutes, so advance one day at a time.
+        for _ = 1, 20 do
+            t.jumpDays(1)
+            minutes(144)
+        end
+        GDForceCheck()
+        local amount = ctx.tank:getContainerContentAmount()
+        t.check("car with someone in it keeps its gas for 20 days", math.abs(amount - ctx.cap) < 0.05,
+            string.format("%.2f of %d", amount, ctx.cap))
+        ctx.acc = ctx.car:getModData()[GD.ACCESS_KEY]
+        ctx.kept = amount
+    end)
+    t.queue(1, function()
+        ctx.exited = ctx.car:exit(ctx.player)
+        t.check("player gets out of the car", ctx.exited and ctx.car:getCharacter(0) ~= ctx.player)
+        t.jumpDays(10)
+        minutes(1)
+        GDForceCheck()
+        t.check("car still inside its 14-day delay after getting out", math.abs(ctx.tank:getContainerContentAmount() - ctx.kept) < 0.05,
+            string.format("%.2f, expected %.2f", ctx.tank:getContainerContentAmount(), ctx.kept))
+    end)
+    t.queue(1, function()
+        t.jumpDays(10)
+        GDForceCheck()
+        local dt = (getGameTime():getWorldAgeHours() / 24) - (ctx.acc + GD.accessDelayDays())
+        local expect = ctx.kept * GD.decayFactor(dt)
+        t.check("car degrades again after the delay, on the curve", dt > 5.5 and math.abs(ctx.tank:getContainerContentAmount() - expect) < 0.08,
+            string.format("%.2f, expected %.2f (after %.1f days of decay)", ctx.tank:getContainerContentAmount(), expect, dt))
+        t.finish()
+    end)
+end
+
+----------------------------------------------------------------------------
+-- Loot research probe: can the loot of specific rooms be changed on its own?
+----------------------------------------------------------------------------
+
+CZM_TEST_SUITES.loot_probe = function(t)
+    local ctx = { rooms = {}, samples = {} }
+    local WANT = { grocery = 1, grocerystorage = 1, gigamart = 1, conveniencestore = 1, cornerstore = 1, pharmacy = 1,
+        pharmacystorage = 1, medical = 1, toolstore = 1, liquorstore = 1, clothingstore = 1, bookstore = 1, kitchen = 1,
+        bedroom = 1, livingroom = 1, gasstore = 1, generalstore = 1, departmentstore = 1 }
+
+    t.queue(1, function()
+        local player = getSpecificPlayer(0)
+        ctx.player = player
+        local px, py = math.floor(player:getX()), math.floor(player:getY())
+        local cell = getCell()
+        for dx = -160, 160 do
+            for dy = -160, 160 do
+                local sq = cell:getGridSquare(px + dx, py + dy, 0)
+                if sq then
+                    local room = sq:getRoom()
+                    local name = room and room:getName()
+                    if name and WANT[name] then
+                        local r = ctx.rooms[name] or { squares = 0, containers = {} }
+                        ctx.rooms[name] = r
+                        r.squares = r.squares + 1
+                        local objs = sq:getObjects()
+                        for i = 0, objs:size() - 1 do
+                            local c = objs:get(i):getContainer()
+                            if c and #r.containers < 6 then r.containers[#r.containers + 1] = c end
+                        end
+                    end
+                end
+            end
+        end
+        for name, r in pairs(ctx.rooms) do
+            local types = {}
+            for _, c in ipairs(r.containers) do types[#types + 1] = c:getType() end
+            print(string.format("%sprobe room=%s squares=%d containers(sample)=%s", t.TAG, name, r.squares, table.concat(types, ",")))
+        end
+        local any = false
+        for _ in pairs(ctx.rooms) do any = true end
+        t.check("rooms of interest exist around the spawn", any)
+    end)
+
+    -- Does the game's own OnFillContainer event tell us the room?
+    t.queue(1, function()
+      local ok, err = pcall(function()
+        ctx.events = {}
+        Events.OnFillContainer.Add(function(roomName, containerType, container)
+            if #ctx.events < 8 then ctx.events[#ctx.events + 1] = tostring(roomName) .. "/" .. tostring(containerType) end
+        end)
+        local name, r = next(ctx.rooms)
+        if r and r.containers[1] then
+            local before = r.containers[1]:getItems():size()
+            r.containers[1]:removeAllItems()
+            ItemPicker.fillContainer(r.containers[1], ctx.player)
+            print(string.format("%sprobe fillContainer in %s: items %d -> %d, OnFillContainer calls seen: %s", t.TAG, name, before,
+                r.containers[1]:getItems():size(), table.concat(ctx.events, " | ")))
+        end
+      end)
+      if not ok then print(t.TAG .. "probe OnFillContainer step error: " .. tostring(err)) end
+    end)
+
+    -- Average number of items a container of each room gets, before and after a change.
+    local function average(container, times, matchItem)
+        local items, matched = 0, 0
+        for _ = 1, times do
+            container:removeAllItems()
+            ItemPicker.fillContainer(container, ctx.player)
+            local list = container:getItems()
+            items = items + list:size()
+            if matchItem then
+                for i = 0, list:size() - 1 do
+                    if list:get(i):getFullType() == matchItem then matched = matched + 1 end
+                end
+            end
+        end
+        return items / times, matched / times
+    end
+    ctx.average = average
+
+    t.queue(1, function()
+        ctx.before = {}
+        for _, name in ipairs({ "grocery", "pharmacy", "kitchen", "bedroom", "toolstore", "gigamart" }) do
+            local r = ctx.rooms[name]
+            if r and r.containers[1] then
+                local avg, pills = average(r.containers[1], 40, "Base.Pills")
+                ctx.before[name] = { avg = avg, pills = pills, c = r.containers[1] }
+                print(string.format("%sprobe BEFORE %s (%s): %.2f items per fill, %.3f Pills per fill", t.TAG, name, r.containers[1]:getType(), avg, pills))
+            else
+                print(t.TAG .. "probe BEFORE " .. name .. ": no container found nearby")
+            end
+        end
+    end)
+
+    -- Change only grocery and pharmacy through the official tables, then re-read them.
+    t.queue(1, function()
+        local function clone(name, factor)
+            local src = ProceduralDistributions.list[name]
+            if not src then return nil end
+            local newName = name .. "__czm"
+            if not ProceduralDistributions.list[newName] then
+                local copy = {}
+                for k, v in pairs(src) do copy[k] = v end
+                if src.items then
+                    copy.items = {}
+                    for i, v in ipairs(src.items) do
+                        copy.items[i] = (i % 2 == 0 and type(v) == "number") and v * factor or v
+                    end
+                end
+                ProceduralDistributions.list[newName] = copy
+            end
+            return newName
+        end
+        local function scaleRoom(room, factor)
+            local def = SuburbsDistributions[room]
+            local changed = 0
+            for _, container in pairs(def or {}) do
+                if type(container) == "table" and container.procedural and container.procList then
+                    for _, p in ipairs(container.procList) do
+                        local n = clone(p.name, factor)
+                        if n then p.name = n; changed = changed + 1 end
+                    end
+                end
+            end
+            return changed
+        end
+        local g = scaleRoom("grocery", 0.2)
+        local p = scaleRoom("pharmacy", 0.2)
+        print(string.format("%sprobe scaled grocery (%d lists) and pharmacy (%d lists) to 20%% in the Lua tables", t.TAG, g, p))
+        ItemPicker.Parse()
+        print(t.TAG .. "probe tables re-read with ItemPicker.Parse()")
+    end)
+
+    t.queue(1, function()
+        for _, name in ipairs({ "grocery", "pharmacy", "kitchen", "bedroom", "toolstore", "gigamart" }) do
+            local b = ctx.before[name]
+            if b then
+                local avg, pills = ctx.average(b.c, 40, "Base.Pills")
+                local ratio = b.avg > 0 and avg / b.avg or -1
+                print(string.format("%sprobe AFTER %s: %.2f items per fill (was %.2f, ratio %.2f), %.3f Pills per fill (was %.3f)", t.TAG, name, avg, b.avg, ratio, pills, b.pills))
+            end
+        end
+        t.finish()
+    end)
+end
+
+----------------------------------------------------------------------------
+-- Loot research, second experiment: change chosen rooms / one item, measure the rest
+----------------------------------------------------------------------------
+
+local LOOT_TARGETS = { "cornerstore", "toolstore", "generalstore", "gasstore", "medical" }
+local LOOT_CONTROLS = { "bedroom", "kitchen", "livingroom" }
+
+local function lootFindRooms(maxContainers)
+    local player = getSpecificPlayer(0)
+    local px, py = math.floor(player:getX()), math.floor(player:getY())
+    local cell = getCell()
+    local rooms = {}
+    local want = {}
+    for _, n in ipairs(LOOT_TARGETS) do want[n] = true end
+    for _, n in ipairs(LOOT_CONTROLS) do want[n] = true end
+    for dx = -160, 160 do
+        for dy = -160, 160 do
+            local sq = cell:getGridSquare(px + dx, py + dy, 0)
+            if sq then
+                local room = sq:getRoom()
+                local name = room and room:getName()
+                if name and want[name] then
+                    rooms[name] = rooms[name] or { containers = {} }
+                    local objs = sq:getObjects()
+                    for i = 0, objs:size() - 1 do
+                        local c = objs:get(i):getContainer()
+                        if c and #rooms[name].containers < (maxContainers or 3) then
+                            rooms[name].containers[#rooms[name].containers + 1] = c
+                        end
+                    end
+                end
+            end
+        end
+    end
+    return rooms
+end
+
+local function lootAverage(container, player, times, itemType)
+    local items, matched = 0, 0
+    for _ = 1, times do
+        container:removeAllItems()
+        ItemPicker.fillContainer(container, player)
+        local list = container:getItems()
+        items = items + list:size()
+        if itemType then
+            for i = 0, list:size() - 1 do
+                if list:get(i):getFullType() == itemType then matched = matched + 1 end
+            end
+        end
+    end
+    return items / times, matched / times
+end
+
+-- Copy a procedural list under a new name, with every item chance multiplied.
+local function lootClone(name, factor, suffix)
+    local src = ProceduralDistributions.list[name]
+    if not src then return nil end
+    local newName = name .. suffix
+    if not ProceduralDistributions.list[newName] then
+        local copy = {}
+        for k, v in pairs(src) do copy[k] = v end
+        if src.items then
+            copy.items = {}
+            for i, v in ipairs(src.items) do
+                copy.items[i] = (i % 2 == 0 and type(v) == "number") and v * factor or v
+            end
+        end
+        ProceduralDistributions.list[newName] = copy
+    end
+    return newName
+end
+
+local function lootScaleRoom(room, factor)
+    local def = SuburbsDistributions[room]
+    local changed = 0
+    for _, container in pairs(def or {}) do
+        if type(container) == "table" and container.procedural and container.procList then
+            for _, p in ipairs(container.procList) do
+                local n = lootClone(p.name, factor, "__czm" .. math.floor(factor * 100))
+                if n then p.name = n; changed = changed + 1 end
+            end
+        end
+    end
+    return changed
+end
+
+CZM_TEST_SUITES.loot_rooms = function(t)
+    local ctx = { before = {} }
+    t.queue(1, function()
+        ctx.player = getSpecificPlayer(0)
+        ctx.rooms = lootFindRooms(2)
+        local names = {}
+        for n in pairs(ctx.rooms) do names[#names + 1] = n end
+        table.sort(names)
+        print(t.TAG .. "probe rooms found: " .. table.concat(names, ","))
+        for _, n in ipairs(names) do
+            local c = ctx.rooms[n].containers[1]
+            if c then
+                local avg = lootAverage(c, ctx.player, 30)
+                ctx.before[n] = { avg = avg, c = c }
+                print(string.format("%sprobe BEFORE %-13s (%s): %.2f items per fill", t.TAG, n, c:getType(), avg))
+            end
+        end
+    end)
+    t.queue(1, function()
+        local done = {}
+        for _, n in ipairs(LOOT_TARGETS) do
+            if ctx.before[n] then done[#done + 1] = n .. "=" .. lootScaleRoom(n, 0.2) end
+        end
+        print(t.TAG .. "probe scaled to 20% (lists changed): " .. table.concat(done, ", "))
+        ItemPicker.Parse()
+    end)
+    t.queue(1, function()
+        local function isTarget(n) for _, x in ipairs(LOOT_TARGETS) do if x == n then return true end end end
+        local targetRatios, controlRatios = {}, {}
+        for n, b in pairs(ctx.before) do
+            local avg = lootAverage(b.c, ctx.player, 30)
+            local ratio = b.avg > 0 and avg / b.avg or -1
+            print(string.format("%sprobe AFTER  %-13s: %.2f items per fill (was %.2f, ratio %.2f) %s", t.TAG, n, avg, b.avg, ratio, isTarget(n) and "[TARGET]" or "[control]"))
+            if isTarget(n) then targetRatios[#targetRatios + 1] = ratio else controlRatios[#controlRatios + 1] = ratio end
+        end
+        local function mean(l) local s = 0 for _, v in ipairs(l) do s = s + v end return #l > 0 and s / #l or -1 end
+        local tm, cm = mean(targetRatios), mean(controlRatios)
+        t.check("targeted rooms lost most of their loot", #targetRatios > 0 and tm < 0.5, string.format("mean ratio %.2f over %d rooms", tm, #targetRatios))
+        t.check("untouched rooms stay about the same", #controlRatios > 0 and cm > 0.8 and cm < 1.2, string.format("mean ratio %.2f over %d rooms", cm, #controlRatios))
+        t.finish()
+    end)
+end
+
+-- One item only: scale every chance of a single item across all lists, keep everything else.
+CZM_TEST_SUITES.loot_item = function(t)
+    local ctx = {}
+    local ITEM = "Base.Pills"
+    t.queue(1, function()
+        ctx.player = getSpecificPlayer(0)
+        ctx.rooms = lootFindRooms(6)
+        -- the room containers where the item can appear
+        ctx.sample = {}
+        for _, n in ipairs(LOOT_TARGETS) do -- shop rooms only: house rooms stop giving loot after ~100 fills
+            local r = ctx.rooms[n]
+            if r then for _, c in ipairs(r.containers) do ctx.sample[#ctx.sample + 1] = { room = n, c = c } end end
+        end
+        local total = 0
+        for _, s in ipairs(ctx.sample) do
+            local avg, matched = lootAverage(s.c, ctx.player, 100, ITEM)
+            s.avg, s.matched = avg, matched
+            total = total + matched
+        end
+        ctx.beforeTotal = total
+        print(string.format("%sprobe BEFORE: %d containers sampled, %.3f %s per fill in total", t.TAG, #ctx.sample, total, ITEM))
+    end)
+    t.queue(1, function()
+        local function scaleItem(dist, item, factor)
+            local changed = 0
+            for k, v in pairs(dist) do
+                if type(v) == "table" then
+                    if k == "items" then
+                        for i = 1, #v - 1, 2 do
+                            if v[i] == item and type(v[i + 1]) == "number" then v[i + 1] = v[i + 1] * factor; changed = changed + 1 end
+                        end
+                    else
+                        changed = changed + scaleItem(v, item, factor)
+                    end
+                end
+            end
+            return changed
+        end
+        local short = ITEM:gsub("^Base%.", "")
+        local a = scaleItem(ProceduralDistributions.list, short, 0.2)
+        local b = scaleItem(SuburbsDistributions, short, 0.2)
+        print(string.format("%sprobe scaled %s to 20%%: %d entries in procedural lists, %d in room tables", t.TAG, short, a, b))
+        ItemPicker.Parse()
+    end)
+    t.queue(1, function()
+        local total = 0
+        for _, s in ipairs(ctx.sample) do
+            local _, matched = lootAverage(s.c, ctx.player, 100, ITEM)
+            total = total + matched
+        end
+        local ratio = ctx.beforeTotal > 0 and total / ctx.beforeTotal or -1
+        print(string.format("%sprobe AFTER: %.3f per fill in total (was %.3f, ratio %.2f)", t.TAG, total, ctx.beforeTotal, ratio))
+        t.check("the single item became much rarer", ctx.beforeTotal > 0 and ratio < 0.5, string.format("ratio %.2f", ratio))
+        t.finish()
+    end)
+end
+
+-- Control: re-read the tables with NO change. Does the re-read alone change how much loot spawns?
+CZM_TEST_SUITES.loot_parse_only = function(t)
+    local ctx = { before = {} }
+    t.queue(1, function()
+        ctx.player = getSpecificPlayer(0)
+        ctx.rooms = lootFindRooms(2)
+        for n, r in pairs(ctx.rooms) do
+            local c = r.containers[1]
+            if c then
+                local avg = lootAverage(c, ctx.player, 80)
+                ctx.before[n] = { avg = avg, c = c }
+                print(string.format("%sprobe BEFORE %-13s (%s): %.2f items per fill", t.TAG, n, c:getType(), avg))
+            end
+        end
+        -- a second measurement without any re-read, to see the normal noise
+        for n, b in pairs(ctx.before) do
+            local avg2 = lootAverage(b.c, ctx.player, 80)
+            print(string.format("%sprobe AGAIN  %-13s: %.2f (first %.2f, ratio %.2f)", t.TAG, n, avg2, b.avg, b.avg > 0 and avg2 / b.avg or -1))
+        end
+    end)
+    t.queue(1, function()
+        ItemPicker.Parse()
+        print(t.TAG .. "probe ItemPicker.Parse() called with no changes")
+    end)
+    t.queue(1, function()
+        local worst = 0
+        for n, b in pairs(ctx.before) do
+            local avg = lootAverage(b.c, ctx.player, 80)
+            local ratio = b.avg > 0 and avg / b.avg or -1
+            print(string.format("%sprobe AFTER  %-13s: %.2f (was %.2f, ratio %.2f)", t.TAG, n, avg, b.avg, ratio))
+        end
+        t.finish()
+    end)
+end
+
+-- Diagnostic: why does a house container give less and less loot when it is refilled again and again?
+CZM_TEST_SUITES.loot_decay = function(t)
+    t.queue(1, function()
+        local player = getSpecificPlayer(0)
+        local rooms = lootFindRooms(4)
+        for _, name in ipairs({ "bedroom", "livingroom", "cornerstore", "gasstore" }) do
+            local r = rooms[name]
+            if r and r.containers[1] then
+                local c = r.containers[1]
+                local blocks = {}
+                for b = 1, 8 do
+                    local avg = lootAverage(c, player, 40)
+                    blocks[#blocks + 1] = string.format("%.2f", avg)
+                end
+                print(string.format("%sprobe DECAY %-12s (%s) per block of 40 fills: %s", t.TAG, name, c:getType(), table.concat(blocks, " ")))
+                -- does a second container of the same room start high again?
+                if r.containers[2] then
+                    local avg2 = lootAverage(r.containers[2], player, 40)
+                    print(string.format("%sprobe DECAY %-12s second container (%s), first block: %.2f", t.TAG, name, r.containers[2]:getType(), avg2))
+                end
+                -- is it tied to the container object or to the square / room?
+                local sq = c:getSourceGrid()
+                print(string.format("%sprobe DECAY %-12s explored=%s square=%s", t.TAG, name, tostring(c.isExplored and c:isExplored() or "n/a"), sq and (sq:getX() .. "," .. sq:getY()) or "nil"))
+            end
+        end
+        t.finish()
+    end)
+end

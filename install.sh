@@ -65,7 +65,9 @@ fi
 mkdir -p "$MODS_DIR"
 
 for name in "${MODS[@]}"; do
-    line="$(list_mods | awk -F'|' -v n="$name" '$1==n || $2==n {print; exit}')"
+    # awk reads everything and sed keeps the first line: exiting awk early would
+    # send SIGPIPE to list_mods and, with pipefail, abort the script silently.
+    line="$(list_mods | awk -F'|' -v n="$name" '$1==n || $2==n {print}' | sed -n 1p)"
     if [ -z "$line" ]; then echo "Unknown mod: $name (see --list)" >&2; exit 1; fi
     folder="$(echo "$line" | cut -d'|' -f1)"
     id="$(echo "$line" | cut -d'|' -f2)"

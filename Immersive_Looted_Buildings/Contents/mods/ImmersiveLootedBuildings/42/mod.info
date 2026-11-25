@@ -1,0 +1,6 @@
+name=Immersive Looted Buildings
+id=ImmersiveLootedBuildings
+description=Shops are raided over time, the way they would be after the end: markets and pharmacies first, survival stores next, small shops last, fastest in the first week and slower as survivors die off. Places overrun by zombies (hospitals, prisons, police and army) keep more loot. Buildings you use as a base are left alone. Fully configurable in the sandbox.
+author=Celi Herstal
+modversion=0.1.0
+versionMin=42.20

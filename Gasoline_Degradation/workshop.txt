@@ -3,6 +3,7 @@ title=Gasoline Degradation
 description=[b]IMPORTANT:[/b] if you add this mod to a save that is already in progress, set "Start day" to the day the save is on right now. Otherwise the degradation is counted from day 0 of the world and is applied to all the gasoline when you return.
 description=
 description=Gasoline slowly degrades over time in vehicles, gas pumps and any container that holds it, so stockpiling early matters and late-game fuel is scarce.
+description=(Gas/Gasoline goes bad)
 description=
 description=[b]Features[/b]
 description=[list]

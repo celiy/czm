@@ -4,6 +4,11 @@
 #   dev/run-autotest.sh            run and print the results
 #   PZ_DIR=<install dir> ...       if the game is not found automatically
 #   CZM_TEST_TIMEOUT=900 ...       seconds before giving up (default 600)
+#   CZM_TEST_MODE / _WORLD / _APO / _SPAWN=x,y / _SB=Key:Value;...   suite and world
+#   CZM_TEST_MODS=A,B ...          active mods (default: all czm mods)
+#   CZM_TEST_CONTINUE=1 ...        load the save of an earlier run (same _WORLD)
+#                                  with this run's mod list; CZM_TEST_PHASE=<name>
+#                                  tells two-launch suites which launch this is
 #
 # It never touches your saves or settings: the game is started with its own
 # cache folder (default ~/.cache/czm-pz-test) holding copies of the czm mods
@@ -27,6 +32,11 @@ find_game() {
     return 1
 }
 
+# One test run at a time: two runs on the same profile corrupt each other's saves.
+mkdir -p "$CACHE"
+exec 9>"$CACHE.lock"
+if ! flock -n 9; then echo "Another test run is using $CACHE. Wait for it to finish." >&2; exit 5; fi
+
 # Never touch a game the player has open: only test instances are stopped here.
 if pgrep -fa "[P]rojectZomboid64" | grep -v "cachedir=" | grep -q .; then
     echo "Your own Project Zomboid is open. Close it first; this test cannot run alongside it." >&2
@@ -49,20 +59,23 @@ for src in "$REPO"/*/Contents/mods/*/ "$REPO"/dev/*/Contents/mods/*/; do
     cp -r -- "${src%/}" "$CACHE/mods/"
 done
 
-cat > "$CACHE/mods/default.txt" <<'EOF'
-VERSION = 1,
-
-mods
-{
-    mod = GasolineDegradation,
-    mod = PerishableFoods,
-    mod = CZMAutoTest,
+# Mods active in the test (CZM_TEST_MODS, comma separated; CZMAutoTest is always added).
+MODLIST="${CZM_TEST_MODS:-GasolineDegradation,PerishableFoods,ImmersiveLootedBuildings}"
+write_mods() { # <file>
+    {
+        printf 'VERSION = 1,\n\nmods\n{\n'
+        for m in ${MODLIST//,/ } CZMAutoTest; do printf '    mod = %s,\n' "$m"; done
+        printf '}\n\nmaps\n{\n}\n'
+    } > "$1"
 }
-
-maps
-{
-}
-EOF
+write_mods "$CACHE/mods/default.txt"
+WORLD="${CZM_TEST_WORLD:-czm-autotest}"
+# CZM_TEST_CONTINUE=1 loads the save an earlier run made, with this run's mod list.
+if [ "${CZM_TEST_CONTINUE:-0}" = 1 ]; then
+    SAVE="$CACHE/Saves/Sandbox/$WORLD"
+    [ -d "$SAVE" ] || { echo "No saved world $SAVE to continue." >&2; exit 2; }
+    write_mods "$SAVE/mods.txt"
+fi
 # Without this file the game resets default.txt to "no mods" on startup.
 printf '%s\n' 'If this file does not exist, default.txt will be reset to empty (no mods active).' > "$CACHE/mods/reset-mods-42_00.txt"
 # Tutorial windows pause the game and stop the world from updating in tests.
@@ -70,13 +83,26 @@ OPTS="$CACHE/options.ini"
 if [ -f "$OPTS" ]; then
     sed -i -e 's/^showSurvivalGuide=.*/showSurvivalGuide=false/' \
            -e 's/^showFirstTimeSearchTutorial=.*/showFirstTimeSearchTutorial=false/' \
-           -e 's/^showFirstTimeSneakTutorial=.*/showFirstTimeSneakTutorial=false/' "$OPTS"
+           -e 's/^showFirstTimeSneakTutorial=.*/showFirstTimeSneakTutorial=false/' \
+           -e 's/^focusloss=.*/focusloss=false/' "$OPTS"
 fi
-printf 'world=%s\nmode=%s\napo=%s\n' "${CZM_TEST_WORLD:-czm-autotest}" "${CZM_TEST_MODE:-gasoline}" "${CZM_TEST_APO:-1}" > "$CACHE/Lua/czm_autotest.txt"
+printf 'world=%s\nmode=%s\napo=%s\n' "$WORLD" "${CZM_TEST_MODE:-gasoline}" "${CZM_TEST_APO:-1}" > "$CACHE/Lua/czm_autotest.txt"
+[ -n "${CZM_TEST_SPAWN:-}" ] && echo "spawn=$CZM_TEST_SPAWN" >> "$CACHE/Lua/czm_autotest.txt"
+[ -n "${CZM_TEST_SB:-}" ] && echo "sb=$CZM_TEST_SB" >> "$CACHE/Lua/czm_autotest.txt"
+[ "${CZM_TEST_CONTINUE:-0}" = 1 ] && echo "continue=1" >> "$CACHE/Lua/czm_autotest.txt"
+[ -n "${CZM_TEST_PHASE:-}" ] && echo "phase=$CZM_TEST_PHASE" >> "$CACHE/Lua/czm_autotest.txt"
 
 echo "Game:    $GAME"
 echo "Profile: $CACHE"
 echo "Starting the game (timeout ${TIMEOUT}s)..."
+
+# The game needs Steam. If it is not running, start it quietly and wait for it.
+if ! pgrep -x steam >/dev/null; then
+    echo "Steam is not running; starting it (silent)..."
+    (nohup steam -silent >/dev/null 2>&1 &)
+    for _ in $(seq 1 90); do pgrep -x steam >/dev/null && break; sleep 1; done
+    sleep 45
+fi
 
 # A stale console from an earlier run must never be mistaken for this run's result.
 rm -f "$CACHE/console.txt" "$CACHE/launcher.out"
@@ -115,9 +141,11 @@ if [ ! -f "$LOG" ]; then echo "No console.txt was written; the game did not star
 grep -h 'CZM-TEST\]' "$LOG" | sed 's/^.*\(\[CZM-TEST\]\)/\1/' || true
 echo
 echo "---- mod errors ----"
-grep -hE "GasolineDegradation.*(attempt to|stack traceback|LuaError)|GD_(Core|World|Client|Access)\.lua" "$LOG" | head -20 || true
+grep -hE "(GasolineDegradation|PerishableFoods|ImmersiveLootedBuildings).*(attempt to|stack traceback|LuaError|failed)|(GD|PF|ILB)_[A-Za-z]+\.lua|CZMAutoTest_ILB\.lua" "$LOG" | head -20 || true
 
-if grep -q 'CZM-TEST\] DONE pass=[0-9]* fail=0' "$LOG"; then
+# Only the first finished run counts (older harness versions restarted after quitting).
+# A pass needs at least one check, no failure, and no timeout or setup error.
+if grep -m1 'CZM-TEST\] DONE' "$LOG" | grep -E 'pass=[1-9][0-9]* fail=0' | grep -qvE 'timeout|error'; then
     echo "ALL PASSED"; exit 0
 fi
 echo "FAILED or incomplete" >&2
