@@ -7,8 +7,8 @@
 #   ./install.sh --workshop <mod>    stage for Workshop upload instead
 #                                    (~/Zomboid/Workshop/<folder>/)
 #
-# A <mod> is either a repo folder name (Gasoline_Degradation) or a mod id
-# (GasolineDegradation). If the mod already exists in the game's mods folder
+# A <mod> is either a repo folder name (Gasoline_Degradation, which installs every
+# mod in it) or a mod id (GasolineDegradation). If the mod already exists in the game's mods folder
 # (folder or symlink) it is deleted and replaced by the repo version.
 # Files are copied, not moved, so the repo stays intact.
 
@@ -67,8 +67,13 @@ mkdir -p "$MODS_DIR"
 for name in "${MODS[@]}"; do
     # awk reads everything and sed keeps the first line: exiting awk early would
     # send SIGPIPE to list_mods and, with pipefail, abort the script silently.
-    line="$(list_mods | awk -F'|' -v n="$name" '$1==n || $2==n {print}' | sed -n 1p)"
-    if [ -z "$line" ]; then echo "Unknown mod: $name (see --list)" >&2; exit 1; fi
+    # A folder name means every mod in that folder (a Workshop item can hold several);
+    # a mod id means that one mod. A Workshop upload takes the whole folder once.
+    lines="$(list_mods | awk -F'|' -v n="$name" '$1==n {print}')"
+    [ -n "$lines" ] || lines="$(list_mods | awk -F'|' -v n="$name" '$2==n {print}' | sed -n 1p)"
+    if [ -z "$lines" ]; then echo "Unknown mod: $name (see --list)" >&2; exit 1; fi
+    [ "$WORKSHOP" -eq 1 ] && lines="$(echo "$lines" | sed -n 1p)"
+    while IFS= read -r line; do
     folder="$(echo "$line" | cut -d'|' -f1)"
     id="$(echo "$line" | cut -d'|' -f2)"
     src="$(echo "$line" | cut -d'|' -f3)"
@@ -103,4 +108,5 @@ for name in "${MODS[@]}"; do
         echo "Kept $old_id from the previous workshop.txt"
     fi
     echo "Installed $folder -> $target"
+    done <<< "$lines"
 done

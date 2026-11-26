@@ -1,0 +1,2066 @@
+category	item	name	kind	DaysFresh	DaysTotallyRotten	spoilage
+Archive	VFX.FoodStorageContainer	Food Storage Container	food			never spoils
+Archive	VFX.MetalFoodStorageContainer	Food Storage Container	food			never spoils
+Archive	VFX.VinegarStarter	Vinegar Starter	food	180	195	spoils
+Archive	VFX.VinegarStarterFermenting	Vinegar Starter (Fermenting)	food			never spoils
+Archive base	Base.VFXChiliSaucepanCopperEvolved	Chili	food	3	6	spoils
+Archive base	Base.VFXChiliSaucepanEvolved	Chili	food	3	6	spoils
+Archive base	Base.VFXCurrySaucepanCopperEvolved	Curry	food	3	6	spoils
+Archive base	Base.VFXCurrySaucepanEvolved	Curry	food	3	6	spoils
+Baking	VFX.AppleCinnamonMuffin	Apple Cinnamon Muffin	food	5	8	spoils
+Baking	VFX.AppleCinnamonMuffinBatter_2	Apple Cinnamon Muffin Batter	food	4	7	spoils
+Baking	VFX.AppleCinnamonMuffinMix_2	Muffin Mix - Apple Cinnamon	food			never spoils
+Baking	VFX.AppleCinnamonMuffinPrep	Tray of Apple Cinnamon Muffins	food	4	7	spoils
+Baking	VFX.BagelDough	Bagel Dough	food	3	5	spoils
+Baking	VFX.BananaBreadMix_2	Bread Mix - Banana	food			never spoils
+Baking	VFX.BananaBreadPrep	Banana Bread	food	5	10	spoils
+Baking	VFX.BananaBreadSlice	Slice of Banana Bread	food	5	10	spoils
+Baking	VFX.BananaCreamPuddingMix_2	Pudding Mix - Banana Cream	food			never spoils
+Baking	VFX.BarleyBread	Barley Bread	food	3	6	spoils
+Baking	VFX.BarleyBreadSlice	Slice of Barley Bread	food	3	6	spoils
+Baking	VFX.BarleySourdough	Barley Sourdough	food	3	6	spoils
+Baking	VFX.BarleySourdoughSlice	Slice of Barley Sourdough	food	3	6	spoils
+Baking	VFX.BatteredChicken	Battered Chicken	food	2	4	spoils
+Baking	VFX.BatteredFish	Battered Fish	food	4	7	spoils
+Baking	VFX.BatteredOysters	Battered Oysters	food	4	7	spoils
+Baking	VFX.BatteredTofu	Battered Tofu	food	6	14	spoils
+Baking	VFX.BeerBread	Beer Bread	food	3	6	spoils
+Baking	VFX.BeerBreadSlice	Slice of Beer Bread	food	3	6	spoils
+Baking	VFX.BlueberryMuffin	Blueberry Muffin	food	5	8	spoils
+Baking	VFX.BlueberryMuffinBatter_2	Blueberry Muffin Batter	food	4	7	spoils
+Baking	VFX.BlueberryMuffinMix_2	Muffin Mix - Blueberry	food			never spoils
+Baking	VFX.BlueberryMuffinPrep	Tray of Blueberry Muffins	food	4	7	spoils
+Baking	VFX.BowlBananaCreamPudding	Bowl of Banana Cream Pudding	food	2	4	spoils
+Baking	VFX.BowlButterscotchPudding	Bowl of Butterscotch Pudding	food	2	4	spoils
+Baking	VFX.BowlChocolateMousse	Bowl of Chocolate Mousse	food	2	4	spoils
+Baking	VFX.BowlCustardPudding	Bowl of Custard Pudding	food	2	4	spoils
+Baking	VFX.BowlPistachioPudding	Bowl of Pistachio Pudding	food	2	4	spoils
+Baking	VFX.BowlVanillaPudding	Bowl of Vanilla Pudding	food	2	4	spoils
+Baking	VFX.BranMuffin	Bran Muffin	food	5	8	spoils
+Baking	VFX.BranMuffinBatter_2	Bran Muffin Batter	food	4	7	spoils
+Baking	VFX.BranMuffinMix_2	Muffin Mix - Bran	food			never spoils
+Baking	VFX.BranMuffinPrep	Tray of Bran Muffins	food	4	7	spoils
+Baking	VFX.Breadstick	Breadstick	food	3	6	spoils
+Baking	VFX.Brioche	Brioche	food	3	6	spoils
+Baking	VFX.BriocheSlice	Slice of Brioche	food	3	6	spoils
+Baking	VFX.Brownie	Brownie	food	5	8	spoils
+Baking	VFX.BrownieBatter_2	Brownie Batter	food	4	9	spoils
+Baking	VFX.BrownieMix_2	Brownie Mix	food			never spoils
+Baking	VFX.BrowniePrep	Tray of Brownies	food	4	9	spoils
+Baking	VFX.ButterscotchPuddingMix_2	Pudding Mix - Butterscotch	food			never spoils
+Baking	VFX.CaramelCake	Caramel Cake	food	4	9	spoils
+Baking	VFX.CaramelCakeBatter_2	Caramel Cake Batter	food	4	9	spoils
+Baking	VFX.CaramelCakeFrostingCaramel	Caramel Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.CaramelCakeFrostingChocolate	Caramel Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.CaramelCakeFrostingConfetti	Caramel Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.CaramelCakeFrostingCreamCheese	Caramel Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.CaramelCakeFrostingLemon	Caramel Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.CaramelCakeFrostingStrawberry	Caramel Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.CaramelCakeFrostingVanilla	Caramel Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.CaramelCakeMix_2	Cake Mix - Caramel	food			never spoils
+Baking	VFX.CaramelCakePrep	Caramel Cake	food	4	9	spoils
+Baking	VFX.CaramelCakeSlice	Caramel Cake Slice	food	3	5	spoils
+Baking	VFX.CaramelCakeSliceFrostingCaramel	Caramel Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.CaramelCakeSliceFrostingChocolate	Caramel Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.CaramelCakeSliceFrostingConfetti	Caramel Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.CaramelCakeSliceFrostingCreamCheese	Caramel Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.CaramelCakeSliceFrostingLemon	Caramel Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.CaramelCakeSliceFrostingStrawberry	Caramel Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.CaramelCakeSliceFrostingVanilla	Caramel Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.CaramelFrosting	Caramel Frosting	food	4	8	spoils
+Baking	VFX.CaramelFrostingTub	Tub of Frosting - Caramel	food			never spoils
+Baking	VFX.CarrotCake	Carrot Cake	food	4	9	spoils
+Baking	VFX.CarrotCakeBatter_2	Carrot Cake Batter	food	4	9	spoils
+Baking	VFX.CarrotCakeFrostingCaramel	Carrot Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.CarrotCakeFrostingChocolate	Carrot Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.CarrotCakeFrostingConfetti	Carrot Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.CarrotCakeFrostingCreamCheese	Carrot Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.CarrotCakeFrostingLemon	Carrot Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.CarrotCakeFrostingStrawberry	Carrot Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.CarrotCakeFrostingVanilla	Carrot Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.CarrotCakeMix_2	Cake Mix - Carrot	food			never spoils
+Baking	VFX.CarrotCakePrep	Carrot Cake	food	4	9	spoils
+Baking	VFX.CarrotCakeSlice	Carrot Cake Slice	food	3	5	spoils
+Baking	VFX.CarrotCakeSliceFrostingCaramel	Carrot Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.CarrotCakeSliceFrostingChocolate	Carrot Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.CarrotCakeSliceFrostingConfetti	Carrot Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.CarrotCakeSliceFrostingCreamCheese	Carrot Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.CarrotCakeSliceFrostingLemon	Carrot Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.CarrotCakeSliceFrostingStrawberry	Carrot Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.CarrotCakeSliceFrostingVanilla	Carrot Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.CheddarBiscuit	Cheddar Biscuit	food	5	10	spoils
+Baking	VFX.CheddarBiscuitMix_2	Biscuit Mix - Cheddar	food			never spoils
+Baking	VFX.CheddarBiscuitPrep	Baking Tray with Cheddar Biscuits	food	5	10	spoils
+Baking	VFX.ChocolateCake	Chocolate Cake	food	4	9	spoils
+Baking	VFX.ChocolateCakeBatter_2	Chocolate Cake Batter	food	4	9	spoils
+Baking	VFX.ChocolateCakeFrostingCaramel	Chocolate Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.ChocolateCakeFrostingChocolate	Chocolate Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.ChocolateCakeFrostingConfetti	Chocolate Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.ChocolateCakeFrostingCreamCheese	Chocolate Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.ChocolateCakeFrostingLemon	Chocolate Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.ChocolateCakeFrostingStrawberry	Chocolate Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.ChocolateCakeFrostingVanilla	Chocolate Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.ChocolateCakeMix_2	Cake Mix - Chocolate	food			never spoils
+Baking	VFX.ChocolateCakePrep	Chocolate Cake	food	4	9	spoils
+Baking	VFX.ChocolateCakeSlice	Chocolate Cake Slice	food	3	5	spoils
+Baking	VFX.ChocolateCakeSliceFrostingCaramel	Chocolate Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.ChocolateCakeSliceFrostingChocolate	Chocolate Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.ChocolateCakeSliceFrostingConfetti	Chocolate Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.ChocolateCakeSliceFrostingCreamCheese	Chocolate Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.ChocolateCakeSliceFrostingLemon	Chocolate Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.ChocolateCakeSliceFrostingStrawberry	Chocolate Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.ChocolateCakeSliceFrostingVanilla	Chocolate Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.ChocolateChipCookieMix_2	Cookie Mix - Chocolate Chip	food			never spoils
+Baking	VFX.ChocolateChipMuffin	Chocolate Chip Muffin	food	5	8	spoils
+Baking	VFX.ChocolateChipMuffinBatter_2	Chocolate Chip Muffin Batter	food	4	7	spoils
+Baking	VFX.ChocolateChipMuffinMix_2	Muffin Mix - Chocolate Chip	food			never spoils
+Baking	VFX.ChocolateChipMuffinPrep	Tray of Chocolate Chip Muffins	food	4	7	spoils
+Baking	VFX.ChocolateCookieMix_2	Chocolate Cookie Mix	food			never spoils
+Baking	VFX.ChocolateFrosting	Chocolate Frosting	food	4	8	spoils
+Baking	VFX.ChocolateFrostingTub	Tub of Frosting - Chocolate	food			never spoils
+Baking	VFX.ChocolateMousseMix_2	Pudding Mix - Chocolate Mousse	food			never spoils
+Baking	VFX.ChocolateSwirlBreadMix_2	Bread Mix - Chocolate Swirl	food			never spoils
+Baking	VFX.ChocolateSwirlBreadPrep	Chocolate Swirl Bread	food	5	10	spoils
+Baking	VFX.ChocolateSwirlBreadSlice	Slice of Chocolate Swirl Bread	food	5	10	spoils
+Baking	VFX.CinnamonSwirlBreadMix_2	Bread Mix - Cinnamon Swirl	food			never spoils
+Baking	VFX.CinnamonSwirlBreadPrep	Cinnamon Swirl Bread	food	5	10	spoils
+Baking	VFX.CinnamonSwirlBreadSlice	Slice of Cinnamon Swirl Bread	food	5	10	spoils
+Baking	VFX.ConfettiCake	Confetti Cake	food	4	9	spoils
+Baking	VFX.ConfettiCakeBatter_2	Confetti Cake Batter	food	4	9	spoils
+Baking	VFX.ConfettiCakeFrostingCaramel	Confetti Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.ConfettiCakeFrostingChocolate	Confetti Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.ConfettiCakeFrostingConfetti	Confetti Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.ConfettiCakeFrostingCreamCheese	Confetti Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.ConfettiCakeFrostingLemon	Confetti Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.ConfettiCakeFrostingStrawberry	Confetti Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.ConfettiCakeFrostingVanilla	Confetti Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.ConfettiCakeMix_2	Cake Mix - Confetti	food			never spoils
+Baking	VFX.ConfettiCakePrep	Confetti Cake	food	4	9	spoils
+Baking	VFX.ConfettiCakeSlice	Confetti Cake Slice	food	3	5	spoils
+Baking	VFX.ConfettiCakeSliceFrostingCaramel	Confetti Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.ConfettiCakeSliceFrostingChocolate	Confetti Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.ConfettiCakeSliceFrostingConfetti	Confetti Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.ConfettiCakeSliceFrostingCreamCheese	Confetti Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.ConfettiCakeSliceFrostingLemon	Confetti Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.ConfettiCakeSliceFrostingStrawberry	Confetti Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.ConfettiCakeSliceFrostingVanilla	Confetti Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.ConfettiFrosting	Confetti Frosting	food	4	8	spoils
+Baking	VFX.ConfettiFrostingTub	Tub of Frosting - Confetti	food			never spoils
+Baking	VFX.CookiesGingerbread	Gingerbread Cookie	food	7	730	spoils
+Baking	VFX.CookiesPeanutButter	Peanut Butter Cookie	food	7	730	spoils
+Baking	VFX.CookiesSnickerdoodle	Snickerdoodle Cookie	food	7	730	spoils
+Baking	VFX.CornMuffin	Corn Muffin	food	5	8	spoils
+Baking	VFX.CornMuffinBatter_2	Corn Muffin Batter	food	4	7	spoils
+Baking	VFX.CornMuffinMix_2	Muffin Mix - Corn	food			never spoils
+Baking	VFX.CornMuffinPrep	Tray of Corn Muffins	food	4	7	spoils
+Baking	VFX.CranberryBreadMix_2	Bread Mix - Cranberry	food			never spoils
+Baking	VFX.CranberryBreadPrep	Cranberry Bread	food	5	10	spoils
+Baking	VFX.CranberryBreadSlice	Slice of Cranberry Bread	food	5	10	spoils
+Baking	VFX.CreamCheeseFrosting	Cream Cheese Frosting	food	4	8	spoils
+Baking	VFX.CreamCheeseFrostingTub	Tub of Frosting - Cream Cheese	food			never spoils
+Baking	VFX.CroissantDough	Croissant Dough	food	3	5	spoils
+Baking	VFX.Crumpet	Crumpet	food	3	6	spoils
+Baking	VFX.CrumpetDough	Crumpet Dough	food	3	6	spoils
+Baking	VFX.CustardPuddingMix_2	Pudding Mix - Custard	food			never spoils
+Baking	VFX.DinnerRoll	Dinner Roll	food	3	6	spoils
+Baking	VFX.DoubleChocolateMuffin	Double Chocolate Muffin	food	5	8	spoils
+Baking	VFX.DoubleChocolateMuffinBatter_2	Double Chocolate Muffin Batter	food	4	7	spoils
+Baking	VFX.DoubleChocolateMuffinMix_2	Muffin Mix - Double Chocolate	food			never spoils
+Baking	VFX.DoubleChocolateMuffinPrep	Tray of Double Chocolate Muffins	food	4	7	spoils
+Baking	VFX.DoughnutDough	Donut Dough	food	3	5	spoils
+Baking	VFX.DumplingWrappers	Dumpling Wrappers	food	2	4	spoils
+Baking	VFX.EnglishMuffin	English Muffin	food	3	6	spoils
+Baking	VFX.Flatbread	Flatbread	food	3	6	spoils
+Baking	VFX.FlatbreadPizzaDough	Flatbread Pizza Dough	food	3	6	spoils
+Baking	VFX.FocacciaBread	Focaccia Bread	food	3	6	spoils
+Baking	VFX.FocacciaBreadSlice	Slice of Focaccia	food	3	6	spoils
+Baking	VFX.FrenchVanillaCake	French Vanilla Cake	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeBatter_2	French Vanilla Cake Batter	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeFrostingCaramel	French Vanilla Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeFrostingChocolate	French Vanilla Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeFrostingConfetti	French Vanilla Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeFrostingCreamCheese	French Vanilla Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeFrostingLemon	French Vanilla Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeFrostingStrawberry	French Vanilla Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeFrostingVanilla	French Vanilla Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeMix_2	Cake Mix - French Vanilla	food			never spoils
+Baking	VFX.FrenchVanillaCakePrep	French Vanilla Cake	food	4	9	spoils
+Baking	VFX.FrenchVanillaCakeSlice	French Vanilla Cake Slice	food	3	5	spoils
+Baking	VFX.FrenchVanillaCakeSliceFrostingCaramel	French Vanilla Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.FrenchVanillaCakeSliceFrostingChocolate	French Vanilla Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.FrenchVanillaCakeSliceFrostingConfetti	French Vanilla Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.FrenchVanillaCakeSliceFrostingCreamCheese	French Vanilla Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.FrenchVanillaCakeSliceFrostingLemon	French Vanilla Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.FrenchVanillaCakeSliceFrostingStrawberry	French Vanilla Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.FrenchVanillaCakeSliceFrostingVanilla	French Vanilla Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.Frybread	Frybread	food	3	6	spoils
+Baking	VFX.GingerbreadCookieDough	Baking Tray with Gingerbread Cookies	food	7	30	spoils
+Baking	VFX.GingerbreadCookieMix_2	Cookie Mix - Gingerbread	food			never spoils
+Baking	VFX.HomemadeCornbread	Cornbread	food	3	5	spoils
+Baking	VFX.HomemadeCroissant	Croissant	food	3	5	spoils
+Baking	VFX.HomemadeGnocchi	Homemade Gnocchi	food	3	6	spoils
+Baking	VFX.HomemadeHamburgerBun	Hamburger Bun	food	3	6	spoils
+Baking	VFX.HomemadeHotdog	Hotdog Bun	food	3	6	spoils
+Baking	VFX.HomemadeMeatDumpling	Meat Dumpling	food	2	4	spoils
+Baking	VFX.HomemadePasta	Homemade Pasta	food	3	6	spoils
+Baking	VFX.HomemadePastaBowl	Bowl of Homemade Pasta	food	3	6	spoils
+Baking	VFX.HomemadePotatoPancakes	Potato Pancakes	food	3	7	spoils
+Baking	VFX.HomemadeTortilla	Tortilla	food	3	5	spoils
+Baking	VFX.HomemadeWaffles	Waffles	food	3	5	spoils
+Baking	VFX.HomestyleBiscuit	Homestyle Biscuit	food	5	10	spoils
+Baking	VFX.HomestyleBiscuitMix_2	Biscuit Mix - Homestyle	food			never spoils
+Baking	VFX.HomestyleBiscuitPrep	Baking Tray with Homestyle Biscuits	food	5	10	spoils
+Baking	VFX.LemonFrosting	Lemon Frosting	food	4	8	spoils
+Baking	VFX.LemonFrostingTub	Tub of Frosting - Lemon	food			never spoils
+Baking	VFX.LemonPoppyMuffin	Lemon Poppy Muffin	food	5	8	spoils
+Baking	VFX.LemonPoppyMuffinBatter_2	Lemon Poppy Muffin Batter	food	4	7	spoils
+Baking	VFX.LemonPoppyMuffinMix_2	Muffin Mix - Lemon Poppy	food			never spoils
+Baking	VFX.LemonPoppyMuffinPrep	Tray of Lemon Poppy Muffins	food	4	7	spoils
+Baking	VFX.MilkBread	Milk Bread	food	3	6	spoils
+Baking	VFX.MilkBreadSlice	Slice of Milk Bread	food	3	6	spoils
+Baking	VFX.NaanBread	Naan Bread	food	3	6	spoils
+Baking	VFX.OatmealCookieMix_2	Oatmeal Cookie Mix	food			never spoils
+Baking	VFX.OrangePoppyseedCake	Orange and Poppyseed Cake	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeBatter_2	Orange and Poppyseed Cake Batter	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeFrostingCaramel	Orange and Poppyseed Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeFrostingChocolate	Orange and Poppyseed Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeFrostingConfetti	Orange and Poppyseed Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeFrostingCreamCheese	Orange and Poppyseed Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeFrostingLemon	Orange and Poppyseed Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeFrostingStrawberry	Orange and Poppyseed Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeFrostingVanilla	Orange and Poppyseed Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeMix_2	Cake Mix - Orange and Poppyseed	food			never spoils
+Baking	VFX.OrangePoppyseedCakePrep	Orange and Poppyseed Cake	food	4	9	spoils
+Baking	VFX.OrangePoppyseedCakeSlice	Orange and Poppyseed Cake Slice	food	3	5	spoils
+Baking	VFX.OrangePoppyseedCakeSliceFrostingCaramel	Orange and Poppyseed Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.OrangePoppyseedCakeSliceFrostingChocolate	Orange and Poppyseed Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.OrangePoppyseedCakeSliceFrostingConfetti	Orange and Poppyseed Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.OrangePoppyseedCakeSliceFrostingCreamCheese	Orange and Poppyseed Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.OrangePoppyseedCakeSliceFrostingLemon	Orange and Poppyseed Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.OrangePoppyseedCakeSliceFrostingStrawberry	Orange and Poppyseed Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.OrangePoppyseedCakeSliceFrostingVanilla	Orange and Poppyseed Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.PeanutButterCookieDough	Baking Tray with Peanut Butter Cookies	food	7	30	spoils
+Baking	VFX.PeanutButterCookieMix_2	Cookie Mix - Peanut Butter	food			never spoils
+Baking	VFX.PistachioPuddingMix_2	Pudding Mix - Pistachio	food			never spoils
+Baking	VFX.PitaBread	Pita Bread	food	3	6	spoils
+Baking	VFX.PizzaDough	Pizza Dough	food	3	6	spoils
+Baking	VFX.PoppyBagelDough	Poppy Bagel Dough	food	3	5	spoils
+Baking	VFX.Pretzel	Pretzel	food	3	6	spoils
+Baking	VFX.Pumpernickel	Pumpernickel	food	3	6	spoils
+Baking	VFX.PumpernickelSlice	Slice of Pumpernickel	food	3	6	spoils
+Baking	VFX.PumpkinBreadMix_2	Bread Mix - Pumpkin	food			never spoils
+Baking	VFX.PumpkinBreadPrep	Pumpkin Bread	food	5	10	spoils
+Baking	VFX.PumpkinBreadSlice	Slice of Pumpkin Bread	food	5	10	spoils
+Baking	VFX.RedVelvetCake	Red Velvet Cake	food	4	9	spoils
+Baking	VFX.RedVelvetCakeBatter_2	Red Velvet Cake Batter	food	4	9	spoils
+Baking	VFX.RedVelvetCakeFrostingCaramel	Red Velvet Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.RedVelvetCakeFrostingChocolate	Red Velvet Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.RedVelvetCakeFrostingConfetti	Red Velvet Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.RedVelvetCakeFrostingCreamCheese	Red Velvet Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.RedVelvetCakeFrostingLemon	Red Velvet Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.RedVelvetCakeFrostingStrawberry	Red Velvet Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.RedVelvetCakeFrostingVanilla	Red Velvet Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.RedVelvetCakeMix_2	Cake Mix - Red Velvet	food			never spoils
+Baking	VFX.RedVelvetCakePrep	Red Velvet Cake	food	4	9	spoils
+Baking	VFX.RedVelvetCakeSlice	Red Velvet Cake Slice	food	3	5	spoils
+Baking	VFX.RedVelvetCakeSliceFrostingCaramel	Red Velvet Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.RedVelvetCakeSliceFrostingChocolate	Red Velvet Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.RedVelvetCakeSliceFrostingConfetti	Red Velvet Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.RedVelvetCakeSliceFrostingCreamCheese	Red Velvet Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.RedVelvetCakeSliceFrostingLemon	Red Velvet Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.RedVelvetCakeSliceFrostingStrawberry	Red Velvet Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.RedVelvetCakeSliceFrostingVanilla	Red Velvet Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.RyeBread	Rye Bread	food	3	6	spoils
+Baking	VFX.RyeBreadSlice	Slice of Rye Bread	food	3	6	spoils
+Baking	VFX.RyeSourdough	Rye Sourdough	food	3	6	spoils
+Baking	VFX.RyeSourdoughSlice	Slice of Rye Sourdough	food	3	6	spoils
+Baking	VFX.Scone	Scone	food	3	6	spoils
+Baking	VFX.SesameBagelDough	Sesame Bagel Dough	food	3	5	spoils
+Baking	VFX.ShortbreadCookieMix_2	Shortbread Cookie Mix	food			never spoils
+Baking	VFX.SlicePieApple	Apple Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieBlackberry	Blackberry Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieBlueberry	Blueberry Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieCherry	Cherry Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieLemonCream	Lemon Cream Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieMixedBerry	Mixed Berry Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePiePeach	Peach Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePiePecan	Pecan Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePiePumpkin	Pumpkin Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieRaspberry	Raspberry Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieStrawberry	Strawberry Pie Slice	food	5	8	spoils
+Baking	VFX.SlicePieSweetPotato	Sweet Potato Pie Slice	food	5	8	spoils
+Baking	VFX.SnickerdoodleCookieDough	Baking Tray with Snickerdoodle Cookies	food	7	30	spoils
+Baking	VFX.SnickerdoodleCookieMix_2	Cookie Mix - Snickerdoodle	food			never spoils
+Baking	VFX.SoupDumplings	Soup Dumplings	food	3	6	spoils
+Baking	VFX.Sourdough	Sourdough	food	3	6	spoils
+Baking	VFX.SourdoughBaguette	Sourdough Baguette	food	3	6	spoils
+Baking	VFX.SourdoughBreadstick	Sourdough Breadstick	food	3	6	spoils
+Baking	VFX.SourdoughDinnerRoll	Sourdough Dinner Roll	food	4	7	spoils
+Baking	VFX.SourdoughHamburgerBun	Sourdough Hamburger Bun	food	3	6	spoils
+Baking	VFX.SourdoughHotdogBun	Sourdough Hotdog Bun	food	3	6	spoils
+Baking	VFX.SourdoughPizzaDough	Sourdough Pizza Dough	food	3	6	spoils
+Baking	VFX.SourdoughSlice	Slice of Sourdough	food	3	6	spoils
+Baking	VFX.SpiceCake	Spice Cake	food	4	9	spoils
+Baking	VFX.SpiceCakeBatter_2	Spice Cake Batter	food	4	9	spoils
+Baking	VFX.SpiceCakeFrostingCaramel	Spice Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.SpiceCakeFrostingChocolate	Spice Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.SpiceCakeFrostingConfetti	Spice Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.SpiceCakeFrostingCreamCheese	Spice Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.SpiceCakeFrostingLemon	Spice Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.SpiceCakeFrostingStrawberry	Spice Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.SpiceCakeFrostingVanilla	Spice Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.SpiceCakeMix_2	Cake Mix - Spice	food			never spoils
+Baking	VFX.SpiceCakePrep	Spice Cake	food	4	9	spoils
+Baking	VFX.SpiceCakeSlice	Spice Cake Slice	food	3	5	spoils
+Baking	VFX.SpiceCakeSliceFrostingCaramel	Spice Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.SpiceCakeSliceFrostingChocolate	Spice Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.SpiceCakeSliceFrostingConfetti	Spice Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.SpiceCakeSliceFrostingCreamCheese	Spice Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.SpiceCakeSliceFrostingLemon	Spice Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.SpiceCakeSliceFrostingStrawberry	Spice Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.SpiceCakeSliceFrostingVanilla	Spice Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.StrawberryCake	Strawberry Cake	food	4	9	spoils
+Baking	VFX.StrawberryCakeBatter_2	Strawberry Cake Batter	food	4	9	spoils
+Baking	VFX.StrawberryCakeFrostingCaramel	Strawberry Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.StrawberryCakeFrostingChocolate	Strawberry Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.StrawberryCakeFrostingConfetti	Strawberry Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.StrawberryCakeFrostingCreamCheese	Strawberry Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.StrawberryCakeFrostingLemon	Strawberry Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.StrawberryCakeFrostingStrawberry	Strawberry Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.StrawberryCakeFrostingVanilla	Strawberry Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.StrawberryCakeMix_2	Cake Mix - Strawberry	food			never spoils
+Baking	VFX.StrawberryCakePrep	Strawberry Cake	food	4	9	spoils
+Baking	VFX.StrawberryCakeSlice	Strawberry Cake Slice	food	3	5	spoils
+Baking	VFX.StrawberryCakeSliceFrostingCaramel	Strawberry Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.StrawberryCakeSliceFrostingChocolate	Strawberry Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.StrawberryCakeSliceFrostingConfetti	Strawberry Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.StrawberryCakeSliceFrostingCreamCheese	Strawberry Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.StrawberryCakeSliceFrostingLemon	Strawberry Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.StrawberryCakeSliceFrostingStrawberry	Strawberry Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.StrawberryCakeSliceFrostingVanilla	Strawberry Cake Slice - Vanilla Frosting	food	3	5	spoils
+Baking	VFX.StrawberryFrosting	Strawberry Frosting	food	4	8	spoils
+Baking	VFX.StrawberryFrostingTub	Tub of Frosting - Strawberry	food			never spoils
+Baking	VFX.SugarCookieMix_2	Sugar Cookie Mix	food			never spoils
+Baking	VFX.VanillaFrostingTub	Tub of Frosting - Vanilla	food			never spoils
+Baking	VFX.VanillaPuddingMix_2	Pudding Mix - Vanilla	food			never spoils
+Baking	VFX.WaterPotForgedHomemadePasta	Cooking Pot with Homemade Pasta	food	3	6	spoils
+Baking	VFX.WaterPotHomemadePasta	Cooking Pot with Homemade Pasta	food	3	6	spoils
+Baking	VFX.WaterSaucepanCopperHomemadePasta	Copper Saucepan with Homemade Pasta	food	3	6	spoils
+Baking	VFX.WaterSaucepanHomemadePasta	Saucepan with Homemade Pasta	food	3	6	spoils
+Baking	VFX.WholePieApple	Apple Pie	food	4	9	spoils
+Baking	VFX.WholePieBlackberry	Blackberry Pie	food	4	9	spoils
+Baking	VFX.WholePieBlueberry	Blueberry Pie	food	4	9	spoils
+Baking	VFX.WholePieCherry	Cherry Pie	food	4	9	spoils
+Baking	VFX.WholePieLemonCream	Lemon Cream Pie	food	4	9	spoils
+Baking	VFX.WholePieMixedBerry	Mixed Berry Pie	food	4	9	spoils
+Baking	VFX.WholePiePeach	Peach Pie	food	4	9	spoils
+Baking	VFX.WholePiePecan	Pecan Pie	food	4	9	spoils
+Baking	VFX.WholePiePecanNoPan	Pecan Pie	food	4	9	spoils
+Baking	VFX.WholePiePumpkin	Pumpkin Pie	food	4	9	spoils
+Baking	VFX.WholePiePumpkinNoPan	Pumpkin Pie	food	4	9	spoils
+Baking	VFX.WholePieRaspberry	Raspberry Pie	food	4	9	spoils
+Baking	VFX.WholePieStrawberry	Strawberry Pie	food	4	9	spoils
+Baking	VFX.WholePieSweetPotato	Sweet Potato Pie	food	4	9	spoils
+Baking	VFX.WholePieSweetPotatoNoPan	Sweet Potato Pie	food	4	9	spoils
+Baking	VFX.YellowCake	Yellow Cake	food	4	9	spoils
+Baking	VFX.YellowCakeBatter_2	Yellow Cake Batter	food	4	9	spoils
+Baking	VFX.YellowCakeFrostingCaramel	Yellow Cake - Caramel Frosting	food	4	9	spoils
+Baking	VFX.YellowCakeFrostingChocolate	Yellow Cake - Chocolate Frosting	food	4	9	spoils
+Baking	VFX.YellowCakeFrostingConfetti	Yellow Cake - Confetti Frosting	food	4	9	spoils
+Baking	VFX.YellowCakeFrostingCreamCheese	Yellow Cake - Cream Cheese Frosting	food	4	9	spoils
+Baking	VFX.YellowCakeFrostingLemon	Yellow Cake - Lemon Frosting	food	4	9	spoils
+Baking	VFX.YellowCakeFrostingStrawberry	Yellow Cake - Strawberry Frosting	food	4	9	spoils
+Baking	VFX.YellowCakeFrostingVanilla	Yellow Cake - Vanilla Frosting	food	4	9	spoils
+Baking	VFX.YellowCakeMix_2	Cake Mix - Yellow	food			never spoils
+Baking	VFX.YellowCakePrep	Yellow Cake	food	4	9	spoils
+Baking	VFX.YellowCakeSlice	Yellow Cake Slice	food	3	5	spoils
+Baking	VFX.YellowCakeSliceFrostingCaramel	Yellow Cake Slice - Caramel Frosting	food	3	5	spoils
+Baking	VFX.YellowCakeSliceFrostingChocolate	Yellow Cake Slice - Chocolate Frosting	food	3	5	spoils
+Baking	VFX.YellowCakeSliceFrostingConfetti	Yellow Cake Slice - Confetti Frosting	food	3	5	spoils
+Baking	VFX.YellowCakeSliceFrostingCreamCheese	Yellow Cake Slice - Cream Cheese Frosting	food	3	5	spoils
+Baking	VFX.YellowCakeSliceFrostingLemon	Yellow Cake Slice - Lemon Frosting	food	3	5	spoils
+Baking	VFX.YellowCakeSliceFrostingStrawberry	Yellow Cake Slice - Strawberry Frosting	food	3	5	spoils
+Baking	VFX.YellowCakeSliceFrostingVanilla	Yellow Cake Slice - Vanilla Frosting	food	3	5	spoils
+Beverages	VFX.BananaMilk	Banana Milk Box	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottleAmberAle	Bottle of Amber Ale	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottleAmericanLager	Bottle of American Lager	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottleAmericanLightLager	Bottle of American Light Lager	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottleAmericanWheatBeer	Bottle of American Wheat Beer	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottlePaleAle	Bottle of Pale Ale	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottlePilsner	Bottle of Pilsner	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottlePorter	Bottle of Porter	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottleStout	Bottle of Stout	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BottleViennaLager	Bottle of Vienna Lager	drink (fluid)			never spoils (fluid)
+Beverages	VFX.BreakfastTeaBag_2	English Breakfast Tea Bag	food			never spoils
+Beverages	VFX.CanAmberAle	Can of Amber Ale	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanAmericanLager	Can of American Lager	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanAmericanLightLager	Can of American Light Lager	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanAmericanWheatBeer	Can of American Wheat Beer	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanPaleAle	Can of Pale Ale	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanPilsner	Can of Pilsner	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanPorter	Can of Porter	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanStout	Can of Stout	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CanViennaLager	Can of Vienna Lager	drink (fluid)			never spoils (fluid)
+Beverages	VFX.ChamomileTeaBag_2	Chamomile Tea Bag	food			never spoils
+Beverages	VFX.CherryColaBottle	Bottle of Cherry Cola	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CherryColaCan	Can of Cherry Cola	drink (fluid)			never spoils (fluid)
+Beverages	VFX.ChocolateMilk	Chocolate Milk Box	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CoffeeCreamerAlmond_2	Coffee Creamer - Almond	food			never spoils
+Beverages	VFX.CoffeeCreamerFrenchVanilla_2	Coffee Creamer - French Vanilla	food			never spoils
+Beverages	VFX.CoffeeCreamerHazelnut_2	Coffee Creamer - Hazelnut	food			never spoils
+Beverages	VFX.CoffeeCreamerIrishCream_2	Coffee Creamer - Irish Cream	food			never spoils
+Beverages	VFX.CoffeeCreamerOriginal_2	Coffee Creamer - Original	food			never spoils
+Beverages	VFX.CreamSodaBottle	Bottle of Cream Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.CreamSodaCan	Can of Cream Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.EarlGrayTeaBag_2	Earl Grey Tea Bag	food			never spoils
+Beverages	VFX.GingerTeaBag_2	Ginger Tea Bag	food			never spoils
+Beverages	VFX.GrapefruitJuice	Grapefruit Juice	drink (fluid)			never spoils (fluid)
+Beverages	VFX.GreenTeaBag_2	Green Tea Bag	food			never spoils
+Beverages	VFX.IcedTeaGreen	Green Iced Tea	drink (fluid)			never spoils (fluid)
+Beverages	VFX.IcedTeaLemon	Lemon Iced Tea	drink (fluid)			never spoils (fluid)
+Beverages	VFX.IcedTeaPeach	Peach Iced Tea	drink (fluid)			never spoils (fluid)
+Beverages	VFX.IcedTeaRaspberry	Raspberry Iced Tea	drink (fluid)			never spoils (fluid)
+Beverages	VFX.IcedTeaSweet	Sweet Iced Tea	drink (fluid)			never spoils (fluid)
+Beverages	VFX.JuiceBoxCranberry	Cranberry Juice Box	drink (fluid)			never spoils (fluid)
+Beverages	VFX.JuiceBoxGrapefruit	Grapefruit Juice Box	drink (fluid)			never spoils (fluid)
+Beverages	VFX.JuiceBoxPineapple	Pineapple Juice Box	drink (fluid)			never spoils (fluid)
+Beverages	VFX.JuiceBoxTropical	Tropical Juice Box	drink (fluid)			never spoils (fluid)
+Beverages	VFX.LemonLimeSodaBottle	Bottle of Lemon Lime Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.LemonLimeSodaCan	Can of Lemon Lime Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.LemonSodaBottle	Bottle of Lemon Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.LemonSodaCan	Can of Lemon Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.LemonTeaBag_2	Lemon Tea Bag	food			never spoils
+Beverages	VFX.OrangeSodaBottle	Bottle of Orange Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.OrangeSodaCan	Can of Orange Soda	drink (fluid)			never spoils (fluid)
+Beverages	VFX.PeppermintTeaBag_2	Peppermint Tea Bag	food			never spoils
+Beverages	VFX.PineappleJuice	Pineapple Juice	drink (fluid)			never spoils (fluid)
+Beverages	VFX.PruneJuice	Prune Juice	drink (fluid)			never spoils (fluid)
+Beverages	VFX.RootBeerBottle	Bottle of Root Beer	drink (fluid)			never spoils (fluid)
+Beverages	VFX.RootBeerCan	Can of Root Beer	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SoyMilk	Bottle of Soy Milk	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SportsBerryBlast	Berry Blast Sports Drink	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SportsFruitPunch	Fruit Punch Sports Drink	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SportsGrape	Grape Sports Drink	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SportsLemonLime	Lemon Lime Sports Drink	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SportsMelon	Melon Sports Drink	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SportsOrange	Orange Sports Drink	drink (fluid)			never spoils (fluid)
+Beverages	VFX.SportsWhiteCherry	White Cherry Sports Drink	drink (fluid)			never spoils (fluid)
+Beverages	VFX.StrawberryMilk	Strawberry Milk Box	drink (fluid)			never spoils (fluid)
+Beverages	VFX.TropicalJuice	Tropical Juice	drink (fluid)			never spoils (fluid)
+Beverages	VFX.VanillaColaBottle	Bottle of Vanilla Cola	drink (fluid)			never spoils (fluid)
+Beverages	VFX.VanillaColaCan	Can of Vanilla Cola	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineBoxCabernetSauvignon	Boxed Cabernet Sauvignon	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineBoxChardonnay	Boxed Chardonnay	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineBoxMerlot	Boxed Merlot	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineBoxPinotGris	Boxed Pinot Gris	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineBoxPinotNoir	Boxed Pinot Noir	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineBoxRiesling	Boxed Riesling	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineBoxSauvignonBlanc	Boxed Sauvignon Blanc	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineCabernetSauvignon	Bottle of Cabernet Sauvignon	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineChardonnay	Bottle of Chardonnay	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineMerlot	Bottle of Merlot	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WinePinotGris	Bottle of Pinot Gris	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WinePinotNoir	Bottle of Pinot Noir	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineRiesling	Bottle of Riesling	drink (fluid)			never spoils (fluid)
+Beverages	VFX.WineSauvignonBlanc	Bottle of Sauvignon Blanc	drink (fluid)			never spoils (fluid)
+Bowls and plates (meals)	VFX.BowlAmbrosia	Bowl of Ambrosia	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlBeefMushroomStew	Bowl of Beef and Mushroom Stew	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlBeefRavioli	Bowl of Beef Ravioli	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlBroccoliCheddarSoup	Bowl of Broccoli and Cheddar Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlBrownGravy	Bowl of Brown Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlCannedChickenNoodleSoup	Bowl of Chicken Noodle Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlCannedPumpkinSoup	Bowl of Pumpkin Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlCannedTomatoSoup	Bowl of Tomato Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlChickenGravy	Bowl of Chicken Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlChickenStuffing	Bowl of Chicken Stuffing	food	3	6	spoils
+Bowls and plates (meals)	VFX.BowlChiliBeanStew	Bowl of Chili Bean Stew	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlChocolateGravy	Bowl of Chocolate Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlClamChowder	Bowl of Clam Chowder	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlColeslaw	Bowl of Coleslaw	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlCornbreadStuffing	Bowl of Cornbread Stuffing	food	3	6	spoils
+Bowls and plates (meals)	VFX.BowlCountryGravy	Bowl of Country Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlFrenchOnionSoup	Bowl of French Onion Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlGibletGravy	Bowl of Giblet Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlGrandmasStuffing	Bowl of Grandma's Stuffing	food	3	6	spoils
+Bowls and plates (meals)	VFX.BowlHerbStuffing	Bowl of Herb Stuffing	food	3	6	spoils
+Bowls and plates (meals)	VFX.BowlHomemadeStuffing	Bowl of Homemade Stuffing	food	3	6	spoils
+Bowls and plates (meals)	VFX.BowlIrishStew	Bowl of Irish Stew	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlLaksaNoodleSoup	Bowl of Laksa Noodle Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlLentilSoup	Bowl of Lentil Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlMashedPotato	Bowl of Mashed Potato	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlMeatloaf	Bowl of Meatloaf	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlMinestroneSoup	Bowl of Minestrone Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlMushroomGravy	Bowl of Mushroom Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlMushroomRavioli	Bowl of Mushroom Ravioli	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlOnionGravy	Bowl of Onion Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlPastaSalad	Bowl of Pasta Salad	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlPeaHamSoup	Bowl of Pea and Ham Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlPepperGravy	Bowl of Pepper Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlPepperSteakStew	Bowl of Pepper Steak Stew	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlPistachioDelight	Bowl of Pistachio Delight	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlPorkGravy	Bowl of Pork Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlPotatoLeekSoup	Bowl of Potato and Leek Soup	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlPotatoSalad	Bowl of Potato Salad	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlRedBeansAndRice	Bowl of Red Beans and Rice	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlRedEyeGravy	Bowl of Red-Eye Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlSausageGravy	Bowl of Sausage Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlSausageStuffing	Bowl of Sausage Stuffing	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSavoryMince	Bowl of Savory Mince	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSloppyJoe	Bowl of Sloppy Joe	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSpaghetti	Bowl of Spaghetti	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSpaghettiAndMeatballs	Bowl of Spaghetti and Meatballs	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSpinachRavioli	Bowl of Spinach Ravioli	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSpoonBread	Bowl of Spoon Bread	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSteakOnionStew	Bowl of Steak and Onion Stew	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlSweetPotatoMash	Bowl of Sweet Potato Mash	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlTomatoGravy	Bowl of Tomato Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlTunaSalad	Bowl of Tuna Salad	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlTurkeyGravy	Bowl of Turkey Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.BowlTurkeyStuffing	Bowl of Turkey Stuffing	food	3	6	spoils
+Bowls and plates (meals)	VFX.BowlVegetableStew	Bowl of Vegetable Stew	food	2	4	spoils
+Bowls and plates (meals)	VFX.BowlVegetarianChili	Bowl of Vegetarian Chili	food	2	4	spoils
+Bowls and plates (meals)	VFX.EvolvedBowlChowderClear	Bowl of Clear Chowder	food	3	6	spoils
+Bowls and plates (meals)	VFX.EvolvedBowlChowderCream	Bowl of Cream Chowder	food	3	6	spoils
+Bowls and plates (meals)	VFX.EvolvedBowlChowderTomato	Bowl of Tomato Chowder	food	3	6	spoils
+Bowls and plates (meals)	VFX.EvolvedBowlCobblerIceCream	Bowl of Cobbler with Ice Cream	food	1	2	spoils
+Bowls and plates (meals)	VFX.EvolvedBowlGrits	Bowl of Grits	food	1	2	spoils
+Bowls and plates (meals)	VFX.EvolvedFoodStorageContainerChowderClear	Container with Clear Chowder	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedFoodStorageContainerChowderCream	Container with Cream Chowder	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedFoodStorageContainerChowderTomato	Container with Tomato Chowder	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedFoodStorageContainerCobbler	Container with Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedMetalFoodStorageContainerChowderClear	Container with Clear Chowder	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedMetalFoodStorageContainerChowderCream	Container with Cream Chowder	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedMetalFoodStorageContainerChowderTomato	Container with Tomato Chowder	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedMetalFoodStorageContainerCobbler	Container with Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.EvolvedPlateCobbler	Plate of Cobbler	food	2	4	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerAmbrosia	Container with Ambrosia	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerArborioRice	Container with Arborio Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerBasmatiRice	Container with Basmati Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerBroccoliCheeseCasserole	Container with Broccoli Cheese Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerBrownRice	Container with Brown Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCandiedYams	Container with Candied Yams	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCasserole	Container with Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCheesyPotatoCasserole	Container with Cheesy Potato Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerChili	Container with Chili	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCobblerApple	Container with Apple Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCobblerBlackberry	Container with Blackberry Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCobblerCherry	Container with Cherry Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCobblerMixedFruit	Container with Mixed Fruit Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCobblerPeach	Container with Peach Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerColeslaw	Container with Coleslaw	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCollardGreens	Container with Collard Greens	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCornbreadDressing	Container with Cornbread Dressing	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCountryGreenBeans	Container with Country Green Beans	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerCurry	Container with Curry	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerFettuccine	Container with Fettuccine	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerFriedRice	Container with Fried Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerFruitSalad	Container with Fruit Salad	food	4	6	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerGlazedCarrots	Container with Glazed Carrots	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerGnocchi	Container with Gnocchi	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerGreenBeanCasserole	Container with Green Bean Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerJasmineRice	Container with Jasmine Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerLasagna	Container with Lasagna	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerMacAndCheeseCasserole	Container with Macaroni and Cheese Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerMacaroni	Container with Macaroni	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerMeatloaf	Container with Meatloaf	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerPastaSalad	Container with Pasta Salad	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerPenne	Container with Penne	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerPistachioDelight	Container with Pistachio Delight	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerPotatoSalad	Container with Potato Salad	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerRice	Container with Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerRoastVegetables	Container with Roasted Vegetables	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerSalad	Container with Salad	food	4	6	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerScallopedPotatoBake	Container with Scalloped Potato Bake	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerSoup	Container with Soup	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerSpaghetti	Container with Spaghetti	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerStew	Container with Stew	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerStirFry	Container with Stir-Fry	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerSweetPotatoCasserole	Container with Sweet Potato Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.FoodStorageContainerTunaSalad	Container with Tuna Salad	food	7	10	spoils
+Bowls and plates (meals)	VFX.GravyBoatChicken	Chicken Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatChocolate	Chocolate Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatCountry	Country Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatGiblet	Giblet Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatMushroom	Mushroom Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatOnion	Onion Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatPepper	Pepper Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatPork	Pork Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatRedEye	Red-Eye Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatSausage	Sausage Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatTomato	Tomato Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.GravyBoatTurkey	Turkey Gravy	food	4	7	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerAmbrosia	Container with Ambrosia	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerArborioRice	Container with Arborio Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerBasmatiRice	Container with Basmati Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerBroccoliCheeseCasserole	Container with Broccoli Cheese Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerBrownRice	Container with Brown Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCandiedYams	Container with Candied Yams	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCasserole	Container with Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCheesyPotatoCasserole	Container with Cheesy Potato Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerChili	Container with Chili	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCobblerApple	Container with Apple Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCobblerBlackberry	Container with Blackberry Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCobblerCherry	Container with Cherry Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCobblerMixedFruit	Container with Mixed Fruit Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCobblerPeach	Container with Peach Cobbler	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerColeslaw	Container with Coleslaw	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCollardGreens	Container with Collard Greens	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCornbreadDressing	Container with Cornbread Dressing	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCountryGreenBeans	Container with Country Green Beans	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerCurry	Container with Curry	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerFettuccine	Container with Fettuccine	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerFriedRice	Container with Fried Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerFruitSalad	Container with Fruit Salad	food	4	6	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerGlazedCarrots	Container with Glazed Carrots	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerGnocchi	Container with Gnocchi	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerGreenBeanCasserole	Container with Green Bean Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerJasmineRice	Container with Jasmine Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerLasagna	Container with Lasagna	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerMacAndCheeseCasserole	Container with Macaroni and Cheese Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerMacaroni	Container with Macaroni	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerMeatloaf	Container with Meatloaf	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerPastaSalad	Container with Pasta Salad	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerPenne	Container with Penne	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerPistachioDelight	Container with Pistachio Delight	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerPotatoSalad	Container with Potato Salad	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerRice	Container with Rice	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerRoastVegetables	Container with Roasted Vegetables	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerSalad	Container with Salad	food	4	6	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerScallopedPotatoBake	Container with Scalloped Potato Bake	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerSoup	Container with Soup	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerSpaghetti	Container with Spaghetti	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerStew	Container with Stew	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerStirFry	Container with Stir-Fry	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerSweetPotatoCasserole	Container with Sweet Potato Casserole	food	7	10	spoils
+Bowls and plates (meals)	VFX.MetalFoodStorageContainerTunaSalad	Container with Tuna Salad	food	7	10	spoils
+Bowls and plates (meals)	VFX.MixingBowlAmbrosia	Mixing Bowl of Ambrosia	food	2	4	spoils
+Bowls and plates (meals)	VFX.MixingBowlColeslaw	Mixing Bowl of Coleslaw	food	2	4	spoils
+Bowls and plates (meals)	VFX.MixingBowlPastaSalad	Mixing Bowl of Pasta Salad	food	2	4	spoils
+Bowls and plates (meals)	VFX.MixingBowlPistachioDelight	Mixing Bowl of Pistachio Delight	food	2	4	spoils
+Bowls and plates (meals)	VFX.MixingBowlPotatoSalad	Mixing Bowl of Potato Salad	food	2	4	spoils
+Bowls and plates (meals)	VFX.MixingBowlTunaSalad	Mixing Bowl of Tuna Salad	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateBroccoliCheeseCasserole	Plate of Broccoli Cheese Casserole	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCandiedYams	Plate of Candied Yams	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCheesyPotatoCasserole	Plate of Cheesy Potato Casserole	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCobblerApple	Plate of Apple Cobbler	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCobblerBlackberry	Plate of Blackberry Cobbler	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCobblerCherry	Plate of Cherry Cobbler	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCobblerMixedFruit	Plate of Mixed Fruit Cobbler	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCobblerPeach	Plate of Peach Cobbler	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCollardGreens	Plate of Collard Greens	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCornbreadDressing	Plate of Cornbread Dressing	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateCountryGreenBeans	Plate of Country Green Beans	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateGlazedCarrots	Plate of Glazed Carrots	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateGreenBeanCasserole	Plate of Green Bean Casserole	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateMacAndCheeseCasserole	Plate of Macaroni and Cheese Casserole	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateMonkeyBread	Plate of Monkey Bread	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateShreddedHashbrowns	Plate of Shredded Hashbrowns	food	2	4	spoils
+Bowls and plates (meals)	VFX.PlateSweetPotatoCasserole	Plate of Sweet Potato Casserole	food	2	4	spoils
+Candy	VFX.BagColaGummies	Bag of Cola Gummies	food			never spoils
+Candy	VFX.BagGummyBears	Bag of Gummy Bears	food			never spoils
+Candy	VFX.BagGummyFish	Bag of Gummy Fish	food			never spoils
+Candy	VFX.BagGummyWorms	Bag of Gummy Worms	food			never spoils
+Candy	VFX.BagPeachRings	Bag of Peach Rings	food			never spoils
+Candy	VFX.BagSourGummyBears	Bag of Sour Gummy Bears	food			never spoils
+Candy	VFX.BagSourGummyWorms	Bag of Sour Gummy Worms	food			never spoils
+Candy	VFX.BottleTops	Bottle Tops	food			never spoils
+Candy	VFX.BubblegumTapeGrape	Bubblegum Tape - Grape	food			never spoils
+Candy	VFX.BubblegumTapePink	Bubblegum Tape - Pink	food			never spoils
+Candy	VFX.BubblegumTapeSourApple	Bubblegum Tape - Sour Apple	food			never spoils
+Candy	VFX.BubblegumTapeSourBlueRaspberry	Bubblegum Tape - Sour Blue Raspberry	food			never spoils
+Candy	VFX.BubblegumTapeStrawberry	Bubblegum Tape - Strawberry	food			never spoils
+Candy	VFX.BubblegumTapeTangyTropical	Bubblegum Tape - Tangy Tropical	food			never spoils
+Candy	VFX.CandyCigarettes	Candy Cigarettes	food			never spoils
+Candy	VFX.CandyNecklace	Candy Necklace	food			never spoils
+Candy	VFX.Cheeps	Cheeps	food			never spoils
+Candy	VFX.ChocolateAlmonds	Bag of Chocolate Almonds	food			never spoils
+Candy	VFX.ChocolateBarAlmond	Almond Chocolate Bar	food			never spoils
+Candy	VFX.ChocolateBarCookiesAndCream	Cookies and Cream Chocolate Bar	food			never spoils
+Candy	VFX.ChocolateBarDark	Dark Chocolate Bar	food			never spoils
+Candy	VFX.ChocolateBarPorkie	Porkie Chocolate Bar	food			never spoils
+Candy	VFX.ChocolateBarWhite	White Chocolate Bar	food			never spoils
+Candy	VFX.ChocolateCandyPeanut	Peanut Chocolate Candy	food			never spoils
+Candy	VFX.ChocolateCaramelDuds	Box of Caramel Duds	food			never spoils
+Candy	VFX.ChocolateCoins	Chocolate Coins	food			never spoils
+Candy	VFX.ChocolateKisses	Bag of Chocolate Smooches	food			never spoils
+Candy	VFX.ChocolateMaltBalls	Box of Malt Balls	food			never spoils
+Candy	VFX.ChocolatePretzels	Chocolate Pretzels	food			never spoils
+Candy	VFX.ChocolateSeniorMints	Box of Senior Mints	food			never spoils
+Candy	VFX.FairySticks	Fairy Sticks	food			never spoils
+Candy	VFX.FruitChewCherry	Fruit Chew - Cherry	food			never spoils
+Candy	VFX.FruitChewGrape	Fruit Chew - Grape	food			never spoils
+Candy	VFX.FruitChewLemon	Fruit Chew - Lemon	food			never spoils
+Candy	VFX.FruitChewOrange	Fruit Chew - Orange	food			never spoils
+Candy	VFX.FruitChewStrawberry	Fruit Chew - Strawberry	food			never spoils
+Candy	VFX.FruitChewWatermelon	Fruit Chew - Watermelon	food			never spoils
+Candy	VFX.Fudge	Fudge	food			never spoils
+Candy	VFX.FunDipApple	Lucky Dip - Apple	food			never spoils
+Candy	VFX.FunDipCherry	Lucky Dip - Cherry	food			never spoils
+Candy	VFX.FunDipGrape	Lucky Dip - Grape	food			never spoils
+Candy	VFX.FunDipOrange	Lucky Dip - Orange	food			never spoils
+Candy	VFX.FunDipStrawberry	Lucky Dip - Strawberry	food			never spoils
+Candy	VFX.FunDipWatermelon	Lucky Dip - Watermelon	food			never spoils
+Candy	VFX.FunnyTaffyBanana	Funny Taffy - Banana	food			never spoils
+Candy	VFX.FunnyTaffyBlueRaspberry	Funny Taffy - Blue Raspberry	food			never spoils
+Candy	VFX.FunnyTaffyCherry	Funny Taffy - Cherry	food			never spoils
+Candy	VFX.FunnyTaffyFruitPunch	Funny Taffy - Fruit Punch	food			never spoils
+Candy	VFX.FunnyTaffyGrape	Funny Taffy - Grape	food			never spoils
+Candy	VFX.FunnyTaffyOrange	Funny Taffy - Orange	food			never spoils
+Candy	VFX.FunnyTaffyStrawberry	Funny Taffy - Strawberry	food			never spoils
+Candy	VFX.FunnyTaffyWatermelon	Funny Taffy - Watermelon	food			never spoils
+Candy	VFX.Geeks	Geeks	food			never spoils
+Candy	VFX.GiantLollipopBlueRaspberry	Giant Lollipop - Blue Raspberry	food			never spoils
+Candy	VFX.GiantLollipopButterscotch	Giant Lollipop - Butterscotch	food			never spoils
+Candy	VFX.GiantLollipopCherry	Giant Lollipop - Cherry	food			never spoils
+Candy	VFX.GiantLollipopCola	Giant Lollipop - Cola	food			never spoils
+Candy	VFX.GiantLollipopCreamSoda	Giant Lollipop - Cream Soda	food			never spoils
+Candy	VFX.GiantLollipopGrape	Giant Lollipop - Grape	food			never spoils
+Candy	VFX.GiantLollipopGreenApple	Giant Lollipop - Green Apple	food			never spoils
+Candy	VFX.GiantLollipopLemon	Giant Lollipop - Lemon	food			never spoils
+Candy	VFX.GiantLollipopLime	Giant Lollipop - Lime	food			never spoils
+Candy	VFX.GiantLollipopOrange	Giant Lollipop - Orange	food			never spoils
+Candy	VFX.GiantLollipopStrawberry	Giant Lollipop - Strawberry	food			never spoils
+Candy	VFX.GiantLollipopWatermelon	Giant Lollipop - Watermelon	food			never spoils
+Candy	VFX.GiantLollipopWildBerry	Giant Lollipop - Wild Berry	food			never spoils
+Candy	VFX.GumBallBanana	Gum Ball - Banana	food			never spoils
+Candy	VFX.GumBallBlueberry	Gum Ball - Blueberry	food			never spoils
+Candy	VFX.GumBallCherry	Gum Ball - Cherry	food			never spoils
+Candy	VFX.GumBallGrape	Gum Ball - Grape	food			never spoils
+Candy	VFX.GumBallLemonLime	Gum Ball - Lemon Lime	food			never spoils
+Candy	VFX.GumBallOrange	Gum Ball - Orange	food			never spoils
+Candy	VFX.GumBallPineapple	Gum Ball - Pineapple	food			never spoils
+Candy	VFX.GumBallStrawberry	Gum Ball - Strawberry	food			never spoils
+Candy	VFX.GumCinnamon	Gum - Cinnamon	food			never spoils
+Candy	VFX.GumGreenApple	Gum - Green Apple	food			never spoils
+Candy	VFX.GumPeppermint	Gum - Peppermint	food			never spoils
+Candy	VFX.GumPinkBubblegum	Gum - Pink Bubblegum	food			never spoils
+Candy	VFX.GumSpearmint	Gum - Spearmint	food			never spoils
+Candy	VFX.GumTuttiFruity	Gum - Tutti Fruity	food			never spoils
+Candy	VFX.GumWatermelon	Gum - Watermelon	food			never spoils
+Candy	VFX.GummyCola	Cola Gummies	food			never spoils
+Candy	VFX.GummyPeachRings	Peach Rings	food			never spoils
+Candy	VFX.GummySourBears	Sour Gummy Bears	food			never spoils
+Candy	VFX.GummySourWorms	Sour Gummy Worms	food			never spoils
+Candy	VFX.JawBreaker	Jaw Breaker	food			never spoils
+Candy	VFX.LollipopBlueRaspberry	Lollipop - Blue Raspberry	food			never spoils
+Candy	VFX.LollipopButterscotch	Lollipop - Butterscotch	food			never spoils
+Candy	VFX.LollipopCherry	Lollipop - Cherry	food			never spoils
+Candy	VFX.LollipopCola	Lollipop - Cola	food			never spoils
+Candy	VFX.LollipopCreamSoda	Lollipop - Cream Soda	food			never spoils
+Candy	VFX.LollipopGrape	Lollipop - Grape	food			never spoils
+Candy	VFX.LollipopGreenApple	Lollipop - Green Apple	food			never spoils
+Candy	VFX.LollipopLemon	Lollipop - Lemon	food			never spoils
+Candy	VFX.LollipopLime	Lollipop - Lime	food			never spoils
+Candy	VFX.LollipopOrange	Lollipop - Orange	food			never spoils
+Candy	VFX.LollipopStrawberry	Lollipop - Strawberry	food			never spoils
+Candy	VFX.LollipopWatermelon	Lollipop - Watermelon	food			never spoils
+Candy	VFX.LollipopWildBerry	Lollipop - Wild Berry	food			never spoils
+Candy	VFX.PopRocksBlueRaspberry	Fizzy Rocks - Blue Raspberry	food			never spoils
+Candy	VFX.PopRocksCherry	Fizzy Rocks - Cherry	food			never spoils
+Candy	VFX.PopRocksCottonCandy	Fizzy Rocks - Cotton Candy	food			never spoils
+Candy	VFX.PopRocksGrape	Fizzy Rocks - Grape	food			never spoils
+Candy	VFX.PopRocksGreenApple	Fizzy Rocks - Green Apple	food			never spoils
+Candy	VFX.PopRocksStrawberry	Fizzy Rocks - Strawberry	food			never spoils
+Candy	VFX.PopRocksTropicalPunch	Fizzy Rocks - Tropical Punch	food			never spoils
+Candy	VFX.PopRocksWatermelon	Fizzy Rocks - Watermelon	food			never spoils
+Candy	VFX.PushPopCherry	Twist Pop - Cherry	food			never spoils
+Candy	VFX.PushPopCola	Twist Pop - Cola	food			never spoils
+Candy	VFX.PushPopFruitFrenzy	Twist Pop - Fruit Frenzy	food			never spoils
+Candy	VFX.PushPopGrape	Twist Pop - Grape	food			never spoils
+Candy	VFX.PushPopRainbowSherbet	Twist Pop - Rainbow Sherbet	food			never spoils
+Candy	VFX.PushPopStrawberry	Twist Pop - Strawberry	food			never spoils
+Candy	VFX.PushPopWatermelon	Twist Pop - Watermelon	food			never spoils
+Candy	VFX.RainbowLollipop	Rainbow Lollipop	food			never spoils
+Candy	VFX.RedCandiedApple	Red Candied Apple	food	5	8	spoils
+Candy	VFX.RingPopBerry	Candy Ring - Berry	food			never spoils
+Candy	VFX.RingPopBlueRaspberry	Candy Ring - Blue Raspberry	food			never spoils
+Candy	VFX.RingPopCitrus	Candy Ring - Citrus	food			never spoils
+Candy	VFX.RingPopFruitPunch	Candy Ring - Fruit Punch	food			never spoils
+Candy	VFX.RingPopGrape	Candy Ring - Grape	food			never spoils
+Candy	VFX.RingPopSourCherry	Candy Ring - Sour Cherry	food			never spoils
+Candy	VFX.RingPopTropical	Candy Ring - Tropical	food			never spoils
+Candy	VFX.RingPopWatermelon	Candy Ring - Watermelon	food			never spoils
+Candy	VFX.Rushers	Rushers	food			never spoils
+Candy	VFX.SaltwaterTaffy	Saltwater Taffy	food			never spoils
+Candy	VFX.SourStraps	Sour Straps	food			never spoils
+Candy	VFX.SourStraws	Sour Straws	food			never spoils
+Candy	VFX.ToffeeBites	Toffee Bites	food			never spoils
+Canned	VFX.CannedAnchovies	Canned Anchovies	food			never spoils
+Canned	VFX.CannedAnchoviesOpen	Opened Canned Anchovies	food	2	4	spoils
+Canned	VFX.CannedApplePieFilling	Canned Apple Pie Filling	food			never spoils
+Canned	VFX.CannedApplePieFillingOpen	Opened Canned Apple Pie Filling	food	2	4	spoils
+Canned	VFX.CannedAppleSlices	Canned Apple Slices	food			never spoils
+Canned	VFX.CannedAppleSlicesOpen	Opened Canned Apple Slices	food	2	4	spoils
+Canned	VFX.CannedApricots	Canned Apricots	food			never spoils
+Canned	VFX.CannedApricotsOpen	Opened Canned Apricots	food	2	4	spoils
+Canned	VFX.CannedBeefMushroomStew	Canned Beef and Mushroom Stew	food			never spoils
+Canned	VFX.CannedBeefMushroomStewOpen	Opened Canned Beef and Mushroom Stew	food	2	4	spoils
+Canned	VFX.CannedBeefRavioli	Canned Beef Ravioli	food			never spoils
+Canned	VFX.CannedBeefRavioliOpen	Opened Canned Beef Ravioli	food	2	4	spoils
+Canned	VFX.CannedBlackBeans	Canned Black Beans	food			never spoils
+Canned	VFX.CannedBlackBeansOpen	Opened Canned Black Beans	food	2	4	spoils
+Canned	VFX.CannedBlackberryPieFilling	Canned Blackberry Pie Filling	food			never spoils
+Canned	VFX.CannedBlackberryPieFillingOpen	Opened Canned Blackberry Pie Filling	food	2	4	spoils
+Canned	VFX.CannedBlueberryPieFilling	Canned Blueberry Pie Filling	food			never spoils
+Canned	VFX.CannedBlueberryPieFillingOpen	Opened Canned Blueberry Pie Filling	food	2	4	spoils
+Canned	VFX.CannedBroccoliCheddarSoup	Canned Broccoli and Cheddar Soup	food			never spoils
+Canned	VFX.CannedBroccoliCheddarSoupOpen	Opened Canned Broccoli and Cheddar Soup	food	2	4	spoils
+Canned	VFX.CannedBrownGravy	Canned Brown Gravy	food			never spoils
+Canned	VFX.CannedBrownGravyOpen	Opened Canned Brown Gravy	food	3	6	spoils
+Canned	VFX.CannedCatFood	Canned Cat Food	food			never spoils
+Canned	VFX.CannedCatFoodOpen	Opened Canned Cat Food	food	2	4	spoils
+Canned	VFX.CannedCherryPieFilling	Canned Cherry Pie Filling	food			never spoils
+Canned	VFX.CannedCherryPieFillingOpen	Opened Canned Cherry Pie Filling	food	2	4	spoils
+Canned	VFX.CannedChicken	Canned Chicken	food			never spoils
+Canned	VFX.CannedChickenGravy	Canned Chicken Gravy	food			never spoils
+Canned	VFX.CannedChickenGravyOpen	Opened Canned Chicken Gravy	food	3	6	spoils
+Canned	VFX.CannedChickenNoodleSoup	Canned Chicken Noodle Soup	food			never spoils
+Canned	VFX.CannedChickenNoodleSoupOpen	Opened Canned Chicken Noodle Soup	food	2	4	spoils
+Canned	VFX.CannedChickenOpen	Opened Canned Chicken	food	2	4	spoils
+Canned	VFX.CannedChickpeas	Canned Chickpeas	food			never spoils
+Canned	VFX.CannedChickpeasOpen	Opened Canned Chickpeas	food	2	4	spoils
+Canned	VFX.CannedChiliBeanStew	Canned Chili Bean Stew	food			never spoils
+Canned	VFX.CannedChiliBeanStewOpen	Opened Canned Chili Bean Stew	food	2	4	spoils
+Canned	VFX.CannedClamChowder	Canned Clam Chowder	food			never spoils
+Canned	VFX.CannedClamChowderOpen	Opened Canned Clam Chowder	food	2	4	spoils
+Canned	VFX.CannedClams	Canned Clams	food			never spoils
+Canned	VFX.CannedClamsOpen	Opened Canned Clams	food	3	6	spoils
+Canned	VFX.CannedCoconutCream	Can of Coconut Cream	food			never spoils
+Canned	VFX.CannedCoconutCreamOpen	Open Can of Coconut Cream	food	3	7	spoils
+Canned	VFX.CannedCoconutMilk	Can of Coconut Milk	food			never spoils
+Canned	VFX.CannedCoconutMilkOpen	Open Can of Coconut Milk	food	3	7	spoils
+Canned	VFX.CannedCollard	Canned Collard	food			never spoils
+Canned	VFX.CannedCollardOpen	Opened Canned Collard	food	3	6	spoils
+Canned	VFX.CannedCountryGravy	Canned Country Gravy	food			never spoils
+Canned	VFX.CannedCountryGravyOpen	Opened Canned Country Gravy	food	3	6	spoils
+Canned	VFX.CannedCranberrySauce	Canned Jellied Cranberry Sauce	food			never spoils
+Canned	VFX.CannedCranberrySauceOpen	Opened Canned Jellied Cranberry Sauce	food	3	6	spoils
+Canned	VFX.CannedCreamCorn	Canned Cream Corn	food			never spoils
+Canned	VFX.CannedCreamCornOpen	Opened Canned Cream Corn	food	2	4	spoils
+Canned	VFX.CannedCrickets	Canned Crickets	food			never spoils
+Canned	VFX.CannedEdamameBeans	Canned Edamame Beans	food			never spoils
+Canned	VFX.CannedEdamameBeansOpen	Opened Canned Edamame Beans	food	2	4	spoils
+Canned	VFX.CannedFrenchOnionSoup	Canned French Onion Soup	food			never spoils
+Canned	VFX.CannedFrenchOnionSoupOpen	Opened Canned French Onion Soup	food	2	4	spoils
+Canned	VFX.CannedGreenBeans	Canned Green Beans	food			never spoils
+Canned	VFX.CannedGreenBeansOpen	Opened Canned Green Beans	food	2	4	spoils
+Canned	VFX.CannedHam	Canned Ham	food			never spoils
+Canned	VFX.CannedHamOpen	Opened Canned Ham	food	2	4	spoils
+Canned	VFX.CannedIrishStew	Canned Irish Stew	food			never spoils
+Canned	VFX.CannedIrishStewOpen	Opened Canned Irish Stew	food	2	4	spoils
+Canned	VFX.CannedKidneyBeans	Canned Kidney Beans	food			never spoils
+Canned	VFX.CannedKidneyBeansOpen	Opened Canned Kidney Beans	food	2	4	spoils
+Canned	VFX.CannedLaksaNoodleSoup	Canned Laksa Noodle Soup	food			never spoils
+Canned	VFX.CannedLaksaNoodleSoupOpen	Opened Canned Laksa Noodle Soup	food	2	4	spoils
+Canned	VFX.CannedLemonCreamPieFilling	Canned Lemon Cream Pie Filling	food			never spoils
+Canned	VFX.CannedLemonCreamPieFillingOpen	Opened Canned Lemon Cream Pie Filling	food	2	4	spoils
+Canned	VFX.CannedLentilSoup	Canned Lentil Soup	food			never spoils
+Canned	VFX.CannedLentilSoupOpen	Opened Canned Lentil Soup	food	2	4	spoils
+Canned	VFX.CannedLentils	Canned Lentils	food			never spoils
+Canned	VFX.CannedLentilsOpen	Opened Canned Lentils	food	2	4	spoils
+Canned	VFX.CannedLychees	Canned Lychees	food			never spoils
+Canned	VFX.CannedLycheesOpen	Opened Canned Lychees	food	2	4	spoils
+Canned	VFX.CannedMandarinOranges	Canned Mandarin Oranges	food			never spoils
+Canned	VFX.CannedMandarinOrangesOpen	Opened Canned Mandarin Oranges	food	3	6	spoils
+Canned	VFX.CannedMangoSlices	Canned Mango Slices	food			never spoils
+Canned	VFX.CannedMangoSlicesOpen	Opened Canned Mango Slices	food	2	4	spoils
+Canned	VFX.CannedMeatloaf	Canned Meatloaf	food			never spoils
+Canned	VFX.CannedMeatloafOpen	Opened Canned Meatloaf	food	2	4	spoils
+Canned	VFX.CannedMinestroneSoup	Canned Minestrone Soup	food			never spoils
+Canned	VFX.CannedMinestroneSoupOpen	Opened Canned Minestrone Soup	food	2	4	spoils
+Canned	VFX.CannedMixedBerryPieFilling	Canned Mixed Berry Pie Filling	food			never spoils
+Canned	VFX.CannedMixedBerryPieFillingOpen	Opened Canned Mixed Berry Pie Filling	food	2	4	spoils
+Canned	VFX.CannedMixedVegetableMedley	Canned Mixed Vegetable Medley	food			never spoils
+Canned	VFX.CannedMixedVegetableMedleyOpen	Opened Canned Mixed Vegetable Medley	food	2	4	spoils
+Canned	VFX.CannedMushroomGravy	Canned Mushroom Gravy	food			never spoils
+Canned	VFX.CannedMushroomGravyOpen	Opened Canned Mushroom Gravy	food	3	6	spoils
+Canned	VFX.CannedMushroomRavioli	Canned Mushroom Ravioli	food			never spoils
+Canned	VFX.CannedMushroomRavioliOpen	Opened Canned Mushroom Ravioli	food	2	4	spoils
+Canned	VFX.CannedOnionGravy	Canned Onion Gravy	food			never spoils
+Canned	VFX.CannedOnionGravyOpen	Opened Canned Onion Gravy	food	3	6	spoils
+Canned	VFX.CannedPassionfruit	Canned Passionfruit	food			never spoils
+Canned	VFX.CannedPassionfruitOpen	Opened Canned Passionfruit	food	2	4	spoils
+Canned	VFX.CannedPeaHamSoup	Canned Pea and Ham Soup	food			never spoils
+Canned	VFX.CannedPeaHamSoupOpen	Opened Canned Pea and Ham Soup	food	2	4	spoils
+Canned	VFX.CannedPeachPieFilling	Canned Peach Pie Filling	food			never spoils
+Canned	VFX.CannedPeachPieFillingOpen	Opened Canned Peach Pie Filling	food	2	4	spoils
+Canned	VFX.CannedPearSlices	Canned Pear Slices	food			never spoils
+Canned	VFX.CannedPearSlicesOpen	Opened Canned Pear Slices	food	2	4	spoils
+Canned	VFX.CannedPepperGravy	Canned Pepper Gravy	food			never spoils
+Canned	VFX.CannedPepperGravyOpen	Opened Canned Pepper Gravy	food	3	6	spoils
+Canned	VFX.CannedPepperSteakStew	Canned Pepper Steak Stew	food			never spoils
+Canned	VFX.CannedPepperSteakStewOpen	Opened Canned Pepper Steak Stew	food	2	4	spoils
+Canned	VFX.CannedPorkGravy	Canned Pork Gravy	food			never spoils
+Canned	VFX.CannedPorkGravyOpen	Opened Canned Pork Gravy	food	3	6	spoils
+Canned	VFX.CannedPotatoLeekSoup	Canned Potato and Leek Soup	food			never spoils
+Canned	VFX.CannedPotatoLeekSoupOpen	Opened Canned Potato and Leek Soup	food	2	4	spoils
+Canned	VFX.CannedPumpkinPuree	Canned Pumpkin Puree	food			never spoils
+Canned	VFX.CannedPumpkinPureeOpen	Opened Canned Pumpkin Puree	food	2	4	spoils
+Canned	VFX.CannedPumpkinSoup	Canned Pumpkin Soup	food			never spoils
+Canned	VFX.CannedPumpkinSoupOpen	Opened Canned Pumpkin Soup	food	2	4	spoils
+Canned	VFX.CannedRaspberryPieFilling	Canned Raspberry Pie Filling	food			never spoils
+Canned	VFX.CannedRaspberryPieFillingOpen	Opened Canned Raspberry Pie Filling	food	2	4	spoils
+Canned	VFX.CannedRedBeansAndRice	Canned Red Beans and Rice	food			never spoils
+Canned	VFX.CannedRedBeansAndRiceOpen	Opened Canned Red Beans and Rice	food	2	4	spoils
+Canned	VFX.CannedSalmon	Canned Salmon	food			never spoils
+Canned	VFX.CannedSalmonOpen	Opened Canned Salmon	food	2	4	spoils
+Canned	VFX.CannedSausageGravy	Canned Sausage Gravy	food			never spoils
+Canned	VFX.CannedSausageGravyOpen	Opened Canned Sausage Gravy	food	3	6	spoils
+Canned	VFX.CannedSavoryMince	Canned Savory Mince	food			never spoils
+Canned	VFX.CannedSavoryMinceOpen	Opened Canned Savory Mince	food	2	4	spoils
+Canned	VFX.CannedSlicedMushroom	Canned Sliced Mushroom	food			never spoils
+Canned	VFX.CannedSlicedMushroomOpen	Opened Canned Sliced Mushroom	food	2	4	spoils
+Canned	VFX.CannedSloppyJoe	Canned Sloppy Joe	food			never spoils
+Canned	VFX.CannedSloppyJoeOpen	Opened Canned Sloppy Joe	food	2	4	spoils
+Canned	VFX.CannedSnails	Canned Snails	food			never spoils
+Canned	VFX.CannedSpaghetti	Canned Spaghetti	food			never spoils
+Canned	VFX.CannedSpaghettiAndMeatballs	Canned Spaghetti and Meatballs	food			never spoils
+Canned	VFX.CannedSpaghettiAndMeatballsOpen	Opened Canned Spaghetti and Meatballs	food	2	4	spoils
+Canned	VFX.CannedSpaghettiOpen	Opened Canned Spaghetti	food	2	4	spoils
+Canned	VFX.CannedSpinach	Canned Spinach	food			never spoils
+Canned	VFX.CannedSpinachOpen	Opened Canned Spinach	food	2	4	spoils
+Canned	VFX.CannedSpinachRavioli	Canned Spinach Ravioli	food			never spoils
+Canned	VFX.CannedSpinachRavioliOpen	Opened Canned Spinach Ravioli	food	2	4	spoils
+Canned	VFX.CannedSteakOnionStew	Canned Steak and Onion Stew	food			never spoils
+Canned	VFX.CannedSteakOnionStewOpen	Opened Canned Steak and Onion Stew	food	2	4	spoils
+Canned	VFX.CannedStrawberryPieFilling	Canned Strawberry Pie Filling	food			never spoils
+Canned	VFX.CannedStrawberryPieFillingOpen	Opened Canned Strawberry Pie Filling	food	2	4	spoils
+Canned	VFX.CannedThreeBeanMix	Canned Three Bean Mix	food			never spoils
+Canned	VFX.CannedThreeBeanMixOpen	Opened Canned Three Bean Mix	food	2	4	spoils
+Canned	VFX.CannedTomatoSoup	Canned Tomato Soup	food			never spoils
+Canned	VFX.CannedTomatoSoupOpen	Opened Canned Tomato Soup	food	2	4	spoils
+Canned	VFX.CannedTurkeyGravy	Canned Turkey Gravy	food			never spoils
+Canned	VFX.CannedTurkeyGravyOpen	Opened Canned Turkey Gravy	food	3	6	spoils
+Canned	VFX.CannedVegetableStew	Canned Vegetable Stew	food			never spoils
+Canned	VFX.CannedVegetableStewOpen	Opened Canned Vegetable Stew	food	2	4	spoils
+Canned	VFX.CannedVegetarianChili	Canned Vegetarian Chili	food			never spoils
+Canned	VFX.CannedVegetarianChiliOpen	Opened Canned Vegetarian Chili	food	2	4	spoils
+Canned	VFX.CannedWhiteBeans	Canned White Beans	food			never spoils
+Canned	VFX.CannedWhiteBeansOpen	Opened Canned White Beans	food	2	4	spoils
+Canned	VFX.CannedWorms	Canned Worms	food			never spoils
+Canned	VFX.JarApricots	Jar of Apricots	food	30	60	spoils
+Canned	VFX.JarApricotsOpen	Opened Jar of Apricots	food	2	4	spoils
+Canned	VFX.JarBeetroot	Jar of Beetroot	food	30	60	spoils
+Canned	VFX.JarBeetrootOpen	Opened Jar of Beetroot	food	2	4	spoils
+Canned	VFX.JarBlackOlives	Jar of Black Olives	food			never spoils
+Canned	VFX.JarBlackOlivesOpen	Opened Jar of Black Olives	food	5	7	spoils
+Canned	VFX.JarBrusselSprouts	Jar of Brussels Sprouts	food	30	60	spoils
+Canned	VFX.JarBrusselSproutsOpen	Opened Jar of Brussels Sprouts	food	2	4	spoils
+Canned	VFX.JarCherry	Jar of Cherries	food	30	60	spoils
+Canned	VFX.JarCherryOpen	Opened Jar of Cherries	food	2	4	spoils
+Canned	VFX.JarCorn	Jar of Corn	food	30	60	spoils
+Canned	VFX.JarCornOpen	Opened Jar of Corn	food	2	4	spoils
+Canned	VFX.JarCucumber	Jar of Cucumbers	food	30	60	spoils
+Canned	VFX.JarCucumberOpen	Opened Jar of Cucumbers	food	2	4	spoils
+Canned	VFX.JarGarlic	Jar of Garlic	food	30	60	spoils
+Canned	VFX.JarGarlicOpen	Opened Jar of Garlic	food	2	4	spoils
+Canned	VFX.JarGreenBeans	Jar of Green Beans	food	30	60	spoils
+Canned	VFX.JarGreenBeansOpen	Opened Jar of Green Beans	food	2	4	spoils
+Canned	VFX.JarGreenOlives	Jar of Green Olives	food			never spoils
+Canned	VFX.JarGreenOlivesOpen	Opened Jar of Green Olives	food	5	7	spoils
+Canned	VFX.JarGreenPeas	Jar of Green Peas	food	30	60	spoils
+Canned	VFX.JarGreenPeasOpen	Opened Jar of Green Peas	food	2	4	spoils
+Canned	VFX.JarOnion	Jar of Onions	food	30	60	spoils
+Canned	VFX.JarOnionOpen	Opened Jar of Onions	food	2	4	spoils
+Canned	VFX.JarPeach	Jar of Peaches	food	30	60	spoils
+Canned	VFX.JarPeachOpen	Opened Jar of Peaches	food	2	4	spoils
+Canned	VFX.JarPear	Jar of Pears	food	30	60	spoils
+Canned	VFX.JarPearOpen	Opened Jar of Pears	food	2	4	spoils
+Canned	VFX.JarPepperJalapeno	Jar of Jalapenos	food	30	60	spoils
+Canned	VFX.JarPepperJalapenoOpen	Opened Jar of Jalapenos	food	2	4	spoils
+Canned	VFX.JarPickleJuiceOpen	Opened Jar of Pickle Juice	food			never spoils
+Canned	VFX.JarPickledEggs	Jar of Pickled Eggs	food			never spoils
+Canned	VFX.JarPickledEggsOpen	Opened Jar of Pickled Eggs	food	5	7	spoils
+Canned	VFX.JarPickledPeppers	Jar of Pickled Peppers	food			never spoils
+Canned	VFX.JarPickledPeppersOpen	Opened Jar of Pickled Peppers	food	5	7	spoils
+Canned	VFX.JarPickles	Jar of Pickles	food			never spoils
+Canned	VFX.JarPlums	Jar of Plums	food	30	60	spoils
+Canned	VFX.JarPlumsOpen	Opened Jar of Plums	food	2	4	spoils
+Canned	VFX.JarPumpkin	Jar of Pumpkin	food	30	60	spoils
+Canned	VFX.JarPumpkinOpen	Opened Jar of Pumpkin	food	2	4	spoils
+Canned	VFX.JarSquash	Jar of Squash	food	30	60	spoils
+Canned	VFX.JarSquashOpen	Opened Jar of Squash	food	2	4	spoils
+Canned	VFX.JarSundriedTomatoes	Jar of Sundried Tomatoes	food			never spoils
+Canned	VFX.JarSundriedTomatoesOpen	Opened Jar of Sundried Tomatoes	food	5	7	spoils
+Canned	VFX.JarSweetPotato	Jar of Sweet Potato	food	30	60	spoils
+Canned	VFX.JarSweetPotatoOpen	Opened Jar of Sweet Potato	food	2	4	spoils
+Canned	VFX.JarZucchini	Jar of Zucchini	food	30	60	spoils
+Canned	VFX.JarZucchiniOpen	Opened Jar of Zucchini	food	2	4	spoils
+Cooking	VFX.FryingPanCollardGreens	Frying Pan of Collard Greens	food	2	4	spoils
+Cooking	VFX.FryingPanCollardGreensForged	Frying Pan of Collard Greens	food	2	4	spoils
+Cooking	VFX.FryingPanShreddedHashbrowns	Frying Pan of Shredded Hashbrowns	food	2	4	spoils
+Cooking	VFX.FryingPanShreddedHashbrownsForged	Frying Pan of Shredded Hashbrowns	food	2	4	spoils
+Cooking	VFX.MonkeyBread	Monkey Bread	food	2	4	spoils
+Cooking	VFX.PanMonkeyBread	Baking Pan of Monkey Bread	food	2	4	spoils
+Cooking	VFX.PanSpoonBread	Baking Pan of Spoon Bread	food	2	4	spoils
+Cooking	VFX.TomatoPastePot	Pot of Tomato Paste	food			never spoils
+Cooking	VFX.TomatoPastePotForged	Pot of Tomato Paste	food			never spoils
+Cooking	VFX.TomatoPulpPot	Pot of Tomato Pulp	food	2	4	spoils
+Cooking	VFX.TomatoPulpPotForged	Pot of Tomato Pulp	food	2	4	spoils
+Cooking	VFX.TrayBroccoliCheeseCasserole	Roasting Pan of Broccoli Cheese Casserole	food	2	4	spoils
+Cooking	VFX.TrayCandiedYams	Roasting Pan of Candied Yams	food	2	4	spoils
+Cooking	VFX.TrayCheesyPotatoCasserole	Roasting Pan of Cheesy Potato Casserole	food	2	4	spoils
+Cooking	VFX.TrayCornbreadDressing	Roasting Pan of Cornbread Dressing	food	2	4	spoils
+Cooking	VFX.TrayCountryGreenBeans	Roasting Pan of Country Green Beans	food	2	4	spoils
+Cooking	VFX.TrayGlazedCarrots	Roasting Pan of Glazed Carrots	food	2	4	spoils
+Cooking	VFX.TrayGreenBeanCasserole	Roasting Pan of Green Bean Casserole	food	2	4	spoils
+Cooking	VFX.TrayMacAndCheeseCasserole	Roasting Pan of Macaroni and Cheese Casserole	food	2	4	spoils
+Cooking	VFX.TraySweetPotatoCasserole	Roasting Pan of Sweet Potato Casserole	food	2	4	spoils
+Dairy	VFX.BananaYogurt	Yogurt Cup - Banana	food	10	15	spoils
+Dairy	VFX.BananaYogurtPot	Yogurt Tub - Banana	food	10	15	spoils
+Dairy	VFX.BlueCheese	Blue Cheese	food	14	21	spoils
+Dairy	VFX.BlueCheeseCurdsPot	Pot of Blue Cheese Curds	food	1	2	spoils
+Dairy	VFX.BlueCheeseCurdsPotForged	Pot of Blue Cheese Curds	food	1	2	spoils
+Dairy	VFX.BlueCheeseHomemade	Blue Cheese - Homemade	food	56	70	spoils
+Dairy	VFX.BlueberryYogurt	Yogurt Cup - Blueberry	food	10	15	spoils
+Dairy	VFX.BlueberryYogurtPot	Yogurt Tub - Blueberry	food	10	15	spoils
+Dairy	VFX.BrieCheese	Brie Cheese	food	5	8	spoils
+Dairy	VFX.BrieCheeseHomemade	Brie Cheese - Homemade (Aging)	food	19	24	spoils
+Dairy	VFX.CamembertCheese	Camembert Cheese	food	5	8	spoils
+Dairy	VFX.CamembertCheeseHomemade	Camembert Cheese - Homemade (Aging)	food	15	22	spoils
+Dairy	VFX.CheddarCheeseCurdsPot	Pot of Cheddar Cheese Curds	food	1	2	spoils
+Dairy	VFX.CheddarCheeseCurdsPotForged	Pot of Cheddar Cheese Curds	food	1	2	spoils
+Dairy	VFX.CheddarCheeseHomemade	Cheddar Cheese - Homemade	food	336	420	spoils
+Dairy	VFX.CheddarWhey	Cheddar Whey	food	5	10	spoils
+Dairy	VFX.CottageCheese	Cottage Cheese	food	7	14	spoils
+Dairy	VFX.CottageCheeseCurdPot	Pot of Cottage Cheese Curds	food	2	4	spoils
+Dairy	VFX.CottageCheeseCurdPotForged	Pot of Cottage Cheese Curds	food	2	4	spoils
+Dairy	VFX.CottageCheeseHomemade	Cottage Cheese - Homemade	food	7	14	spoils
+Dairy	VFX.CottageCheesePreparationPot	Cottage Cheese Preparation	food	2	4	spoils
+Dairy	VFX.CottageCheesePreparationPotForged	Cottage Cheese Preparation	food	2	4	spoils
+Dairy	VFX.CreamCheese	Cream Cheese	food	14	20	spoils
+Dairy	VFX.CreamCheeseHomemade	Cream Cheese - Homemade	food	14	20	spoils
+Dairy	VFX.CulturedButtermilk	Buttermilk - Homemade	food	4	7	spoils
+Dairy	VFX.EvaporatedMilkHomemade	Evaporated Milk - Homemade	food	4	7	spoils
+Dairy	VFX.EvaporatedMilkPot	Pot of Evaporated Milk	food	4	7	spoils
+Dairy	VFX.EvaporatedMilkPotForged	Pot of Evaporated Milk	food	4	7	spoils
+Dairy	VFX.EvaporatedMilkPreparationPot	Evaporated Milk Preparation	food	2	4	spoils
+Dairy	VFX.EvaporatedMilkPreparationPotForged	Evaporated Milk Preparation	food	2	4	spoils
+Dairy	VFX.FetaCheese	Feta Cheese	food	14	28	spoils
+Dairy	VFX.FetaCheeseCurdsPot	Pot of Feta Cheese Curds	food	1	2	spoils
+Dairy	VFX.FetaCheeseCurdsPotForged	Pot of Feta Cheese Curds	food	1	2	spoils
+Dairy	VFX.FetaCheeseHomemade	Feta Cheese - Homemade (Aging)	food	56	70	spoils
+Dairy	VFX.FetaWhey	Feta Whey	food	5	10	spoils
+Dairy	VFX.FrenchCheeseCurdsPot	Pot of French Cheese Curds	food	1	2	spoils
+Dairy	VFX.FrenchCheeseCurdsPotForged	Pot of French Cheese Curds	food	1	2	spoils
+Dairy	VFX.GoatCheese	Goat Cheese	food	14	28	spoils
+Dairy	VFX.GreekYogurtHomemade	Jar of Greek Yogurt - Homemade	food	10	15	spoils
+Dairy	VFX.GreekYogurtPot	Yogurt Tub - Greek	food	10	15	spoils
+Dairy	VFX.HeavyCream	Heavy Cream	food	7	14	spoils
+Dairy	VFX.HeavyCreamHomemade	Heavy Cream - Homemade	food	7	14	spoils
+Dairy	VFX.IcecreamHomemade	Ice Cream - Homemade	food	1	1	spoils
+Dairy	VFX.IcecreamHomemadeMelted	Ice Cream - Homemade (Melted)	food	2	2	spoils
+Dairy	VFX.MixedBerryYogurt	Yogurt Cup - Mixed Berry	food	10	15	spoils
+Dairy	VFX.MixedBerryYogurtPot	Yogurt Tub - Mixed Berry	food	10	15	spoils
+Dairy	VFX.MozzarellaCheese	Mozzarella Cheese	food	3	6	spoils
+Dairy	VFX.MozzarellaCheeseHomemade	Mozzarella Cheese - Homemade	food	3	6	spoils
+Dairy	VFX.MozzarellaCurdsPot	Pot of Mozzarella Curds	food	1	2	spoils
+Dairy	VFX.MozzarellaCurdsPotForged	Pot of Mozzarella Curds	food	1	2	spoils
+Dairy	VFX.MozzarellaWhey	Mozzarella Whey	food	5	10	spoils
+Dairy	VFX.NaturalYogurtPot	Yogurt Tub - Natural	food	10	15	spoils
+Dairy	VFX.ParmesanCheese	Parmesan Cheese	food	720	1440	spoils
+Dairy	VFX.ParmesanCheeseCurdsPot	Pot of Parmesan Cheese Curds	food	1	2	spoils
+Dairy	VFX.ParmesanCheeseCurdsPotForged	Pot of Parmesan Cheese Curds	food	1	2	spoils
+Dairy	VFX.ParmesanCheeseHomemade	Parmesan Cheese - Homemade	food	360	450	spoils
+Dairy	VFX.ParmesanWhey	Parmesan Whey	food	5	10	spoils
+Dairy	VFX.PeachYogurt	Yogurt Cup - Peach	food	10	15	spoils
+Dairy	VFX.PeachYogurtPot	Yogurt Tub - Peach	food	10	15	spoils
+Dairy	VFX.PotForgedNettleRennet	Pot of Nettle Rennet	food			never spoils
+Dairy	VFX.PotNettleRennet	Pot of Nettle Rennet	food			never spoils
+Dairy	VFX.RaspberryYogurt	Yogurt Cup - Raspberry	food	10	15	spoils
+Dairy	VFX.RaspberryYogurtPot	Yogurt Tub - Raspberry	food	10	15	spoils
+Dairy	VFX.SourCreamHomemade	Sour Cream - Homemade	food	3	5	spoils
+Dairy	VFX.StrawberryYogurt	Yogurt Cup - Strawberry	food	10	15	spoils
+Dairy	VFX.StrawberryYogurtPot	Yogurt Tub - Strawberry	food	10	15	spoils
+Dairy	VFX.SwissCheese	Swiss Cheese	food	30	45	spoils
+Dairy	VFX.SwissCheeseCurdsPot	Pot of Swiss Cheese Curds	food	1	2	spoils
+Dairy	VFX.SwissCheeseCurdsPotForged	Pot of Swiss Cheese Curds	food	1	2	spoils
+Dairy	VFX.SwissCheeseHomemade	Swiss Cheese - Homemade	food	120	150	spoils
+Dairy	VFX.SwissWhey	Swiss Whey	food	5	10	spoils
+Dairy	VFX.VanillaYogurtPot	Yogurt Tub - Vanilla	food	10	15	spoils
+Dairy	VFX.WheelBlueCheeseHomemade	Blue Cheese Wheel - Homemade (Aging)	food	56	70	spoils
+Dairy	VFX.WheelCheddarCheeseHomemade	Cheddar Cheese Wheel - Homemade (Aging)	food	336	420	spoils
+Dairy	VFX.WheelParmesanCheeseHomemade	Parmesan Cheese Wheel - Homemade (Aging)	food	360	450	spoils
+Dairy	VFX.WheelSwissCheeseHomemade	Swiss Cheese Wheel - Homemade (Aging)	food	120	150	spoils
+Dairy	VFX.WhippedCream	Whipped Cream	food	7	14	spoils
+Dairy	VFX.WhippedCreamHomemade	Homemade Whipped Cream	food	2	4	spoils
+Dairy	VFX.YogurtHomemade	Jar of Yogurt - Homemade	food	10	15	spoils
+Dairy	VFX.YogurtPreparationPan	Yogurt Preparation	food	2	4	spoils
+Dairy	VFX.YogurtPreparationPanCopper	Yogurt Preparation	food	2	4	spoils
+Eggs	VFX.DeviledEgg	Deviled Egg	food	2	4	spoils
+Eggs	VFX.EggFried	Egg (Fried)	food	3	6	spoils
+Eggs	VFX.FryingPanFriedEgg	Frying Pan of Fried Egg	food	3	6	spoils
+Eggs	VFX.FryingPanFriedEggForged	Frying Pan of Fried Egg	food	3	6	spoils
+Eggs	VFX.FryingPanScrambledEggs	Frying Pan of Scrambled Eggs	food	3	6	spoils
+Eggs	VFX.FryingPanScrambledEggsForged	Frying Pan of Scrambled Eggs	food	3	6	spoils
+Eggs	VFX.PlateScrambledEggs	Plate of Scrambled Eggs	food	3	6	spoils
+Evolved	VFX.EvolvedPotChowderClear	Pot of Clear Chowder	food	3	6	spoils
+Evolved	VFX.EvolvedPotChowderCream	Pot of Cream Chowder	food	3	6	spoils
+Evolved	VFX.EvolvedPotChowderTomato	Pot of Tomato Chowder	food	3	6	spoils
+Evolved	VFX.EvolvedPotFishStock	Fish Stock	food	3	6	spoils
+Evolved	VFX.EvolvedPotForgedChowderClear	Pot of Clear Chowder	food	3	6	spoils
+Evolved	VFX.EvolvedPotForgedChowderCream	Pot of Cream Chowder	food	3	6	spoils
+Evolved	VFX.EvolvedPotForgedChowderTomato	Pot of Tomato Chowder	food	3	6	spoils
+Evolved	VFX.EvolvedPotForgedFishStock	Fish Stock	food	3	6	spoils
+Evolved	VFX.EvolvedRoastingPanCobbler	Cobbler	food	3	5	spoils
+Evolved	VFX.EvolvedSaucepanCopperGrits	Copper Saucepan of Grits	food	1	2	spoils
+Evolved	VFX.EvolvedSaucepanGrits	Saucepan of Grits	food	1	2	spoils
+Evolved recipe bases	Base.VFXAdmiralChompBowlEvolved	Bowl of Admiral Chomp	food	4	7	spoils
+Evolved recipe bases	Base.VFXArborioRicePotEvolved	Arborio Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXArborioRicePotForgedEvolved	Arborio Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXArborioRiceSaucepanCopperEvolved	Arborio Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXArborioRiceSaucepanEvolved	Arborio Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXBakedPotato	Baked Potato	food	2	4	spoils
+Evolved recipe bases	Base.VFXBakedPotatoEvolved	Baked Potato	food	3	6	spoils
+Evolved recipe bases	Base.VFXBakedPotatoPreparation	Baked Potato	food	3	6	spoils
+Evolved recipe bases	Base.VFXBarleyBreadSandwich	Barley Bread Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXBarleyBreadToast	Barley Bread Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXBarleySourdoughSandwich	Barley Sourdough Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXBarleySourdoughToast	Barley Sourdough Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXBasmatiRicePotEvolved	Basmati Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXBasmatiRicePotForgedEvolved	Basmati Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXBasmatiRiceSaucepanCopperEvolved	Basmati Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXBasmatiRiceSaucepanEvolved	Basmati Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXBeerBreadSandwich	Beer Bread Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXBeerBreadToast	Beer Bread Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXBoneBrothPot	Bone Broth	food	3	6	spoils
+Evolved recipe bases	Base.VFXBoneBrothPotForged	Bone Broth	food	3	6	spoils
+Evolved recipe bases	Base.VFXBowlBeefRamenEvolved	Bowl of Beef Ramen	food	2	4	spoils
+Evolved recipe bases	Base.VFXBowlChickenRamenEvolved	Bowl of Chicken Ramen	food	2	4	spoils
+Evolved recipe bases	Base.VFXBowlChili	Bowl of Chili	food	3	6	spoils
+Evolved recipe bases	Base.VFXBowlCurry	Bowl of Curry	food	3	6	spoils
+Evolved recipe bases	Base.VFXBowlFriedRice	Bowl of Fried Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXBowlHotAndSpicyRamenEvolved	Bowl of Hot and Spicy Ramen	food	2	4	spoils
+Evolved recipe bases	Base.VFXBowlPorkRamenEvolved	Bowl of Pork Ramen	food	2	4	spoils
+Evolved recipe bases	Base.VFXBowlShrimpRamenEvolved	Bowl of Shrimp Ramen	food	2	4	spoils
+Evolved recipe bases	Base.VFXBowlSoySauceRamenEvolved	Bowl of Soy Sauce Ramen	food	2	4	spoils
+Evolved recipe bases	Base.VFXBriocheSandwich	Brioche Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXBriocheToast	Brioche Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXBrownRicePotEvolved	Brown Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXBrownRicePotForgedEvolved	Brown Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXBrownRiceSaucepanCopperEvolved	Brown Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXBrownRiceSaucepanEvolved	Brown Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXCasseroleEvolved	Casserole	food	3	5	spoils
+Evolved recipe bases	Base.VFXCheesecakeEvolved	Cheesecake	food	4	9	spoils
+Evolved recipe bases	Base.VFXCheesecakePreparation	Cheesecake	food	4	9	spoils
+Evolved recipe bases	Base.VFXCheesecakeSlice	Cheesecake Slice	food	3	5	spoils
+Evolved recipe bases	Base.VFXChiliPotEvolved	Chili	food	3	6	spoils
+Evolved recipe bases	Base.VFXChiliPotForgedEvolved	Chili	food	3	6	spoils
+Evolved recipe bases	Base.VFXCocoaPuffsBowlEvolved	Bowl of Cocoa Puffs	food	4	7	spoils
+Evolved recipe bases	Base.VFXCornFlakesBowlEvolved	Bowl of Corn Flakes	food	4	7	spoils
+Evolved recipe bases	Base.VFXCurryPotEvolved	Curry	food	3	6	spoils
+Evolved recipe bases	Base.VFXCurryPotForgedEvolved	Curry	food	3	6	spoils
+Evolved recipe bases	Base.VFXEnchiladaEvolved	Enchilada	food	3	6	spoils
+Evolved recipe bases	Base.VFXEnchiladaPreparation	Enchilada	food	3	6	spoils
+Evolved recipe bases	Base.VFXFettuccinePotEvolved	Fettuccine	food	3	6	spoils
+Evolved recipe bases	Base.VFXFettuccinePotForgedEvolved	Fettuccine	food	3	6	spoils
+Evolved recipe bases	Base.VFXFettuccineSaucepanCopperEvolved	Fettuccine	food	4	7	spoils
+Evolved recipe bases	Base.VFXFettuccineSaucepanEvolved	Fettuccine	food	4	7	spoils
+Evolved recipe bases	Base.VFXFocacciaBreadSandwich	Focaccia Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXFocacciaBreadToast	Focaccia Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXFriedRiceEvolved	Fried Rice	food	3	5	spoils
+Evolved recipe bases	Base.VFXFriedRiceEvolvedForged	Fried Rice	food	3	5	spoils
+Evolved recipe bases	Base.VFXFriedRicePreparation	Fried Rice	food	3	5	spoils
+Evolved recipe bases	Base.VFXFriedRicePreparationForged	Fried Rice	food	3	5	spoils
+Evolved recipe bases	Base.VFXFrostyCrunchBowlEvolved	Bowl of Frosty Crunch	food	4	7	spoils
+Evolved recipe bases	Base.VFXFruityLoopsBowlEvolved	Bowl of Fruity Loops	food	4	7	spoils
+Evolved recipe bases	Base.VFXGnocchiPotEvolved	Gnocchi	food	3	6	spoils
+Evolved recipe bases	Base.VFXGnocchiPotForgedEvolved	Gnocchi	food	3	6	spoils
+Evolved recipe bases	Base.VFXGnocchiSaucepanCopperEvolved	Gnocchi	food	4	7	spoils
+Evolved recipe bases	Base.VFXGnocchiSaucepanEvolved	Gnocchi	food	4	7	spoils
+Evolved recipe bases	Base.VFXHomemadeJam	Jam - Homemade	food			never spoils
+Evolved recipe bases	Base.VFXHomemadeSauceCream	Cream Sauce Base	food	3	6	spoils
+Evolved recipe bases	Base.VFXHomemadeSauceOil	Oil Sauce Base	food	28	56	spoils
+Evolved recipe bases	Base.VFXHomemadeSauceStock	Stock Sauce Base	food	7	14	spoils
+Evolved recipe bases	Base.VFXHomemadeSauceTomato	Tomato Sauce Base	food	7	14	spoils
+Evolved recipe bases	Base.VFXHomemadeSauceVinegar	Vinegar Sauce Base	food	28	56	spoils
+Evolved recipe bases	Base.VFXHoneyOatyOsBowlEvolved	Bowl of Honey Oaty O’s	food	4	7	spoils
+Evolved recipe bases	Base.VFXJasmineRicePotEvolved	Jasmine Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXJasmineRicePotForgedEvolved	Jasmine Rice	food	3	6	spoils
+Evolved recipe bases	Base.VFXJasmineRiceSaucepanCopperEvolved	Jasmine Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXJasmineRiceSaucepanEvolved	Jasmine Rice	food	4	7	spoils
+Evolved recipe bases	Base.VFXLasagnaEvolved	Lasagna	food	3	6	spoils
+Evolved recipe bases	Base.VFXMacaroniPotEvolved	Macaroni	food	3	6	spoils
+Evolved recipe bases	Base.VFXMacaroniPotForgedEvolved	Macaroni	food	3	6	spoils
+Evolved recipe bases	Base.VFXMacaroniSaucepanCopperEvolved	Macaroni	food	4	7	spoils
+Evolved recipe bases	Base.VFXMacaroniSaucepanEvolved	Macaroni	food	4	7	spoils
+Evolved recipe bases	Base.VFXMeatloafEvolved	Meatloaf	food	3	6	spoils
+Evolved recipe bases	Base.VFXMeatloafPreparation	Meatloaf	food	3	6	spoils
+Evolved recipe bases	Base.VFXMilkBreadSandwich	Milk Bread Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXMilkBreadToast	Milk Bread Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXMilkshakeEvolved	Milkshake	food	2	3	spoils
+Evolved recipe bases	Base.VFXMilkshakePreparation	Milkshake	food	2	3	spoils
+Evolved recipe bases	Base.VFXNachosEvolved	Nachos	food	3	6	spoils
+Evolved recipe bases	Base.VFXNachosPreparation	Nachos	food	3	6	spoils
+Evolved recipe bases	Base.VFXOatyOsBowlEvolved	Bowl of Oaty O’s	food	4	7	spoils
+Evolved recipe bases	Base.VFXPennePotEvolved	Penne	food	3	6	spoils
+Evolved recipe bases	Base.VFXPennePotForgedEvolved	Penne	food	3	6	spoils
+Evolved recipe bases	Base.VFXPenneSaucepanCopperEvolved	Penne	food	4	7	spoils
+Evolved recipe bases	Base.VFXPenneSaucepanEvolved	Penne	food	4	7	spoils
+Evolved recipe bases	Base.VFXPlateCasserole	Plate of Casserole	food	2	4	spoils
+Evolved recipe bases	Base.VFXPlateEnchilada	Plate of Enchilada	food	2	5	spoils
+Evolved recipe bases	Base.VFXPlateLasagna	Plate of Lasagna	food	2	5	spoils
+Evolved recipe bases	Base.VFXPlateMeatloaf	Plate of Meatloaf	food	2	5	spoils
+Evolved recipe bases	Base.VFXPlateNachos	Plate of Nachos	food	2	5	spoils
+Evolved recipe bases	Base.VFXPlateQuiche	Plate of Quiche	food	2	5	spoils
+Evolved recipe bases	Base.VFXPlateScallopedPotatoBake	Plate of Scalloped Potato Bake	food	2	5	spoils
+Evolved recipe bases	Base.VFXPumpernickelSandwich	Pumpernickel Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXPumpernickelToast	Pumpernickel Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXQuesadillaEvolved	Quesadilla	food	3	6	spoils
+Evolved recipe bases	Base.VFXQuicheEvolved	Quiche	food	3	6	spoils
+Evolved recipe bases	Base.VFXQuichePreparation	Quiche	food	3	6	spoils
+Evolved recipe bases	Base.VFXRiceKrispsBowlEvolved	Bowl of Rice Krisps	food	4	7	spoils
+Evolved recipe bases	Base.VFXRyeBreadSandwich	Rye Bread Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXRyeBreadToast	Rye Bread Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXRyeSourdoughSandwich	Rye Sourdough Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXRyeSourdoughToast	Rye Sourdough Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXSausagedog	Sausage Hot Dog	food	3	6	spoils
+Evolved recipe bases	Base.VFXScallopedPotatoBakeEvolved	Scalloped Potato Bake	food	3	6	spoils
+Evolved recipe bases	Base.VFXScallopedPotatoBakePreparation	Scalloped Potato Bake	food	3	6	spoils
+Evolved recipe bases	Base.VFXSourdoughBurger	Sourdough Burger	food	3	5	spoils
+Evolved recipe bases	Base.VFXSourdoughHotdog	Sourdough Hot Dog	food	3	6	spoils
+Evolved recipe bases	Base.VFXSourdoughSandwich	Sourdough Sandwich	food	3	6	spoils
+Evolved recipe bases	Base.VFXSourdoughSausagedog	Sourdough Sausage Hot Dog	food	3	6	spoils
+Evolved recipe bases	Base.VFXSourdoughToast	Sourdough Toast	food	3	6	spoils
+Evolved recipe bases	Base.VFXStockPot	Stock	food	3	6	spoils
+Evolved recipe bases	Base.VFXStockPotForged	Stock	food	3	6	spoils
+Evolved recipe bases	Base.VFXSushiEvolved	Sushi	food	2	4	spoils
+Evolved recipe bases	Base.VFXSushiPreparation	Sushi	food	2	4	spoils
+Evolved recipe bases	Base.VFXUnluckyCharmsBowlEvolved	Bowl of Unlucky Charms	food	4	7	spoils
+Evolved recipe bases	Base.VFXWheatiesBowlEvolved	Bowl of Wheaties	food	4	7	spoils
+Fermentation	VFX.BottleBeerEmpty	Empty Beer Bottle	drink (fluid)			never spoils (fluid)
+Fermentation	VFX.BottleHomemadeBeer	Bottle of Homemade Beer	drink (fluid)			never spoils (fluid)
+Fermentation	VFX.BottleHomemadeBeerFermenting	Bottle of Homemade Beer (Fermenting)	food			never spoils
+Fermentation	VFX.BottleHomemadeBeerUnsealed	Bottle of Homemade Beer (Unsealed)	food	7	30	spoils
+Fermentation	VFX.BottleHomemadeWine	Bottle of Homemade Wine	drink (fluid)			never spoils (fluid)
+Fermentation	VFX.BottleWineEmpty	Empty Bottle of Wine	drink (fluid)			never spoils (fluid)
+Fermentation	VFX.DeadSourdoughStarter	Dead Sourdough Starter	food			never spoils
+Fermentation	VFX.DeadYeastStarter	Dead Yeast Starter	food			never spoils
+Fermentation	VFX.HomemadeBeerPreparation	Jar of Beer Preparation	food	7	30	spoils
+Fermentation	VFX.HomemadeBeerPreparationFermenting	Jar of Beer Preparation (Fermenting)	food			never spoils
+Fermentation	VFX.HomemadeVinegar	Jar of Vinegar - Homemade	food	700	10000	spoils
+Fermentation	VFX.HomemadeVinegarFermentingAlcohol	Jar of Vinegar - Homemade (Fermenting)	food			never spoils
+Fermentation	VFX.HomemadeVinegarFermentingFruit	Jar of Vinegar - Homemade (Fermenting)	food			never spoils
+Fermentation	VFX.HomemadeVinegarFermentingVinegar	Jar of Vinegar - Homemade (Fermenting)	food			never spoils
+Fermentation	VFX.HomemadeWinePreparation	Jar of Wine Preparation	drink (fluid)			never spoils (fluid)
+Fermentation	VFX.HomemadeWinePreparationFermenting	Jar of Wine Preparation (Fermenting)	food			never spoils
+Fermentation	VFX.MashPot	Pot of Mash	food	1	2	spoils
+Fermentation	VFX.MashPotForged	Pot of Mash	food	1	2	spoils
+Fermentation	VFX.SourdoughStarter	Sourdough Starter (Fed)	food			never spoils
+Fermentation	VFX.SourdoughStarterUnfed	Sourdough Starter (Unfed)	food			never spoils
+Fermentation	VFX.WortPot	Pot of Wort	food	1	2	spoils
+Fermentation	VFX.WortPotForged	Pot of Wort	food	1	2	spoils
+Fermentation	VFX.YeastStarter	Yeast Starter (Fed)	food			never spoils
+Fermentation	VFX.YeastStarterFermenting	Yeast Starter (Fermenting)	food			never spoils
+Fermentation	VFX.YeastStarterUnfed	Yeast Starter (Unfed)	food			never spoils
+Fridge and freezer	VFX.BECBreakfastSandwich	Bacon, Egg and Cheese Breakfast Sandwich	food	4	7	spoils
+Fridge and freezer	VFX.BECBreakfastSandwich_Box	Box of Breakfast Sandwiches - Bacon Egg and Cheese	food	4	7	spoils
+Fridge and freezer	VFX.BaconCheddarDip	Dip - Bacon & Cheddar	food	60	75	spoils
+Fridge and freezer	VFX.BagChickenTenders	Bag of Chicken Tenders	food	3	5	spoils
+Fridge and freezer	VFX.BagHashbrowns	Bag of Hashbrowns	food	3	5	spoils
+Fridge and freezer	VFX.BagMozzarellaSticks	Bag of Mozzarella Sticks	food	3	5	spoils
+Fridge and freezer	VFX.BagOnionRings	Bag of Onion Rings	food	3	5	spoils
+Fridge and freezer	VFX.BagShreddedHashbrowns	Bag of Shredded Hashbrowns	food	3	5	spoils
+Fridge and freezer	VFX.BagWedges	Bag of Wedges	food	3	5	spoils
+Fridge and freezer	VFX.BagWingsBBQ	Bag of Wings - BBQ	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsBuffalo	Bag of Wings - Buffalo	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsCaribbeanJerk	Bag of Wings - Caribbean Jerk	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsCrispy	Bag of Wings - Crispy	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsGarlicParmesan	Bag of Wings - Garlic Parmesan	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsHoneyBBQ	Bag of Wings - Honey BBQ	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsHot	Bag of Wings - Hot	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsNatural	Bag of Wings - Natural	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsRanch	Bag of Wings - Ranch	food	4	6	spoils
+Fridge and freezer	VFX.BagWingsSpicyCajun	Bag of Wings - Spicy Cajun	food	4	6	spoils
+Fridge and freezer	VFX.BananaPopsicle	Popsicle - Banana	food	1	1	spoils
+Fridge and freezer	VFX.BananaPopsicleMelted	Popsicle - Banana (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.BerryMedley	Packaged Berry Medley	food	5	10	spoils
+Fridge and freezer	VFX.Blackberries	Packaged Blackberries	food	5	10	spoils
+Fridge and freezer	VFX.Blueberries	Packaged Blueberries	food	5	10	spoils
+Fridge and freezer	VFX.BowlChickenMushroomRavioli	Bowl of Chicken and Mushroom Ravioli	food	2	4	spoils
+Fridge and freezer	VFX.BowlFourCheeseTortellini	Bowl of Four Cheese Tortellini	food	2	4	spoils
+Fridge and freezer	VFX.BowlGroundBeefRavioli	Bowl of Ground Beef Ravioli	food	2	4	spoils
+Fridge and freezer	VFX.BowlGroundBeefTortellini	Bowl of Ground Beef Tortellini	food	2	4	spoils
+Fridge and freezer	VFX.BowlLobsterRavioli	Bowl of Lobster Ravioli	food	2	4	spoils
+Fridge and freezer	VFX.BowlPepperedPorkTortellini	Bowl of Peppered Pork Tortellini	food	2	4	spoils
+Fridge and freezer	VFX.BowlPumpkinRavioli	Bowl of Pumpkin Ravioli	food	2	4	spoils
+Fridge and freezer	VFX.BowlSpinachRicottaRavioli	Bowl of Spinach and Ricotta Ravioli	food	2	4	spoils
+Fridge and freezer	VFX.BowlSpinachRicottaTortellini	Bowl of Spinach and Ricotta Tortellini	food	2	4	spoils
+Fridge and freezer	VFX.BowlThreeCheeseRavioli	Bowl of Three Cheese Ravioli	food	2	4	spoils
+Fridge and freezer	VFX.BuffaloChickenPizzaSlice	Slice of Buffalo Chicken Pizza	food	3	5	spoils
+Fridge and freezer	VFX.BuffaloDip	Dip - Buffalo	food	60	75	spoils
+Fridge and freezer	VFX.ButterPecanIceCream	Ice Cream - Butter Pecan	food	1	1	spoils
+Fridge and freezer	VFX.ButterPecanIceCreamCone	Butter Pecan Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.ButterPecanIceCreamConeMelted	Butter Pecan Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.ButterPecanIceCreamMelted	Ice Cream - Butter Pecan (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.CHUncrustable	Chocolate Hazelnut Crustless	food	5	8	spoils
+Fridge and freezer	VFX.CHUncrustable_Box	Box of Crustless - Chocolate Hazelnut	food	5	8	spoils
+Fridge and freezer	VFX.CSUncrustable	Cinnamon Sugar Crustless	food	5	8	spoils
+Fridge and freezer	VFX.CSUncrustable_Box	Box of Crustless - Cinnamon Sugar	food	5	8	spoils
+Fridge and freezer	VFX.CheesePizzaRoll	Cheese Pizza Roll	food	4	7	spoils
+Fridge and freezer	VFX.CheesePizzaRoll_Box	Bag of Pizza Rolls - Cheese	food	4	7	spoils
+Fridge and freezer	VFX.CheesePizzaSlice	Slice of Cheese Pizza	food	3	5	spoils
+Fridge and freezer	VFX.CherryPopsicle	Popsicle - Cherry	food	1	1	spoils
+Fridge and freezer	VFX.CherryPopsicleMelted	Popsicle - Cherry (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.ChickenMushroomRavioli	Ravioli - Chicken and Mushroom	food	3	5	spoils
+Fridge and freezer	VFX.ChickenPotPieFrozenMeal	TV Dinner - Chicken Pot Pie	food	3	5	spoils
+Fridge and freezer	VFX.ChocolateChipIceCream	Ice Cream - Chocolate Chip	food	1	1	spoils
+Fridge and freezer	VFX.ChocolateChipIceCreamCone	Chocolate Chip Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.ChocolateChipIceCreamConeMelted	Chocolate Chip Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.ChocolateChipIceCreamMelted	Ice Cream - Chocolate Chip (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.ChocolateIceCream	Ice Cream - Chocolate	food	1	1	spoils
+Fridge and freezer	VFX.ChocolateIceCreamCone	Chocolate Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.ChocolateIceCreamConeMelted	Chocolate Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.ChocolateIceCreamMelted	Ice Cream - Chocolate (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.CobblerApple	Apple Cobbler	food	4	9	spoils
+Fridge and freezer	VFX.CobblerBlackberry	Blackberry Cobbler	food	4	9	spoils
+Fridge and freezer	VFX.CobblerCherry	Cherry Cobbler	food	4	9	spoils
+Fridge and freezer	VFX.CobblerMixedFruit	Mixed Fruit Cobbler	food	4	9	spoils
+Fridge and freezer	VFX.CobblerPeach	Peach Cobbler	food	4	9	spoils
+Fridge and freezer	VFX.CookiesAndCreamIceCream	Ice Cream - Cookies and Cream	food	1	1	spoils
+Fridge and freezer	VFX.CookiesAndCreamIceCreamCone	Cookies and Cream Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.CookiesAndCreamIceCreamConeMelted	Cookies and Cream Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.CookiesAndCreamIceCreamMelted	Ice Cream - Cookies and Cream (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.CopperSaucepanChickenMushroomRavioli	Copper Saucepan of Chicken and Mushroom Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanFourCheeseTortellini	Copper Saucepan of Four Cheese Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanGroundBeefRavioli	Copper Saucepan of Ground Beef Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanGroundBeefTortellini	Copper Saucepan of Ground Beef Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanLobsterRavioli	Copper Saucepan of Lobster Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanPepperedPorkTortellini	Copper Saucepan of Peppered Pork Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanPumpkinRavioli	Copper Saucepan of Pumpkin Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanSpinachRicottaRavioli	Copper Saucepan of Spinach and Ricotta Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanSpinachRicottaTortellini	Copper Saucepan of Spinach and Ricotta Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.CopperSaucepanThreeCheeseRavioli	Copper Saucepan of Three Cheese Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.CottagePieFrozenMeal	TV Dinner - Cottage Pie	food	3	5	spoils
+Fridge and freezer	VFX.DarkSweetCherries	Packaged Dark Sweet Cherries	food	5	10	spoils
+Fridge and freezer	VFX.ECBreakfastSandwich	Egg and Cheese Breakfast Sandwich	food	4	7	spoils
+Fridge and freezer	VFX.ECBreakfastSandwich_Box	Box of Breakfast Sandwiches - Egg and Cheese	food	4	7	spoils
+Fridge and freezer	VFX.FourCheeseTortellini	Tortellini - Four Cheese	food	3	5	spoils
+Fridge and freezer	VFX.FrenchOnionDip	Dip - French Onion	food	60	75	spoils
+Fridge and freezer	VFX.FrozenBeanBurrito	Bean Burrito	food	3	5	spoils
+Fridge and freezer	VFX.FrozenBeefBurrito	Beef Burrito	food	3	5	spoils
+Fridge and freezer	VFX.FrozenBuffaloChickenPizza	Buffalo Chicken Pizza	food	3	5	spoils
+Fridge and freezer	VFX.FrozenCheesePizza	Cheese Pizza	food	3	5	spoils
+Fridge and freezer	VFX.FrozenChickenBurrito	Chicken Burrito	food	3	5	spoils
+Fridge and freezer	VFX.FrozenChickenTenders	Chicken Tenders	food	3	5	spoils
+Fridge and freezer	VFX.FrozenEggRoll	Egg Roll	food	3	5	spoils
+Fridge and freezer	VFX.FrozenMeatPie	Meat Pie	food	3	5	spoils
+Fridge and freezer	VFX.FrozenMozzarellaSticks	Mozzarella Sticks	food	3	5	spoils
+Fridge and freezer	VFX.FrozenPepperoniPizza	Pepperoni Pizza	food	3	5	spoils
+Fridge and freezer	VFX.FrozenSausageRoll	Sausage Roll	food	3	5	spoils
+Fridge and freezer	VFX.FrozenSupremePizza	Supreme Pizza	food	3	5	spoils
+Fridge and freezer	VFX.FrozenThreeMeatPizza	Three Meat Pizza	food	3	5	spoils
+Fridge and freezer	VFX.GrapePopsicle	Popsicle - Grape	food	1	1	spoils
+Fridge and freezer	VFX.GrapePopsicleMelted	Popsicle - Grape (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.GroundBeefRavioli	Ravioli - Ground Beef	food	3	5	spoils
+Fridge and freezer	VFX.GroundBeefTortellini	Tortellini - Ground Beef	food	3	5	spoils
+Fridge and freezer	VFX.Hashbrowns	Hashbrowns	food	3	5	spoils
+Fridge and freezer	VFX.HomemadeIceCreamCone	Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.HomemadeIceCreamConeMelted	Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.Hummus	Hummus	food	60	75	spoils
+Fridge and freezer	VFX.LimePopsicle	Popsicle - Lime	food	1	1	spoils
+Fridge and freezer	VFX.LimePopsicleMelted	Popsicle - Lime (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.LobsterRavioli	Ravioli - Lobster	food	3	5	spoils
+Fridge and freezer	VFX.MacNCheeseFrozenMeal	TV Dinner - Macaroni and Cheese	food	3	5	spoils
+Fridge and freezer	VFX.MangoChunks	Packaged Mango Chunks	food	5	10	spoils
+Fridge and freezer	VFX.MeatLoversPizzaRoll	Meat Lovers Pizza Roll	food	4	7	spoils
+Fridge and freezer	VFX.MeatLoversPizzaRoll_Box	Bag of Pizza Rolls - Meat Lovers	food	4	7	spoils
+Fridge and freezer	VFX.MeatloafFrozenMeal	TV Dinner - Meatloaf	food	3	5	spoils
+Fridge and freezer	VFX.MintChocolateChipIceCream	Ice Cream - Mint Chocolate Chip	food	1	1	spoils
+Fridge and freezer	VFX.MintChocolateChipIceCreamCone	Mint Chocolate Chip Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.MintChocolateChipIceCreamConeMelted	Mint Chocolate Chip Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.MintChocolateChipIceCreamMelted	Ice Cream - Mint Chocolate Chip (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.MixedFruit	Packaged Mixed Fruit	food	5	10	spoils
+Fridge and freezer	VFX.NeapolitanIceCream	Ice Cream - Neapolitan	food	1	1	spoils
+Fridge and freezer	VFX.NeapolitanIceCreamCone	Neapolitan Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.NeapolitanIceCreamConeMelted	Neapolitan Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.NeapolitanIceCreamMelted	Ice Cream - Neapolitan (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.OrangePopsicle	Popsicle - Orange	food	1	1	spoils
+Fridge and freezer	VFX.OrangePopsicleMelted	Popsicle - Orange (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.PBFUncrustable	Peanut Butter and Marshmallow Crustless	food	5	8	spoils
+Fridge and freezer	VFX.PBFUncrustable_Box	Box of Crustless - Peanut Butter and Marshmallow	food	5	8	spoils
+Fridge and freezer	VFX.PBJUncrustable	Peanut Butter and Grape Crustless	food	5	8	spoils
+Fridge and freezer	VFX.PBJUncrustable_Box	Box of Crustless - Peanut Butter and Grape	food	5	8	spoils
+Fridge and freezer	VFX.PackagedBeans	Packaged Beans	food	3	5	spoils
+Fridge and freezer	VFX.PackagedBroccoli	Packaged Broccoli	food	3	5	spoils
+Fridge and freezer	VFX.PackagedCarrot	Packaged Carrot	food	3	5	spoils
+Fridge and freezer	VFX.PackagedCauliflower	Packaged Cauliflower	food	3	5	spoils
+Fridge and freezer	VFX.PackagedPumpkin	Packaged Pumpkin	food	3	5	spoils
+Fridge and freezer	VFX.PepperedPorkTortellini	Tortellini - Peppered Pork	food	3	5	spoils
+Fridge and freezer	VFX.PepperoniPizzaRoll	Pepperoni Pizza Roll	food	4	7	spoils
+Fridge and freezer	VFX.PepperoniPizzaRoll_Box	Bag of Pizza Rolls - Pepperoni	food	4	7	spoils
+Fridge and freezer	VFX.PepperoniPizzaSlice	Slice of Pepperoni Pizza	food	3	5	spoils
+Fridge and freezer	VFX.PineappleChunks	Packaged Pineapple Chunks	food	5	10	spoils
+Fridge and freezer	VFX.PistachioIceCream	Ice Cream - Pistachio	food	1	1	spoils
+Fridge and freezer	VFX.PistachioIceCreamCone	Pistachio Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.PistachioIceCreamConeMelted	Pistachio Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.PistachioIceCreamMelted	Ice Cream - Pistachio (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.PotChickenMushroomRavioli	Pot of Chicken and Mushroom Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedChickenMushroomRavioli	Pot of Chicken and Mushroom Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedFourCheeseTortellini	Pot of Four Cheese Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedGroundBeefRavioli	Pot of Ground Beef Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedGroundBeefTortellini	Pot of Ground Beef Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedLobsterRavioli	Pot of Lobster Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedPepperedPorkTortellini	Pot of Peppered Pork Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedPumpkinRavioli	Pot of Pumpkin Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedSpinachRicottaRavioli	Pot of Spinach and Ricotta Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedSpinachRicottaTortellini	Pot of Spinach and Ricotta Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotForgedThreeCheeseRavioli	Pot of Three Cheese Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotFourCheeseTortellini	Pot of Four Cheese Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotGroundBeefRavioli	Pot of Ground Beef Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotGroundBeefTortellini	Pot of Ground Beef Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotLobsterRavioli	Pot of Lobster Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotPepperedPorkTortellini	Pot of Peppered Pork Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotPumpkinRavioli	Pot of Pumpkin Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotSpinachRicottaRavioli	Pot of Spinach and Ricotta Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PotSpinachRicottaTortellini	Pot of Spinach and Ricotta Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.PotThreeCheeseRavioli	Pot of Three Cheese Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.PumpkinRavioli	Ravioli - Pumpkin	food	3	5	spoils
+Fridge and freezer	VFX.Raspberries	Packaged Raspberries	food	5	10	spoils
+Fridge and freezer	VFX.RedTartCherries	Packaged Red Tart Cherries	food	5	10	spoils
+Fridge and freezer	VFX.RoastTurkeyFrozenMeal	TV Dinner - Roast Turkey	food	3	5	spoils
+Fridge and freezer	VFX.RockyRoadIceCream	Ice Cream - Rocky Road	food	1	1	spoils
+Fridge and freezer	VFX.RockyRoadIceCreamCone	Rocky Road Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.RockyRoadIceCreamConeMelted	Rocky Road Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.RockyRoadIceCreamMelted	Ice Cream - Rocky Road (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.SECBreakfastSandwich	Sausage, Egg and Cheese Breakfast Sandwich	food	4	7	spoils
+Fridge and freezer	VFX.SECBreakfastSandwich_Box	Box of Breakfast Sandwiches - Sausage Egg and Cheese	food	4	7	spoils
+Fridge and freezer	VFX.SalisburySteakFrozenMeal	TV Dinner - Salisbury Steak	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanChickenMushroomRavioli	Saucepan of Chicken and Mushroom Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanFourCheeseTortellini	Saucepan of Four Cheese Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanGroundBeefRavioli	Saucepan of Ground Beef Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanGroundBeefTortellini	Saucepan of Ground Beef Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanLobsterRavioli	Saucepan of Lobster Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanPepperedPorkTortellini	Saucepan of Peppered Pork Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanPumpkinRavioli	Saucepan of Pumpkin Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanSpinachRicottaRavioli	Saucepan of Spinach and Ricotta Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanSpinachRicottaTortellini	Saucepan of Spinach and Ricotta Tortellini	food	3	5	spoils
+Fridge and freezer	VFX.SaucepanThreeCheeseRavioli	Saucepan of Three Cheese Ravioli	food	3	5	spoils
+Fridge and freezer	VFX.SlicedBananas	Packaged Sliced Bananas	food	5	10	spoils
+Fridge and freezer	VFX.SlicedStrawberries	Packaged Sliced Strawberries	food	5	10	spoils
+Fridge and freezer	VFX.SpaghettiMeatballsFrozenMeal	TV Dinner - Spaghetti and Meatballs	food	3	5	spoils
+Fridge and freezer	VFX.SpinachArtichokeDip	Dip - Spinach Artichoke	food	60	75	spoils
+Fridge and freezer	VFX.SpinachRicottaRavioli	Ravioli - Spinach and Ricotta	food	3	5	spoils
+Fridge and freezer	VFX.SpinachRicottaTortellini	Tortellini - Spinach and Ricotta	food	3	5	spoils
+Fridge and freezer	VFX.StrawberryBananaBlend	Packaged Strawberry Banana Blend	food	5	10	spoils
+Fridge and freezer	VFX.StrawberryIceCream	Ice Cream - Strawberry	food	1	1	spoils
+Fridge and freezer	VFX.StrawberryIceCreamCone	Strawberry Ice Cream Cone	food	1	1	spoils
+Fridge and freezer	VFX.StrawberryIceCreamConeMelted	Strawberry Ice Cream Cone (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.StrawberryIceCreamMelted	Ice Cream - Strawberry (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.StrawberryPopsicle	Popsicle - Strawberry	food	1	1	spoils
+Fridge and freezer	VFX.StrawberryPopsicleMelted	Popsicle - Strawberry (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.SupremePizzaRoll	Supreme Pizza Roll	food	4	7	spoils
+Fridge and freezer	VFX.SupremePizzaRoll_Box	Bag of Pizza Rolls - Supreme	food	4	7	spoils
+Fridge and freezer	VFX.SupremePizzaSlice	Slice of Supreme Pizza	food	3	5	spoils
+Fridge and freezer	VFX.TECBreakfastSandwich	Turkey, Egg and Cheese Breakfast Sandwich	food	4	7	spoils
+Fridge and freezer	VFX.TECBreakfastSandwich_Box	Box of Breakfast Sandwiches - Turkey Egg and Cheese	food	4	7	spoils
+Fridge and freezer	VFX.ThreeCheeseRavioli	Ravioli - Three Cheese	food	3	5	spoils
+Fridge and freezer	VFX.ThreeMeatPizzaSlice	Slice of Three Meat Pizza	food	3	5	spoils
+Fridge and freezer	VFX.TropicalPopsicle	Popsicle - Tropical	food	1	1	spoils
+Fridge and freezer	VFX.TropicalPopsicleMelted	Popsicle - Tropical (Melted)	food	2	2	spoils
+Fridge and freezer	VFX.Wedges	Wedges	food	3	5	spoils
+Fridge and freezer	VFX.WholeFrozenPieApple	Apple Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPieBlackberry	Blackberry Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPieBlueberry	Blueberry Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPieCherry	Cherry Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPieLemonCream	Lemon Cream Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPieMixedBerry	Mixed Berry Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPiePeach	Peach Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPieRaspberry	Raspberry Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeFrozenPieStrawberry	Strawberry Pie	food	4	9	spoils
+Fridge and freezer	VFX.WholeStrawberries	Packaged Whole Strawberries	food	5	10	spoils
+Fruit and vegetables	VFX.Apricot	Apricot	food	5	7	spoils
+Fruit and vegetables	VFX.Asparagus	Asparagus	food	5	7	spoils
+Fruit and vegetables	VFX.BagCranberries	Bag of Cranberries	food	10	14	spoils
+Fruit and vegetables	VFX.BagGreenBeans	Bag of Green Beans	food	6	8	spoils
+Fruit and vegetables	VFX.Beetroot	Beetroot	food	7	9	spoils
+Fruit and vegetables	VFX.BokChoy	Bok Choy	food	5	7	spoils
+Fruit and vegetables	VFX.Celery	Celery	food	7	11	spoils
+Fruit and vegetables	VFX.Collard	Collard	food	3	5	spoils
+Fruit and vegetables	VFX.Cranberries	Cranberry	food	4	6	spoils
+Fruit and vegetables	VFX.Figs	Fig	food	5	7	spoils
+Fruit and vegetables	VFX.GoldKiwi	Gold Kiwi	food	5	7	spoils
+Fruit and vegetables	VFX.GreenKiwi	Green Kiwi	food	5	7	spoils
+Fruit and vegetables	VFX.MandarinOrange	Mandarin Orange	food	6	8	spoils
+Fruit and vegetables	VFX.MashedPotato	Mashed Potato	food	2	4	spoils
+Fruit and vegetables	VFX.Nectarines	Nectarine	food	6	8	spoils
+Fruit and vegetables	VFX.Papaya	Papaya	food	7	10	spoils
+Fruit and vegetables	VFX.Plum	Plum	food	5	7	spoils
+Fruit and vegetables	VFX.Pomegranate	Pomegranate	food	7	10	spoils
+Fruit and vegetables	VFX.PunnetBlackberries	Punnet of Blackberries	food	4	6	spoils
+Fruit and vegetables	VFX.PunnetBlueberries	Punnet of Blueberries	food	4	6	spoils
+Fruit and vegetables	VFX.PunnetRaspberries	Punnet of Raspberries	food	4	6	spoils
+Fruit and vegetables	VFX.RedCabbage	Red Cabbage	food	10	14	spoils
+Fruit and vegetables	VFX.SlicedPotato	Sliced Potato	food	28	280	spoils
+Fruit and vegetables	VFX.SnowPeas	Bag of Snow Peas	food	6	8	spoils
+Fruit and vegetables	VFX.Tangerines	Tangerine	food	6	8	spoils
+Homemade	VFX.HomemadeAlfredoSauce	Homemade Alfredo Sauce	food			never spoils
+Homemade	VFX.HomemadeAlfredoSauce_Open	Opened Homemade Alfredo Sauce	food	2	4	spoils
+Homemade	VFX.HomemadeBasilPestoSauce	Homemade Basil Pesto Sauce	food			never spoils
+Homemade	VFX.HomemadeBasilPestoSauce_Open	Opened Homemade Basil Pesto Sauce	food	2	4	spoils
+Homemade	VFX.HomemadeBechamelSauce	Homemade Bechamel Sauce	food			never spoils
+Homemade	VFX.HomemadeBechamelSauce_Open	Opened Homemade Bechamel Sauce	food	2	4	spoils
+Homemade	VFX.HomemadeCranberrySauce	Homemade Cranberry Sauce	food			never spoils
+Homemade	VFX.HomemadeCranberrySauce_Open	Opened Homemade Cranberry Sauce	food	4	8	spoils
+Homemade	VFX.HomemadeJelliedCranberrySauce	Homemade Jellied Cranberry Sauce	food			never spoils
+Homemade	VFX.HomemadeJelliedCranberrySauce_Open	Opened Homemade Jellied Cranberry Sauce	food	4	8	spoils
+Homemade	VFX.HomemadeMarinara	Homemade Marinara	food			never spoils
+Homemade	VFX.HomemadeMarinara_Open	Opened Homemade Marinara	food	4	6	spoils
+Homemade	VFX.HomemadeMeatSauce	Homemade Meat Sauce	food			never spoils
+Homemade	VFX.HomemadeMeatSauce_Open	Opened Homemade Meat Sauce	food	2	4	spoils
+Homemade	VFX.HomemadeSpicyMarinara	Homemade Spicy Marinara	food			never spoils
+Homemade	VFX.HomemadeSpicyMarinara_Open	Opened Homemade Spicy Marinara	food	4	6	spoils
+Homemade	VFX.SliceCranberrySauce	Slice of Jellied Cranberry Sauce	food	2	4	spoils
+Meat	VFX.BeefBrisket	Beef Brisket	food	2	4	spoils
+Meat	VFX.BeefMeatball	Beef Meatball	food	2	4	spoils
+Meat	VFX.BeefMeatballHomemade	Beef Meatball	food	2	4	spoils
+Meat	VFX.BeefMeatballsBag	Bag of Meatballs - Beef	food	4	7	spoils
+Meat	VFX.BeefPorkSausage	Beef and Pork Sausage	food	2	4	spoils
+Meat	VFX.BeefPorkSausagePack	Pack of Beef and Pork Sausages	food	4	7	spoils
+Meat	VFX.BeefSausage	Beef Sausage	food	2	4	spoils
+Meat	VFX.BeefSausagePack	Pack of Beef Sausages	food	4	7	spoils
+Meat	VFX.BeefShank	Beef Shank	food	2	4	spoils
+Meat	VFX.BeefShortRibs	Beef Short Ribs	food	2	4	spoils
+Meat	VFX.BlackPudding	Black Pudding	food	10	15	spoils
+Meat	VFX.CheeseSausage	Cheese Sausage	food	2	4	spoils
+Meat	VFX.CheeseSausagePack	Pack of Cheese Sausages	food	4	7	spoils
+Meat	VFX.ChickenDrumsticks	Chicken Drumsticks	food	2	4	spoils
+Meat	VFX.ChickenMeatball	Chicken Meatball	food	2	4	spoils
+Meat	VFX.ChickenMeatballHomemade	Chicken Meatball	food	2	4	spoils
+Meat	VFX.ChickenMeatballsBag	Bag of Meatballs - Chicken	food	4	7	spoils
+Meat	VFX.ChickenSausage	Chicken Sausage	food	2	4	spoils
+Meat	VFX.ChickenSausagePack	Pack of Chicken Sausages	food	4	7	spoils
+Meat	VFX.ChickenThighs	Chicken Thighs	food	2	4	spoils
+Meat	VFX.Chorizo	Chorizo	food	3	5	spoils
+Meat	VFX.ChorizoPack	Pack of Chorizo	food	5	10	spoils
+Meat	VFX.DuckBreast	Duck Breast	food	2	4	spoils
+Meat	VFX.Giblets	Giblets	food	2	4	spoils
+Meat	VFX.GroundChicken	Ground Chicken	food	2	4	spoils
+Meat	VFX.GroundFish	Ground Fish Meat	food	2	4	spoils
+Meat	VFX.GroundFrog	Ground Frog Meat	food	2	4	spoils
+Meat	VFX.GroundLamb	Ground Lamb	food	2	4	spoils
+Meat	VFX.GroundPork	Ground Pork	food	2	4	spoils
+Meat	VFX.GroundRabbit	Ground Rabbit	food	2	4	spoils
+Meat	VFX.GroundRodent	Ground Rodent Meat	food	2	4	spoils
+Meat	VFX.GroundSalmon	Ground Salmon	food	2	4	spoils
+Meat	VFX.GroundSmallBird	Ground Bird Meat	food	2	4	spoils
+Meat	VFX.GroundTurkey	Ground Turkey	food	2	4	spoils
+Meat	VFX.GroundVenison	Ground Venison	food	2	4	spoils
+Meat	VFX.ImitationCrab	Imitation Crab	food	2	4	spoils
+Meat	VFX.LambLeg	Lamb Leg	food	2	4	spoils
+Meat	VFX.MeatballFish	Fish Meatball	food	2	4	spoils
+Meat	VFX.MeatballFrog	Frog Meatball	food	2	4	spoils
+Meat	VFX.MeatballLamb	Lamb Meatball	food	2	4	spoils
+Meat	VFX.MeatballRabbit	Rabbit Meatball	food	2	4	spoils
+Meat	VFX.MeatballRodent	Rodent Meatball	food	2	4	spoils
+Meat	VFX.MeatballSalmon	Salmon Meatball	food	2	4	spoils
+Meat	VFX.MeatballSmallBird	Bird Meatball	food	2	4	spoils
+Meat	VFX.MeatballVenison	Venison Meatball	food	2	4	spoils
+Meat	VFX.PattyChicken	Chicken Patty	food	2	4	spoils
+Meat	VFX.PattyFish	Fish Patty	food	2	4	spoils
+Meat	VFX.PattyFrog	Frog Patty	food	2	4	spoils
+Meat	VFX.PattyLamb	Lamb Patty	food	2	4	spoils
+Meat	VFX.PattyPork	Pork Patty	food	2	4	spoils
+Meat	VFX.PattyRabbit	Rabbit Patty	food	2	4	spoils
+Meat	VFX.PattyRodent	Rodent Patty	food	2	4	spoils
+Meat	VFX.PattySalmon	Salmon Patty	food	2	4	spoils
+Meat	VFX.PattySmallBird	Bird Patty	food	2	4	spoils
+Meat	VFX.PattyTurkey	Turkey Patty	food	2	4	spoils
+Meat	VFX.PattyVenison	Venison Patty	food	2	4	spoils
+Meat	VFX.PorkBelly	Pork Belly	food	2	4	spoils
+Meat	VFX.PorkMeatball	Pork Meatball	food	2	4	spoils
+Meat	VFX.PorkMeatballHomemade	Pork Meatball	food	2	4	spoils
+Meat	VFX.PorkMeatballsBag	Bag of Meatballs - Pork	food	4	7	spoils
+Meat	VFX.PorkRibs	Pork Ribs	food	2	4	spoils
+Meat	VFX.PorkSausage	Pork Sausage	food	2	4	spoils
+Meat	VFX.PorkSausagePack	Pack of Pork Sausages	food	4	7	spoils
+Meat	VFX.Seitan	Seitan	food	6	14	spoils
+Meat	VFX.SlicedChicken	Slice of Roast Chicken	food	3	6	spoils
+Meat	VFX.SlicedSeitan	Slice of Seitan	food	6	14	spoils
+Meat	VFX.SlicedSeitanRoast	Slice of Seitan Roast	food	3	6	spoils
+Meat	VFX.SlicedTofuRoast	Slice of Tofu Roast	food	3	6	spoils
+Meat	VFX.SlicedTurkey	Slice of Roast Turkey	food	3	6	spoils
+Meat	VFX.SmokedSalmon	Smoked Salmon	food	3	5	spoils
+Meat	VFX.SmokedSausage	Smoked Sausage	food	3	5	spoils
+Meat	VFX.SmokedSausagePack	Pack of Smoked Sausages	food	5	10	spoils
+Meat	VFX.SpicySausage	Spicy Sausage	food	2	4	spoils
+Meat	VFX.SpicySausagePack	Pack of Spicy Sausages	food	4	7	spoils
+Meat	VFX.StuffedChicken	Stuffed Chicken	food	2	4	spoils
+Meat	VFX.StuffedSeitanRoast	Stuffed Seitan Roast	food	3	6	spoils
+Meat	VFX.StuffedTofuRoast	Stuffed Tofu Roast	food	3	6	spoils
+Meat	VFX.StuffedTurkey	Stuffed Turkey	food	2	4	spoils
+Meat	VFX.TurkeyMeatball	Turkey Meatball	food	2	4	spoils
+Meat	VFX.TurkeyMeatballHomemade	Turkey Meatball	food	2	4	spoils
+Meat	VFX.TurkeyMeatballsBag	Bag of Meatballs - Turkey	food	4	7	spoils
+Meat	VFX.VealCutlet	Veal Cutlet	food	2	4	spoils
+Meat	VFX.VealMeatball	Veal Meatball	food	2	4	spoils
+Meat	VFX.VealMeatballsBag	Bag of Meatballs - Veal	food	4	7	spoils
+Meat	VFX.WingBBQ	BBQ Wing	food	2	4	spoils
+Meat	VFX.WingBuffalo	Buffalo Wing	food	2	4	spoils
+Meat	VFX.WingCaribbeanJerk	Caribbean Jerk Wing	food	2	4	spoils
+Meat	VFX.WingCrispy	Crispy Wing	food	2	4	spoils
+Meat	VFX.WingGarlicParmesan	Garlic Parmesan Wing	food	2	4	spoils
+Meat	VFX.WingHoneyBBQ	Honey BBQ Wing	food	2	4	spoils
+Meat	VFX.WingHot	Hot Wing	food	2	4	spoils
+Meat	VFX.WingRanch	Ranch Wing	food	2	4	spoils
+Meat	VFX.WingSpicyCajun	Spicy Cajun Wing	food	2	4	spoils
+Pantry	VFX.AcornFlour	Acorn Flour	food			never spoils
+Pantry	VFX.AdmiralChomp	Cereal - Admiral Chomp	food			never spoils
+Pantry	VFX.AdmiralChompBowl	Bowl of Admiral Chomp	food	4	7	spoils
+Pantry	VFX.AlfredoSauce	Alfredo Sauce	food			never spoils
+Pantry	VFX.AppleButter	Apple Butter	food			never spoils
+Pantry	VFX.ApricotJam	Jam - Apricot	food			never spoils
+Pantry	VFX.ArborioRice	Arborio Rice	food			never spoils
+Pantry	VFX.ArborioRiceBowl	Bowl of Arborio Rice	food	3	6	spoils
+Pantry	VFX.BagFriedOnion	Bag of Fried Onion	food			never spoils
+Pantry	VFX.BagShreddedCoconut	Bag of Shredded Coconut	food			never spoils
+Pantry	VFX.BarleyFlour	Barley Flour	food			never spoils
+Pantry	VFX.BasilPestoSauce	Basil Pesto Sauce	food			never spoils
+Pantry	VFX.BasmatiRice	Basmati Rice	food			never spoils
+Pantry	VFX.BasmatiRiceBowl	Bowl of Basmati Rice	food	3	6	spoils
+Pantry	VFX.BechamelSauce	Bechamel Sauce	food			never spoils
+Pantry	VFX.BeefRamen	Ramen Packet - Beef	food			never spoils
+Pantry	VFX.BeefRamenFlavourSachet	Flavour Sachet - Beef	food			never spoils
+Pantry	VFX.BlackberryJam	Jam - Blackberry	food			never spoils
+Pantry	VFX.BlueberryJam	Jam - Blueberry	food			never spoils
+Pantry	VFX.BowlBeefRamen	Bowl of Beef Ramen	food	2	4	spoils
+Pantry	VFX.BowlChickenNoodleSoup	Bowl of Chicken Noodle Soup	food	2	3	spoils
+Pantry	VFX.BowlChickenRamen	Bowl of Chicken Ramen	food	2	4	spoils
+Pantry	VFX.BowlHotAndSpicyRamen	Bowl of Hot and Spicy Ramen	food	2	4	spoils
+Pantry	VFX.BowlPeaAndHamSoup	Bowl of Pea and Ham Soup	food	2	3	spoils
+Pantry	VFX.BowlPorkRamen	Bowl of Pork Ramen	food	2	4	spoils
+Pantry	VFX.BowlPumpkinSoup	Bowl of Pumpkin Soup	food	2	3	spoils
+Pantry	VFX.BowlShrimpRamen	Bowl of Shrimp Ramen	food	2	4	spoils
+Pantry	VFX.BowlSoySauceRamen	Bowl of Soy Sauce Ramen	food	2	4	spoils
+Pantry	VFX.BowlTomatoSoup	Bowl of Tomato Soup	food	2	3	spoils
+Pantry	VFX.BoxBeefRamen	Box of Ramen - Beef	food			never spoils
+Pantry	VFX.BoxChickenNoodleSoupSachets	Box of Soup Sachets - Chicken Noodle	food			never spoils
+Pantry	VFX.BoxChickenRamen	Box of Ramen - Chicken	food			never spoils
+Pantry	VFX.BoxChickenStuffingMix	Stuffing Mix - Chicken	food			never spoils
+Pantry	VFX.BoxCornbreadStuffingMix	Stuffing Mix - Cornbread	food			never spoils
+Pantry	VFX.BoxHerbStuffingMix	Stuffing Mix - Herb	food			never spoils
+Pantry	VFX.BoxHotAndSpicyRamen	Box of Ramen - Hot and Spicy	food			never spoils
+Pantry	VFX.BoxPeaAndHamSoupSachets	Box of Soup Sachets - Pea and Ham	food			never spoils
+Pantry	VFX.BoxPorkRamen	Box of Ramen - Pork	food			never spoils
+Pantry	VFX.BoxPumpkinSoupSachets	Box of Soup Sachets - Pumpkin	food			never spoils
+Pantry	VFX.BoxScallopedPotatoes	Box of Scalloped Potatoes	food			never spoils
+Pantry	VFX.BoxShrimpRamen	Box of Ramen - Shrimp	food			never spoils
+Pantry	VFX.BoxSoySauceRamen	Box of Ramen - Soy Sauce	food			never spoils
+Pantry	VFX.BoxTomatoSoupSachets	Box of Soup Sachets - Tomato	food			never spoils
+Pantry	VFX.BoxTurkeyStuffingMix	Stuffing Mix - Turkey	food			never spoils
+Pantry	VFX.Breadcrumbs	Breadcrumbs	food			never spoils
+Pantry	VFX.BrownRice	Brown Rice	food			never spoils
+Pantry	VFX.BrownRiceBowl	Bowl of Brown Rice	food	3	6	spoils
+Pantry	VFX.CanisterGrits	Grits	food			never spoils
+Pantry	VFX.CheeseSpread	Cheese Spread	food			never spoils
+Pantry	VFX.ChickenNoodleSoupSachet	Soup Sachet - Chicken Noodle	food			never spoils
+Pantry	VFX.ChickenRamen	Ramen Packet - Chicken	food			never spoils
+Pantry	VFX.ChickenRamenFlavourSachet	Flavour Sachet - Chicken	food			never spoils
+Pantry	VFX.ChocolateChipGranola	Granola - Chocolate Chip	food			never spoils
+Pantry	VFX.ChocolateChipGranolaBowl	Bowl of Chocolate Chip Granola	food	4	7	spoils
+Pantry	VFX.CinnamonButter	Cinnamon Butter	food			never spoils
+Pantry	VFX.CocoaPuffs	Cereal - Choco-Roos	food			never spoils
+Pantry	VFX.CocoaPuffsBowl	Bowl of Choco-Roos	food	4	7	spoils
+Pantry	VFX.CoconutAlmondGranola	Granola - Coconut Almond	food			never spoils
+Pantry	VFX.CoconutAlmondGranolaBowl	Bowl of Coconut Almond Granola	food	4	7	spoils
+Pantry	VFX.Croutons	Croutons - Plain	food			never spoils
+Pantry	VFX.CroutonsCheddar	Croutons - Cheddar	food			never spoils
+Pantry	VFX.CroutonsGarlic	Croutons - Garlic	food			never spoils
+Pantry	VFX.CroutonsHerbButter	Croutons - Herb and Butter	food			never spoils
+Pantry	VFX.Fettuccine	Fettuccine	food			never spoils
+Pantry	VFX.FettuccineBowl	Bowl of Fettuccine	food	3	6	spoils
+Pantry	VFX.FrostyCrunch	Cereal - Frosty Crunch	food			never spoils
+Pantry	VFX.FrostyCrunchBowl	Bowl of Frosty Crunch	food	4	7	spoils
+Pantry	VFX.FruitNutGranola	Granola - Fruit and Nut	food			never spoils
+Pantry	VFX.FruitNutGranolaBowl	Bowl of Fruit and Nut Granola	food	4	7	spoils
+Pantry	VFX.FruityLoops	Cereal - Fruity Loops	food			never spoils
+Pantry	VFX.FruityLoopsBowl	Bowl of Fruity Loops	food	4	7	spoils
+Pantry	VFX.Gnocchi	Gnocchi	food			never spoils
+Pantry	VFX.GnocchiBowl	Bowl of Gnocchi	food	3	6	spoils
+Pantry	VFX.GrapeJam	Jam - Grape	food			never spoils
+Pantry	VFX.HazelnutSpread	Hazelnut Spread	food			never spoils
+Pantry	VFX.HomemadeGrits	Grits	food			never spoils
+Pantry	VFX.HoneyOatsGranola	Granola - Oats and Honey	food			never spoils
+Pantry	VFX.HoneyOatsGranolaBowl	Bowl of Honey and Oats Granola	food	4	7	spoils
+Pantry	VFX.HoneyOatyOs	Cereal - Honey O's	food			never spoils
+Pantry	VFX.HoneyOatyOsBowl	Bowl of Honey O’s	food	4	7	spoils
+Pantry	VFX.HotAndSpicyRamen	Ramen Packet - Hot and Spicy	food			never spoils
+Pantry	VFX.HotAndSpicyRamenFlavourSachet	Flavour Sachet - Hot and Spicy	food			never spoils
+Pantry	VFX.JasmineRice	Jasmine Rice	food			never spoils
+Pantry	VFX.JasmineRiceBowl	Bowl of Jasmine Rice	food	3	6	spoils
+Pantry	VFX.LasagnaPreparation	Lasagna	food	3	6	spoils
+Pantry	VFX.LasagnaSheets	Lasagna Sheets	food			never spoils
+Pantry	VFX.LemonMarmalade	Lemon Marmalade	food			never spoils
+Pantry	VFX.LiverSpread	Liver Spread	food			never spoils
+Pantry	VFX.Macaroni	Macaroni	food			never spoils
+Pantry	VFX.MacaroniBowl	Bowl of Macaroni	food	3	6	spoils
+Pantry	VFX.MapleButter	Maple Butter	food			never spoils
+Pantry	VFX.MaplePecanGranola	Granola - Maple Pecan	food			never spoils
+Pantry	VFX.MaplePecanGranolaBowl	Bowl of Maple Pecan Granola	food	4	7	spoils
+Pantry	VFX.MeatSauce	Meat Sauce	food			never spoils
+Pantry	VFX.Molasses	Molasses	food			never spoils
+Pantry	VFX.MugChickenNoodleSoup	Mug of Chicken Noodle Soup	food	2	3	spoils
+Pantry	VFX.MugChickenNoodleSoup_Clay	Mug of Chicken Noodle Soup	food	2	3	spoils
+Pantry	VFX.MugChickenNoodleSoup_Spiffo	Mug of Chicken Noodle Soup	food	2	3	spoils
+Pantry	VFX.MugChickenNoodleSoup_White	Mug of Chicken Noodle Soup	food	2	3	spoils
+Pantry	VFX.MugPeaAndHamSoup	Mug of Pea and Ham Soup	food	2	3	spoils
+Pantry	VFX.MugPeaAndHamSoup_Clay	Mug of Pea and Ham Soup	food	2	3	spoils
+Pantry	VFX.MugPeaAndHamSoup_Spiffo	Mug of Pea and Ham Soup	food	2	3	spoils
+Pantry	VFX.MugPeaAndHamSoup_White	Mug of Pea and Ham Soup	food	2	3	spoils
+Pantry	VFX.MugPumpkinSoup	Mug of Pumpkin Soup	food	2	3	spoils
+Pantry	VFX.MugPumpkinSoup_Clay	Mug of Pumpkin Soup	food	2	3	spoils
+Pantry	VFX.MugPumpkinSoup_Spiffo	Mug of Pumpkin Soup	food	2	3	spoils
+Pantry	VFX.MugPumpkinSoup_White	Mug of Pumpkin Soup	food	2	3	spoils
+Pantry	VFX.MugTomatoSoup	Mug of Tomato Soup	food	2	3	spoils
+Pantry	VFX.MugTomatoSoup_Clay	Mug of Tomato Soup	food	2	3	spoils
+Pantry	VFX.MugTomatoSoup_Spiffo	Mug of Tomato Soup	food	2	3	spoils
+Pantry	VFX.MugTomatoSoup_White	Mug of Tomato Soup	food	2	3	spoils
+Pantry	VFX.OatFlour	Oat Flour	food			never spoils
+Pantry	VFX.OatyOs	Cereal - Oaty O's	food			never spoils
+Pantry	VFX.OatyOsBowl	Bowl of Oaty O’s	food	4	7	spoils
+Pantry	VFX.PMAlfredo	Alfredo Pasta	food			never spoils
+Pantry	VFX.PMBowlAlfredo	Bowl of Alfredo Pasta	food	1	3	spoils
+Pantry	VFX.PMBowlCheddarBroccoli	Bowl of Cheddar Broccoli Pasta	food	1	3	spoils
+Pantry	VFX.PMBowlCreamyChicken	Bowl of Creamy Chicken Pasta	food	1	3	spoils
+Pantry	VFX.PMBowlCreamyPesto	Bowl of Creamy Pesto Pasta	food	1	3	spoils
+Pantry	VFX.PMBowlMacCheese	Bowl of Macaroni and Cheese Pasta	food	1	3	spoils
+Pantry	VFX.PMBowlParmesan	Bowl of Parmesan Pasta	food	1	3	spoils
+Pantry	VFX.PMCheddarBroccoli	Cheddar Broccoli Pasta	food			never spoils
+Pantry	VFX.PMCopperSaucepanAlfredo	Copper Saucepan of Alfredo Pasta	food	3	5	spoils
+Pantry	VFX.PMCopperSaucepanCheddarBroccoli	Copper Saucepan of Cheddar Broccoli Pasta	food	3	5	spoils
+Pantry	VFX.PMCopperSaucepanCreamyChicken	Copper Saucepan of Creamy Chicken Pasta	food	3	5	spoils
+Pantry	VFX.PMCopperSaucepanCreamyPesto	Copper Saucepan of Creamy Pesto Pasta	food	3	5	spoils
+Pantry	VFX.PMCopperSaucepanMacCheese	Copper Saucepan of Macaroni and Cheese Pasta	food	3	5	spoils
+Pantry	VFX.PMCopperSaucepanParmesan	Copper Saucepan of Parmesan Pasta	food	3	5	spoils
+Pantry	VFX.PMCreamyChicken	Creamy Chicken Pasta	food			never spoils
+Pantry	VFX.PMCreamyPesto	Creamy Pesto Pasta	food			never spoils
+Pantry	VFX.PMMacCheese	Macaroni and Cheese Pasta	food			never spoils
+Pantry	VFX.PMParmesan	Parmesan Pasta	food			never spoils
+Pantry	VFX.PMSaucepanAlfredo	Saucepan of Alfredo Pasta	food	3	5	spoils
+Pantry	VFX.PMSaucepanCheddarBroccoli	Saucepan of Cheddar Broccoli Pasta	food	3	5	spoils
+Pantry	VFX.PMSaucepanCreamyChicken	Saucepan of Creamy Chicken Pasta	food	3	5	spoils
+Pantry	VFX.PMSaucepanCreamyPesto	Saucepan of Creamy Pesto Pasta	food	3	5	spoils
+Pantry	VFX.PMSaucepanMacCheese	Saucepan of Macaroni and Cheese Pasta	food	3	5	spoils
+Pantry	VFX.PMSaucepanParmesan	Saucepan of Parmesan Pasta	food	3	5	spoils
+Pantry	VFX.PeaAndHamSoupSachet	Soup Sachet - Pea and Ham	food			never spoils
+Pantry	VFX.PeachJam	Jam - Peach	food			never spoils
+Pantry	VFX.Penne	Penne	food			never spoils
+Pantry	VFX.PenneBowl	Bowl of Penne	food	3	6	spoils
+Pantry	VFX.PorkRamen	Ramen Packet - Pork	food			never spoils
+Pantry	VFX.PorkRamenFlavourSachet	Flavour Sachet - Pork	food			never spoils
+Pantry	VFX.PowderedSugar	Powdered Sugar	food			never spoils
+Pantry	VFX.PumpkinSoupSachet	Soup Sachet - Pumpkin	food			never spoils
+Pantry	VFX.RMBowlChicken	Bowl of Chicken Rice	food	1	3	spoils
+Pantry	VFX.RMBowlFried	Bowl of Fried Rice	food	1	3	spoils
+Pantry	VFX.RMBowlMedley	Bowl of Rice Medley	food	1	3	spoils
+Pantry	VFX.RMBowlMexican	Bowl of Spicy Mexican Rice	food	1	3	spoils
+Pantry	VFX.RMChicken	Chicken Rice	food			never spoils
+Pantry	VFX.RMCopperSaucepanChicken	Copper Saucepan of Chicken Rice	food	3	5	spoils
+Pantry	VFX.RMCopperSaucepanFried	Copper Saucepan of Fried Rice	food	3	5	spoils
+Pantry	VFX.RMCopperSaucepanMedley	Copper Saucepan of Rice Medley	food	3	5	spoils
+Pantry	VFX.RMCopperSaucepanMexican	Copper Saucepan of Spicy Mexican Rice	food	3	5	spoils
+Pantry	VFX.RMFried	Fried Rice	food			never spoils
+Pantry	VFX.RMMedley	Rice Medley	food			never spoils
+Pantry	VFX.RMMexican	Spicy Mexican Rice	food			never spoils
+Pantry	VFX.RMSaucepanChicken	Saucepan of Chicken Rice	food	3	5	spoils
+Pantry	VFX.RMSaucepanFried	Saucepan of Fried Rice	food	3	5	spoils
+Pantry	VFX.RMSaucepanMedley	Saucepan of Rice Medley	food	3	5	spoils
+Pantry	VFX.RMSaucepanMexican	Saucepan of Spicy Mexican Rice	food	3	5	spoils
+Pantry	VFX.RaspberryJam	Jam - Raspberry	food			never spoils
+Pantry	VFX.RiceKrisps	Cereal - Rice Krisps	food			never spoils
+Pantry	VFX.RiceKrispsBowl	Bowl of Rice Krisps	food	4	7	spoils
+Pantry	VFX.RolledOats	Rolled Oats	food	180	365	spoils
+Pantry	VFX.RyeFlour	Rye Flour	food			never spoils
+Pantry	VFX.SeasoningMixWingsBBQ	Seasoning Mix - BBQ Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsBuffalo	Seasoning Mix - Buffalo Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsCaribbeanJerk	Seasoning Mix - Caribbean Jerk Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsCrispy	Seasoning Mix - Crispy Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsGarlicParmesan	Seasoning Mix - Garlic Parmesan Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsHoneyBBQ	Seasoning Mix - Honey BBQ Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsHot	Seasoning Mix - Hot Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsRanch	Seasoning Mix - Ranch Wings	food			never spoils
+Pantry	VFX.SeasoningMixWingsSpicyCajun	Seasoning Mix - Spicy Cajun Wings	food			never spoils
+Pantry	VFX.ShrimpRamen	Ramen Packet - Shrimp	food			never spoils
+Pantry	VFX.ShrimpRamenFlavourSachet	Flavour Sachet - Shrimp	food			never spoils
+Pantry	VFX.SoySauceRamen	Ramen Packet - Soy Sauce	food			never spoils
+Pantry	VFX.SoySauceRamenFlavourSachet	Flavour Sachet - Soy Sauce	food			never spoils
+Pantry	VFX.SpicyMarinara	Spicy Marinara	food			never spoils
+Pantry	VFX.Sprinkles	Sprinkles	food			never spoils
+Pantry	VFX.StrawberryJam	Jam - Strawberry	food			never spoils
+Pantry	VFX.SugarBeetMolassesPot	Pot of Molasses	food			never spoils
+Pantry	VFX.SugarBeetMolassesPotForged	Pot of Molasses	food			never spoils
+Pantry	VFX.SugarBeetPulpPot	Pot of Sugar Beet Pulp	food	3	6	spoils
+Pantry	VFX.SugarBeetPulpPotForged	Pot of Sugar Beet Pulp	food	3	6	spoils
+Pantry	VFX.SugarBeetSugar	Sugar Beet Sugar	food			never spoils
+Pantry	VFX.SugarBeetSyrupPot	Pot of Sugar Beet Syrup	food	1	2	spoils
+Pantry	VFX.SugarBeetSyrupPotForged	Pot of Sugar Beet Syrup	food	1	2	spoils
+Pantry	VFX.TomatoSoupSachet	Soup Sachet - Tomato	food			never spoils
+Pantry	VFX.UnluckyCharms	Cereal - Unlucky Charms	food			never spoils
+Pantry	VFX.UnluckyCharmsBowl	Bowl of Unlucky Charms	food	4	7	spoils
+Pantry	VFX.VanillaExtract	Vanilla Extract	food			never spoils
+Pantry	VFX.WaterPotArborioRice	Cooking Pot with Arborio Rice	food	3	6	spoils
+Pantry	VFX.WaterPotBasmatiRice	Cooking Pot with Basmati Rice	food	3	6	spoils
+Pantry	VFX.WaterPotBrownRice	Cooking Pot with Brown Rice	food	3	6	spoils
+Pantry	VFX.WaterPotFettuccine	Cooking Pot with Fettuccine	food	3	6	spoils
+Pantry	VFX.WaterPotForgedArborioRice	Cooking Pot with Arborio Rice	food	3	6	spoils
+Pantry	VFX.WaterPotForgedBasmatiRice	Cooking Pot with Basmati Rice	food	3	6	spoils
+Pantry	VFX.WaterPotForgedBrownRice	Cooking Pot with Brown Rice	food	3	6	spoils
+Pantry	VFX.WaterPotForgedFettuccine	Cooking Pot with Fettuccine	food	3	6	spoils
+Pantry	VFX.WaterPotForgedGnocchi	Cooking Pot with Gnocchi	food	3	6	spoils
+Pantry	VFX.WaterPotForgedJasmineRice	Cooking Pot with Jasmine Rice	food	3	6	spoils
+Pantry	VFX.WaterPotForgedMacaroni	Cooking Pot with Macaroni	food	3	6	spoils
+Pantry	VFX.WaterPotForgedPenne	Cooking Pot with Penne	food	3	6	spoils
+Pantry	VFX.WaterPotGnocchi	Cooking Pot with Gnocchi	food	3	6	spoils
+Pantry	VFX.WaterPotJasmineRice	Cooking Pot with Jasmine Rice	food	3	6	spoils
+Pantry	VFX.WaterPotMacaroni	Cooking Pot with Macaroni	food	3	6	spoils
+Pantry	VFX.WaterPotPenne	Cooking Pot with Penne	food	3	6	spoils
+Pantry	VFX.WaterSaucepanArborioRice	Saucepan with Arborio Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanBasmatiRice	Saucepan with Basmati Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanBrownRice	Saucepan with Brown Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperArborioRice	Copper Saucepan with Arborio Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperBasmatiRice	Copper Saucepan with Basmati Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperBrownRice	Copper Saucepan with Brown Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperFettuccine	Copper Saucepan with Fettuccine	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperGnocchi	Copper Saucepan with Gnocchi	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperJasmineRice	Copper Saucepan with Jasmine Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperMacaroni	Copper Saucepan with Macaroni	food	3	6	spoils
+Pantry	VFX.WaterSaucepanCopperPenne	Copper Saucepan with Penne	food	3	6	spoils
+Pantry	VFX.WaterSaucepanFettuccine	Saucepan with Fettuccine	food	3	6	spoils
+Pantry	VFX.WaterSaucepanGnocchi	Saucepan with Gnocchi	food	3	6	spoils
+Pantry	VFX.WaterSaucepanJasmineRice	Saucepan with Jasmine Rice	food	3	6	spoils
+Pantry	VFX.WaterSaucepanMacaroni	Saucepan with Macaroni	food	3	6	spoils
+Pantry	VFX.WaterSaucepanPenne	Saucepan with Penne	food	3	6	spoils
+Pantry	VFX.Wheaties	Cereal - Wheat Flakes	food			never spoils
+Pantry	VFX.WheatiesBowl	Bowl of Wheat Flakes	food	4	7	spoils
+Prepared dishes (cookbooks)	VFX.BowlButterChicken	Bowl of Butter Chicken	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.BowlChanaMasala	Bowl of Chana Masala	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.BowlMassamanCurry	Bowl of Massaman Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.BowlSweetPotatoChickpeaCurry	Bowl of Sweet Potato and Chickpea Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.BowlThaiGreenCurry	Bowl of Thai Green Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.BowlTofuCurry	Bowl of Tofu Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.PanChickenPotPie	Baking Pan of Chicken Pot Pie	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateBakedZiti	Plate of Baked Ziti	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateBangersAndMash	Plate of Bangers and Mash	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateBeansOnToast	Plate of Beans on Toast	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateChickenDivan	Plate of Chicken Divan	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateChickenPotPie	Plate of Chicken Pot Pie	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateFishAndChips	Plate of Fish and Chips	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateFullEnglishBreakfast	Plate of Full English Breakfast	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateHalfEnglishBreakfast	Plate of Half English Breakfast	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateMoussaka	Plate of Moussaka	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateSalisburySteak	Plate of Salisbury Steak	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateSausageAppleFry	Plate of Sausage and Apple Fry	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateShepherdsPie	Plate of Shepherd's Pie	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateStuffedBellPepper	Plate of Stuffed Bell Peppers	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PlateTunaCasserole	Plate of Tuna Casserole	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.PotButterChicken	Cooking Pot of Butter Chicken	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.PotChanaMasala	Cooking Pot of Chana Masala	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.PotMassamanCurry	Cooking Pot of Massaman Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.PotSweetPotatoChickpeaCurry	Cooking Pot of Sweet Potato and Chickpea Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.PotThaiGreenCurry	Cooking Pot of Thai Green Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.PotTofuCurry	Cooking Pot of Tofu Curry	food	3	6	spoils
+Prepared dishes (cookbooks)	VFX.ScotchEgg	Scotch Egg	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.StuffedBellPepper	Stuffed Bell Pepper	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TrayBakedZiti	Roasting Pan of Baked Ziti	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TrayChickenDivan	Roasting Pan of Chicken Divan	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TrayMoussaka	Roasting Pan of Moussaka	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TraySalisburySteak	Roasting Pan of Salisbury Steak	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TraySausageAppleFry	Roasting Pan of Sausage and Apple Fry	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TrayShepherdsPie	Roasting Pan of Shepherd's Pie	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TrayStuffedBellPepper	Roasting Pan of Stuffed Bell Peppers	food	2	4	spoils
+Prepared dishes (cookbooks)	VFX.TrayTunaCasserole	Roasting Pan of Tuna Casserole	food	2	4	spoils
+Seasoning and sauces	VFX.Aioli	Aioli	food			never spoils
+Seasoning and sauces	VFX.Allspice	Allspice	food			never spoils
+Seasoning and sauces	VFX.AppleSauce	Apple Sauce	food			never spoils
+Seasoning and sauces	VFX.BarbequeRub	Barbecue Rub	food			never spoils
+Seasoning and sauces	VFX.BayLeaves	Bay Leaves	food			never spoils
+Seasoning and sauces	VFX.BeefBouillonCube	Beef Bouillon Cube	food			never spoils
+Seasoning and sauces	VFX.BuffaloSauce	Buffalo Sauce	food			never spoils
+Seasoning and sauces	VFX.CaesarSaladDressing	Caesar Salad Dressing	food			never spoils
+Seasoning and sauces	VFX.CajunSeasoning	Cajun Seasoning	food			never spoils
+Seasoning and sauces	VFX.Cardamom	Cardamom	food			never spoils
+Seasoning and sauces	VFX.CayennePepper	Cayenne Pepper	food			never spoils
+Seasoning and sauces	VFX.CelerySalt	Celery Salt	food			never spoils
+Seasoning and sauces	VFX.ChiliFlakes	Chili Flakes	food			never spoils
+Seasoning and sauces	VFX.ChineseFiveSpice	Chinese Five-Spice	food			never spoils
+Seasoning and sauces	VFX.ChipotleSauce	Chipotle Sauce	food			never spoils
+Seasoning and sauces	VFX.CinnamonSugar	Cinnamon Sugar	food			never spoils
+Seasoning and sauces	VFX.Cloves	Cloves	food			never spoils
+Seasoning and sauces	VFX.CocktailSauce	Cocktail Sauce	food			never spoils
+Seasoning and sauces	VFX.ColeslawDressing	Coleslaw Dressing	food			never spoils
+Seasoning and sauces	VFX.CranberrySauce	Cranberry Sauce	food			never spoils
+Seasoning and sauces	VFX.Cumin	Cumin	food			never spoils
+Seasoning and sauces	VFX.CurryPowder	Curry Powder	food			never spoils
+Seasoning and sauces	VFX.DijonMustard	Dijon Mustard	food			never spoils
+Seasoning and sauces	VFX.Dill	Dill	food			never spoils
+Seasoning and sauces	VFX.FennelSeeds	Fennel Seeds	food			never spoils
+Seasoning and sauces	VFX.FishBouillonCube	Fish Bouillon Cube	food			never spoils
+Seasoning and sauces	VFX.GaramMasala	Garam Masala	food			never spoils
+Seasoning and sauces	VFX.GarlicSalt	Garlic Salt	food			never spoils
+Seasoning and sauces	VFX.GroundChili	Ground Chili	food			never spoils
+Seasoning and sauces	VFX.GroundGinger	Ground Ginger	food			never spoils
+Seasoning and sauces	VFX.HoneyBBQSauce	Honey Barbecue Sauce	food			never spoils
+Seasoning and sauces	VFX.HoneyMustard	Honey Mustard	food			never spoils
+Seasoning and sauces	VFX.Horseradish	Horseradish	food			never spoils
+Seasoning and sauces	VFX.ItalianHerbsSeasoning	Italian Herbs Seasoning	food			never spoils
+Seasoning and sauces	VFX.LemonJuice	Lemon Juice	food			never spoils
+Seasoning and sauces	VFX.LemonPepperSeasoning	Lemon Pepper Seasoning	food			never spoils
+Seasoning and sauces	VFX.LimeJuice	Lime Juice	food			never spoils
+Seasoning and sauces	VFX.MemphisBarbequeRub	Memphis Barbecue Rub	food			never spoils
+Seasoning and sauces	VFX.MustardPowder	Mustard Powder	food			never spoils
+Seasoning and sauces	VFX.Nutmeg	Nutmeg	food			never spoils
+Seasoning and sauces	VFX.OldBaySeasoning	Old Bay Seasoning	food			never spoils
+Seasoning and sauces	VFX.OnionFlakes	Onion Flakes	food			never spoils
+Seasoning and sauces	VFX.Paprika	Paprika	food			never spoils
+Seasoning and sauces	VFX.PickleRelish	Pickle Relish	food			never spoils
+Seasoning and sauces	VFX.PoultrySeasoning	Poultry Seasoning	food			never spoils
+Seasoning and sauces	VFX.PumpkinSpiceSeasoning	Pumpkin Spice Seasoning	food			never spoils
+Seasoning and sauces	VFX.Ranch	Ranch	food			never spoils
+Seasoning and sauces	VFX.RanchSeasoning	Ranch Seasoning	food			never spoils
+Seasoning and sauces	VFX.SaltCan	Salt Can	food			never spoils
+Seasoning and sauces	VFX.SesameSeeds	Sesame Seeds	food			never spoils
+Seasoning and sauces	VFX.SmokedPaprika	Smoked Paprika	food			never spoils
+Seasoning and sauces	VFX.SpicyBrownMustard	Spicy Brown Mustard	food			never spoils
+Seasoning and sauces	VFX.SteakhouseSeasoning	Steakhouse Seasoning	food			never spoils
+Seasoning and sauces	VFX.SweetChiliSauce	Sweet Chili Sauce	food			never spoils
+Seasoning and sauces	VFX.SweetOnionRelish	Sweet Onion Relish	food			never spoils
+Seasoning and sauces	VFX.TartarSauce	Tartar Sauce	food			never spoils
+Seasoning and sauces	VFX.TexMexSeasoning	Tex-Mex Seasoning	food			never spoils
+Seasoning and sauces	VFX.ThistleDried	Thistle (Dried)	food			never spoils
+Seasoning and sauces	VFX.TomatoRelish	Tomato Relish	food			never spoils
+Seasoning and sauces	VFX.VegetableBouillonCube	Vegetable Bouillon Cube	food			never spoils
+Seasoning and sauces	VFX.Vinaigrette	Vinaigrette	food			never spoils
+Seasoning and sauces	VFX.WhitePepper	White Pepper	food			never spoils
+Snacks	VFX.AlmondGranolaBar	Almond Granola Bar	food			never spoils
+Snacks	VFX.AlmondGranolaBarBox	Box of Granola Bars - Almond	food			never spoils
+Snacks	VFX.Almonds	Almonds	food			never spoils
+Snacks	VFX.BananaCreamPuddingBox	Pack of Pudding Cups - Banana Cream	food			never spoils
+Snacks	VFX.BananaCreamPuddingCup	Banana Cream Pudding Cup	food			never spoils
+Snacks	VFX.BerryBlueJelloBox	Pack of Jello Cups - Berry Blue	food			never spoils
+Snacks	VFX.BerryBlueJelloCup	Berry Blue Jello Cup	food			never spoils
+Snacks	VFX.BlueberryStrudelsBox	Box of Pop Strudels - Blueberry	food			never spoils
+Snacks	VFX.BlueberryToasterStrudel	Blueberry Pop Strudel	food	7		spoils
+Snacks	VFX.BreakfastTrailMix	Trail Mix - Breakfast Blend	food			never spoils
+Snacks	VFX.BrownSugarStrudelsBox	Box of Pop Strudels - Brown Sugar Cinnamon	food			never spoils
+Snacks	VFX.BrownSugarToasterStrudel	Brown Sugar Cinnamon Pop Strudel	food	7		spoils
+Snacks	VFX.CandyCrunchTrailMix	Trail Mix - Candy Crunch	food			never spoils
+Snacks	VFX.Cashews	Cashews	food			never spoils
+Snacks	VFX.CheddarChips	Chips - Cheddar	food			never spoils
+Snacks	VFX.CheezItz	Cheeze-Emz	food			never spoils
+Snacks	VFX.CherryJelloBox	Pack of Jello Cups - Cherry	food			never spoils
+Snacks	VFX.CherryJelloCup	Cherry Jello Cup	food			never spoils
+Snacks	VFX.CherryStrudelsBox	Box of Pop Strudels - Cherry	food			never spoils
+Snacks	VFX.CherryToasterStrudel	Cherry Pop Strudel	food	7		spoils
+Snacks	VFX.ChocolateChipGranolaBar	Chocolate Chip Granola Bar	food			never spoils
+Snacks	VFX.ChocolateChipGranolaBarBox	Box of Granola Bars - Chocolate Chip	food			never spoils
+Snacks	VFX.ChocolatePuddingBox	Pack of Pudding Cups - Chocolate	food			never spoils
+Snacks	VFX.ChocolatePuddingCup	Chocolate Pudding Cup	food			never spoils
+Snacks	VFX.ClassicTrailMix	Trail Mix - Classic	food			never spoils
+Snacks	VFX.CoffeeCake	Coffee Cake	food			never spoils
+Snacks	VFX.CoffeeCakesBox	Box of Coffee Cakes	food			never spoils
+Snacks	VFX.CookiesAndCreamStrudelsBox	Box of Pop Strudels - Cookies and Cream	food			never spoils
+Snacks	VFX.CookiesAndCreamToasterStrudel	Cookies and Cream Pop Strudel	food	7		spoils
+Snacks	VFX.CosmicBrownie	Space Cake	food			never spoils
+Snacks	VFX.CosmicBrowniesBox	Box of Space Cakes	food			never spoils
+Snacks	VFX.CustardPuddingBox	Pack of Pudding Cups - Custard	food			never spoils
+Snacks	VFX.CustardPuddingCup	Custard Pudding Cup	food			never spoils
+Snacks	VFX.DillPickleChips	Chips - Dill Pickle	food			never spoils
+Snacks	VFX.DriedAppleSlices	Dried Apple Slices	food			never spoils
+Snacks	VFX.DriedApricots	Dried Apricots	food			never spoils
+Snacks	VFX.DriedBananaChips	Dried Banana Chips	food			never spoils
+Snacks	VFX.DriedCranberries	Dried Cranberries	food			never spoils
+Snacks	VFX.DriedDates	Dried Dates	food			never spoils
+Snacks	VFX.DriedMangoSlices	Dried Mango Slices	food			never spoils
+Snacks	VFX.DriedPineapple	Dried Pineapple	food			never spoils
+Snacks	VFX.DriedPrunes	Dried Prunes	food			never spoils
+Snacks	VFX.DriedSultanas	Dried Sultanas	food			never spoils
+Snacks	VFX.EnergyTrailMix	Trail Mix - Energy Boost	food			never spoils
+Snacks	VFX.FruitSaladJellyFruitBox	Pack of Fruit Cups - Fruit Salad in Jelly	food			never spoils
+Snacks	VFX.FruitSaladJellyFruitCup	Cup of Fruit Salad in Jelly	food			never spoils
+Snacks	VFX.FruitSaladSyrupFruitBox	Pack of Fruit Cups - Fruit Salad in Syrup	food			never spoils
+Snacks	VFX.FruitSaladSyrupFruitCup	Cup of Fruit Salad in Syrup	food			never spoils
+Snacks	VFX.FudgeRound	Choccy Round	food			never spoils
+Snacks	VFX.FudgeRoundsBox	Box of Choccy Rounds	food			never spoils
+Snacks	VFX.Goldfish	Koi Crackers	food			never spoils
+Snacks	VFX.GrapeJelloBox	Pack of Jello Cups - Grape	food			never spoils
+Snacks	VFX.GrapeJelloCup	Grape Jello Cup	food			never spoils
+Snacks	VFX.Hazelnuts	Hazelnuts	food			never spoils
+Snacks	VFX.HoneyBarbecueChips	Chips - Honey Barbecue	food			never spoils
+Snacks	VFX.LemonJelloBox	Pack of Jello Cups - Lemon	food			never spoils
+Snacks	VFX.LemonJelloCup	Lemon Jello Cup	food			never spoils
+Snacks	VFX.LemonLimeJelloBox	Pack of Jello Cups - Lemon Lime	food			never spoils
+Snacks	VFX.LemonLimeJelloCup	Lemon Lime Jello Cup	food			never spoils
+Snacks	VFX.LimeJelloBox	Pack of Jello Cups - Lime	food			never spoils
+Snacks	VFX.LimeJelloCup	Lime Jello Cup	food			never spoils
+Snacks	VFX.MandarinJellyFruitBox	Pack of Fruit Cups - Mandarin Oranges in Jelly	food			never spoils
+Snacks	VFX.MandarinJellyFruitCup	Cup of Mandarin Oranges in Jelly	food			never spoils
+Snacks	VFX.MandarinSyrupFruitBox	Pack of Fruit Cups - Mandarin Oranges in Syrup	food			never spoils
+Snacks	VFX.MandarinSyrupFruitCup	Cup of Mandarin Oranges in Syrup	food			never spoils
+Snacks	VFX.MixedNuts	Mixed Nuts	food			never spoils
+Snacks	VFX.MountainTrailMix	Trail Mix - Mountain Munch	food			never spoils
+Snacks	VFX.NuttyGranolaBar	Nutty Granola Bar	food			never spoils
+Snacks	VFX.NuttyGranolaBarBox	Box of Granola Bars - Nutty	food			never spoils
+Snacks	VFX.OatGranolaBar	Oat Granola Bar	food			never spoils
+Snacks	VFX.OatGranolaBarBox	Box of Granola Bars - Oat	food			never spoils
+Snacks	VFX.OatmealCremePie	Oats n' Cream Pie	food			never spoils
+Snacks	VFX.OatmealCremePiesBox	Box of Oats n' Cream Pies	food			never spoils
+Snacks	VFX.OrangeJelloBox	Pack of Jello Cups - Orange	food			never spoils
+Snacks	VFX.OrangeJelloCup	Orange Jello Cup	food			never spoils
+Snacks	VFX.PackagedBlueberryStrudel	Packaged Pop Strudel - Blueberry	food			never spoils
+Snacks	VFX.PackagedBrownSugarStrudel	Packaged Pop Strudel - Brown Sugar Cinnamon	food			never spoils
+Snacks	VFX.PackagedCherryStrudel	Packaged Pop Strudel - Cherry	food			never spoils
+Snacks	VFX.PackagedCookiesAndCreamStrudel	Packaged Pop Strudel - Cookies and Cream	food			never spoils
+Snacks	VFX.PackagedStrawberryStrudel	Packaged Pop Strudel - Strawberry	food			never spoils
+Snacks	VFX.PeachJelloBox	Pack of Jello Cups - Peach	food			never spoils
+Snacks	VFX.PeachJelloCup	Peach Jello Cup	food			never spoils
+Snacks	VFX.PeachJellyFruitBox	Pack of Fruit Cups - Peaches in Jelly	food			never spoils
+Snacks	VFX.PeachJellyFruitCup	Cup of Peaches in Jelly	food			never spoils
+Snacks	VFX.PeachSyrupFruitBox	Pack of Fruit Cups - Peaches in Syrup	food			never spoils
+Snacks	VFX.PeachSyrupFruitCup	Cup of Peaches in Syrup	food			never spoils
+Snacks	VFX.PeanutButterGranolaBarBox	Box of Granola Bars - Peanut Butter	food			never spoils
+Snacks	VFX.PearJellyFruitBox	Pack of Fruit Cups - Pears in Jelly	food			never spoils
+Snacks	VFX.PearJellyFruitCup	Cup of Pears in Jelly	food			never spoils
+Snacks	VFX.PearSyrupFruitBox	Pack of Fruit Cups - Pears in Syrup	food			never spoils
+Snacks	VFX.PearSyrupFruitCup	Cup of Pears in Syrup	food			never spoils
+Snacks	VFX.Pecans	Pecans	food			never spoils
+Snacks	VFX.PineNuts	Pine Nuts	food			never spoils
+Snacks	VFX.PineappleJelloBox	Pack of Jello Cups - Pineapple	food			never spoils
+Snacks	VFX.PineappleJelloCup	Pineapple Jello Cup	food			never spoils
+Snacks	VFX.PineappleJellyFruitBox	Pack of Fruit Cups - Pineapple in Jelly	food			never spoils
+Snacks	VFX.PineappleJellyFruitCup	Cup of Pineapple in Jelly	food			never spoils
+Snacks	VFX.PineappleSyrupFruitBox	Pack of Fruit Cups - Pineapple in Syrup	food			never spoils
+Snacks	VFX.PineappleSyrupFruitCup	Cup of Pineapple in Syrup	food			never spoils
+Snacks	VFX.Pistachios	Pistachios	food			never spoils
+Snacks	VFX.RanchChips	Chips - Ranch	food			never spoils
+Snacks	VFX.RaspberryJelloBox	Pack of Jello Cups - Raspberry	food			never spoils
+Snacks	VFX.RaspberryJelloCup	Raspberry Jello Cup	food			never spoils
+Snacks	VFX.RiceCakesAppleCinnamon	Rice Cakes - Apple Cinnamon	food			never spoils
+Snacks	VFX.RiceCakesCheddar	Rice Cakes - Cheddar	food			never spoils
+Snacks	VFX.RiceCakesLightlySalted	Rice Cakes - Lightly Salted	food			never spoils
+Snacks	VFX.RiceCakesRanch	Rice Cakes - Ranch	food			never spoils
+Snacks	VFX.RitzCrackers	Jazz Crackers	food			never spoils
+Snacks	VFX.StrawberryJelloBox	Pack of Jello Cups - Strawberry	food			never spoils
+Snacks	VFX.StrawberryJelloCup	Strawberry Jello Cup	food			never spoils
+Snacks	VFX.StrawberryPuddingBox	Pack of Pudding Cups - Strawberry	food			never spoils
+Snacks	VFX.StrawberryPuddingCup	Strawberry Pudding Cup	food			never spoils
+Snacks	VFX.StrawberryStrudelsBox	Box of Pop Strudels - Strawberry	food			never spoils
+Snacks	VFX.StrawberryToasterStrudel	Strawberry Pop Strudel	food	7		spoils
+Snacks	VFX.SwissRoll	Swirl Roll	food			never spoils
+Snacks	VFX.SwissRollsBox	Box of Swirl Rolls	food			never spoils
+Snacks	VFX.TropicalJellyFruitBox	Pack of Fruit Cups - Tropical Twist in Jelly	food			never spoils
+Snacks	VFX.TropicalJellyFruitCup	Cup of Tropical Twist in Jelly	food			never spoils
+Snacks	VFX.TropicalSyrupFruitBox	Pack of Fruit Cups - Tropical Twist in Syrup	food			never spoils
+Snacks	VFX.TropicalSyrupFruitCup	Cup of Tropical Twist in Syrup	food			never spoils
+Snacks	VFX.TropicalTrailMix	Trail Mix - Tropical Twist	food			never spoils
+Snacks	VFX.VanillaPuddingBox	Pack of Pudding Cups - Vanilla	food			never spoils
+Snacks	VFX.VanillaPuddingCup	Vanilla Pudding Cup	food			never spoils
+Snacks	VFX.Walnuts	Walnuts	food			never spoils
+Snacks	VFX.WheatThins	Wheat Crisps	food			never spoils
+Snacks	VFX.ZebraCakesBox	Box of Quagga Cakes	food			never spoils
+vfx_items_kitchenware.txt	VFX.EmptyJamJar	Empty Jam Jar	drink (fluid)			never spoils (fluid)
+vfx_items_kitchenware.txt	VFX.MilkshakeGlass	Empty Milkshake Glass	drink (fluid)			never spoils (fluid)
+vfx_items_kitchenware.txt	VFX.MixingBowl	Mixing Bowl	drink (fluid)			never spoils (fluid)
+vfx_items_kitchenware.txt	VFX.PlasticPitcher	Empty Plastic Pitcher	drink (fluid)			never spoils (fluid)
+vfx_items_kitchenware.txt	VFX.ProteinShaker	Empty Protein Shaker	drink (fluid)			never spoils (fluid)
+vfx_items_kitchenware.txt	VFX.SmallJar	Small Jar	drink (fluid)			never spoils (fluid)
+vfx_items_kitchenware.txt	VFX.SmallTinCanEmpty	Small Tin Can Empty	drink (fluid)			never spoils (fluid)

@@ -115,10 +115,19 @@ Hospitals, prisons, police and army rooms are never touched by the loss. They ge
 
 ### Player bases
 
-A building is a **base** once the player, in its tier rooms:
+A building is a **base** when it shows that a player lives there. The game has no flag for this in singleplayer (claimed safehouses exist only in multiplayer), so the mod reads the signs a player leaves (code in `ILB_Base.lua`):
 
-- stores `BaseItems` items or more (default 3), **or**
-- has activity on `BaseActiveDays` different days or more (default 3).
+- **Player actions** (the vanilla timed actions are wrapped; the original runs first, unchanged):
+  - barricading a door or window of the shop (`ISBarricadeAction:complete`);
+  - placing furniture inside it (`ISMoveablesAction:complete`, mode "place");
+  - building something inside it or against its walls, 1 tile (`ISBuildIsoEntity:create`);
+  - turning on or plugging in a generator inside it or within 3 tiles (`ISActivateGenerator:complete`, `ISPlugGenerator:complete`).
+- **Traces found when the shop loads**, for bases made before the mod was added: a running generator inside, or furniture the game itself marks as moved by a player (`IsoThumpable:isMovedThumpable`).
+- **Use**: `BaseItems` items or more stored in its tier containers (default 3), or activity on `BaseActiveDays` different days (default 3).
+
+Barricades and objects the game places when it creates the world never go through those actions and are never marked as moved, so a pre-made barricaded building is **not** taken for a base. A barricade alone found at load is not a sign for the same reason. The sign is saved in the activity record (`baseSignal`, with the day), and it is permanent.
+
+A shop that was only visited or seen, without any sign, is not a base: it loses loot as usual, with the 14-day recent-visit pause.
 
 Activity for the base rule is a container listed in the loot window, an item taken out, or an item put in. **Entering the building counts as a visit for the recent-visit pause, but not as a day of activity**: otherwise walking through a shop on three days would make it a base that never loses loot. Entering is checked only when the player's building changes, so it costs one lookup per move.
 

@@ -1,0 +1,2603 @@
+{
+ "foods": {
+  "VFX.AcornFlour": {
+   "group": "flour",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.AdmiralChomp": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.Aioli": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.AlfredoSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Allspice": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.AlmondGranolaBar": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.AlmondGranolaBarBox": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.Almonds": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.AppleButter": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.AppleCinnamonMuffinMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.AppleSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ApricotJam": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ArborioRice": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagColaGummies": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagFriedOnion": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagGummyBears": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagGummyFish": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagGummyWorms": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagPeachRings": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagShreddedCoconut": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.BagSourGummyBears": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BagSourGummyWorms": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BananaBreadMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BananaCreamPuddingBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BananaCreamPuddingCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.BananaCreamPuddingMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BarbequeRub": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.BarleyFlour": {
+   "group": "flour",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BasilPestoSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BasmatiRice": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BayLeaves": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.BechamelSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BeefBouillonCube": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.BeefRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BeefRamenFlavourSachet": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.BerryBlueJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BerryBlueJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.BlackberryJam": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BlueberryJam": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BlueberryMuffinMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BlueberryStrudelsBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.BottleTops": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxBeefRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxChickenNoodleSoupSachets": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxChickenRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxChickenStuffingMix": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxCornbreadStuffingMix": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxHerbStuffingMix": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxHotAndSpicyRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxPeaAndHamSoupSachets": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxPorkRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxPumpkinSoupSachets": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxScallopedPotatoes": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxShrimpRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxSoySauceRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxTomatoSoupSachets": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BoxTurkeyStuffingMix": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BranMuffinMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Breadcrumbs": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.BreakfastTeaBag_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BreakfastTrailMix": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BrownRice": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BrownSugarStrudelsBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.BrownieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BubblegumTapeGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BubblegumTapePink": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BubblegumTapeSourApple": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BubblegumTapeSourBlueRaspberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BubblegumTapeStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BubblegumTapeTangyTropical": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.BuffaloSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ButterscotchPuddingMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CaesarSaladDressing": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CajunSeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.CandyCigarettes": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CandyCrunchTrailMix": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CandyNecklace": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CanisterGrits": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CaramelCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CaramelFrostingTub": {
+   "group": "frosting",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Cardamom": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.CarrotCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Cashews": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CayennePepper": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.CelerySalt": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ChamomileTeaBag_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CheddarBiscuitMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CheddarChips": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Cheeps": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CheeseSpread": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CheezItz": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CherryJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CherryJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CherryStrudelsBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.ChickenNoodleSoupSachet": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChickenRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChickenRamenFlavourSachet": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ChiliFlakes": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ChineseFiveSpice": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ChipotleSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateAlmonds": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateBarAlmond": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateBarCookiesAndCream": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateBarDark": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateBarPorkie": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateBarWhite": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateCandyPeanut": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateCaramelDuds": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateChipCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateChipGranola": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.ChocolateChipGranolaBar": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.ChocolateChipGranolaBarBox": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.ChocolateChipMuffinMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateCoins": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateFrostingTub": {
+   "group": "frosting",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateKisses": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateMaltBalls": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateMousseMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolatePretzels": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolatePuddingBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolatePuddingCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.ChocolateSeniorMints": {
+   "group": "chocolate",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ChocolateSwirlBreadMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CinnamonButter": {
+   "group": "butter",
+   "freshDays": 60,
+   "rottenDays": 80
+  },
+  "VFX.CinnamonSugar": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.CinnamonSwirlBreadMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ClassicTrailMix": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Cloves": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.CocktailSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CocoaPuffs": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CoconutAlmondGranola": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CoffeeCake": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.CoffeeCakesBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.CoffeeCreamerAlmond_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CoffeeCreamerFrenchVanilla_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CoffeeCreamerHazelnut_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CoffeeCreamerIrishCream_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CoffeeCreamerOriginal_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ColeslawDressing": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ConfettiCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ConfettiFrostingTub": {
+   "group": "frosting",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CookiesAndCreamStrudelsBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.CornMuffinMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CosmicBrownie": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.CosmicBrowniesBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.CranberryBreadMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CranberrySauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CreamCheeseFrostingTub": {
+   "group": "frosting",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Croutons": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CroutonsCheddar": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CroutonsGarlic": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CroutonsHerbButter": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.Cumin": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.CurryPowder": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.CustardPuddingBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.CustardPuddingCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.CustardPuddingMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DijonMustard": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Dill": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.DillPickleChips": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DoubleChocolateMuffinMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedAppleSlices": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedApricots": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedBananaChips": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedCranberries": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedDates": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedMangoSlices": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedPineapple": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedPrunes": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.DriedSultanas": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.EarlGrayTeaBag_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.EnergyTrailMix": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FairySticks": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FennelSeeds": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.Fettuccine": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FishBouillonCube": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.FrenchVanillaCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FrostyCrunch": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.FruitChewCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FruitChewGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FruitChewLemon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FruitChewOrange": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FruitChewStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FruitChewWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FruitNutGranola": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.FruitSaladJellyFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.FruitSaladJellyFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.FruitSaladSyrupFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.FruitSaladSyrupFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.FruityLoops": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.Fudge": {
+   "group": "fudge",
+   "freshDays": 90,
+   "rottenDays": 120
+  },
+  "VFX.FudgeRound": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.FudgeRoundsBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.FunDipApple": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunDipCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunDipGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunDipOrange": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunDipStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunDipWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyBanana": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyBlueRaspberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyFruitPunch": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyOrange": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.FunnyTaffyWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GaramMasala": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.GarlicSalt": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.Geeks": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopBlueRaspberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopButterscotch": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopCola": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopCreamSoda": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopGreenApple": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopLemon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopLime": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopOrange": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GiantLollipopWildBerry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GingerTeaBag_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GingerbreadCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Gnocchi": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Goldfish": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GrapeJam": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GrapeJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GrapeJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.GreenTeaBag_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GroundChili": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.GroundGinger": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.GumBallBanana": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumBallBlueberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumBallCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumBallGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumBallLemonLime": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumBallOrange": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumBallPineapple": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumBallStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumCinnamon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumGreenApple": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumPeppermint": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumPinkBubblegum": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumSpearmint": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumTuttiFruity": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GumWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GummyCola": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GummyPeachRings": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GummySourBears": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.GummySourWorms": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HazelnutSpread": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Hazelnuts": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HomemadeAlfredoSauce": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomemadeBasilPestoSauce": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomemadeBechamelSauce": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomemadeCranberrySauce": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomemadeJelliedCranberrySauce": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomemadeMarinara": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomemadeMeatSauce": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomemadeSpicyMarinara": {
+   "group": "homemade_sauce",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.HomestyleBiscuitMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HoneyBBQSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HoneyBarbecueChips": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HoneyMustard": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HoneyOatsGranola": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.HoneyOatyOs": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.Horseradish": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HotAndSpicyRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.HotAndSpicyRamenFlavourSachet": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ItalianHerbsSeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.JarBlackOlives": {
+   "group": "pickled",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.JarGreenOlives": {
+   "group": "pickled",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.JarPickledEggs": {
+   "group": "pickled",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.JarPickledPeppers": {
+   "group": "pickled",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.JarPickles": {
+   "group": "pickled",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.JarSundriedTomatoes": {
+   "group": "pickled",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.JasmineRice": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.JawBreaker": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LasagnaSheets": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LemonFrostingTub": {
+   "group": "frosting",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LemonJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LemonJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.LemonJuice": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LemonLimeJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LemonLimeJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.LemonMarmalade": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LemonPepperSeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.LemonPoppyMuffinMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LemonTeaBag_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LimeJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LimeJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.LimeJuice": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LiverSpread": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.LollipopBlueRaspberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopButterscotch": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopCola": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopCreamSoda": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopGreenApple": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopLemon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopLime": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopOrange": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.LollipopWildBerry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Macaroni": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.MandarinJellyFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.MandarinJellyFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.MandarinSyrupFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.MandarinSyrupFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.MapleButter": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.MaplePecanGranola": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.MeatSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.MemphisBarbequeRub": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.MixedNuts": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Molasses": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.MountainTrailMix": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.MustardPowder": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.Nutmeg": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.NuttyGranolaBar": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.NuttyGranolaBarBox": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.OatFlour": {
+   "group": "flour",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.OatGranolaBar": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.OatGranolaBarBox": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.OatmealCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.OatmealCremePie": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.OatmealCremePiesBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.OatyOs": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.OldBaySeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.OnionFlakes": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.OrangeJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.OrangeJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.OrangePoppyseedCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PMAlfredo": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PMCheddarBroccoli": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PMCreamyChicken": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PMCreamyPesto": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PMMacCheese": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PMParmesan": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PackagedBlueberryStrudel": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.PackagedBrownSugarStrudel": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.PackagedCherryStrudel": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.PackagedCookiesAndCreamStrudel": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.PackagedStrawberryStrudel": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.Paprika": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.PeaAndHamSoupSachet": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PeachJam": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PeachJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PeachJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PeachJellyFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PeachJellyFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PeachSyrupFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PeachSyrupFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PeanutButterCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PeanutButterGranolaBarBox": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PearJellyFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PearJellyFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PearSyrupFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PearSyrupFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.Pecans": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Penne": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PeppermintTeaBag_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PickleRelish": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PineNuts": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PineappleJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PineappleJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PineappleJellyFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PineappleJellyFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PineappleSyrupFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PineappleSyrupFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.PistachioPuddingMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Pistachios": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksBlueRaspberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksCottonCandy": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksGreenApple": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksTropicalPunch": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PopRocksWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PorkRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PorkRamenFlavourSachet": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.PoultrySeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.PumpkinBreadMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PumpkinSoupSachet": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PumpkinSpiceSeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.PushPopCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PushPopCola": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PushPopFruitFrenzy": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PushPopGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PushPopRainbowSherbet": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PushPopStrawberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.PushPopWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RMChicken": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RMFried": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RMMedley": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RMMexican": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RainbowLollipop": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Ranch": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RanchChips": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RanchSeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.RaspberryJam": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RaspberryJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RaspberryJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.RedVelvetCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RiceCakesAppleCinnamon": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RiceCakesCheddar": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RiceCakesLightlySalted": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RiceCakesRanch": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RiceKrisps": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.RingPopBerry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RingPopBlueRaspberry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RingPopCitrus": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RingPopFruitPunch": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RingPopGrape": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RingPopSourCherry": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RingPopTropical": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RingPopWatermelon": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RitzCrackers": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Rushers": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.RyeFlour": {
+   "group": "flour",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SaltwaterTaffy": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SeasoningMixWingsBBQ": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsBuffalo": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsCaribbeanJerk": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsCrispy": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsGarlicParmesan": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsHoneyBBQ": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsHot": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsRanch": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SeasoningMixWingsSpicyCajun": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SesameSeeds": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ShortbreadCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ShrimpRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ShrimpRamenFlavourSachet": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SmokedPaprika": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SnickerdoodleCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SourStraps": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SourStraws": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SoySauceRamen": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SoySauceRamenFlavourSachet": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.SpiceCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SpicyBrownMustard": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SpicyMarinara": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Sprinkles": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SteakhouseSeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.StrawberryCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.StrawberryFrostingTub": {
+   "group": "frosting",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.StrawberryJam": {
+   "group": "jam",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.StrawberryJelloBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.StrawberryJelloCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.StrawberryPuddingBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.StrawberryPuddingCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.StrawberryStrudelsBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.SugarCookieMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SweetChiliSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SweetOnionRelish": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.SwissRoll": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.SwissRollsBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  },
+  "VFX.TartarSauce": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.TexMexSeasoning": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ThistleDried": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.ToffeeBites": {
+   "group": "candy",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.TomatoRelish": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.TomatoSoupSachet": {
+   "group": "dry",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.TropicalJellyFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.TropicalJellyFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.TropicalSyrupFruitBox": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.TropicalSyrupFruitCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.TropicalTrailMix": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.UnluckyCharms": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.VanillaExtract": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.VanillaFrostingTub": {
+   "group": "frosting",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.VanillaPuddingBox": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.VanillaPuddingCup": {
+   "group": "cup",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.VanillaPuddingMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.VegetableBouillonCube": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.Vinaigrette": {
+   "group": "sauce",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Walnuts": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.WheatThins": {
+   "group": "snack",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.Wheaties": {
+   "group": "cereal",
+   "freshDays": 180,
+   "rottenDays": 240
+  },
+  "VFX.WhitePepper": {
+   "group": "spice",
+   "freshDays": 730,
+   "rottenDays": 820
+  },
+  "VFX.YellowCakeMix_2": {
+   "group": "powder",
+   "freshDays": 365,
+   "rottenDays": 420
+  },
+  "VFX.ZebraCakesBox": {
+   "group": "packaged_cake",
+   "freshDays": 30,
+   "rottenDays": 45
+  }
+ },
+ "drinks": {
+  "VFX.BananaMilk": {
+   "group": "milk",
+   "days": 60
+  },
+  "VFX.CherryColaBottle": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.CherryColaCan": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.ChocolateMilk": {
+   "group": "milk",
+   "days": 60
+  },
+  "VFX.CreamSodaBottle": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.CreamSodaCan": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.GrapefruitJuice": {
+   "group": "juice",
+   "days": 30
+  },
+  "VFX.IcedTeaGreen": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.IcedTeaLemon": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.IcedTeaPeach": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.IcedTeaRaspberry": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.IcedTeaSweet": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.JuiceBoxCranberry": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.JuiceBoxGrapefruit": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.JuiceBoxPineapple": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.JuiceBoxTropical": {
+   "group": "juice_box",
+   "days": 120
+  },
+  "VFX.LemonLimeSodaBottle": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.LemonLimeSodaCan": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.LemonSodaBottle": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.LemonSodaCan": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.OrangeSodaBottle": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.OrangeSodaCan": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.PineappleJuice": {
+   "group": "juice",
+   "days": 30
+  },
+  "VFX.PruneJuice": {
+   "group": "juice",
+   "days": 30
+  },
+  "VFX.RootBeerBottle": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.RootBeerCan": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.SoyMilk": {
+   "group": "milk",
+   "days": 60
+  },
+  "VFX.SportsBerryBlast": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.SportsFruitPunch": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.SportsGrape": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.SportsLemonLime": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.SportsMelon": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.SportsOrange": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.SportsWhiteCherry": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.StrawberryMilk": {
+   "group": "milk",
+   "days": 60
+  },
+  "VFX.TropicalJuice": {
+   "group": "juice",
+   "days": 30
+  },
+  "VFX.VanillaColaBottle": {
+   "group": "soda",
+   "days": 365
+  },
+  "VFX.VanillaColaCan": {
+   "group": "soda",
+   "days": 365
+  }
+ }
+}

@@ -1,0 +1,9 @@
+name=Perishable Foods: Vanilla Foods Expanded
+id=PerishableFoodsVFX
+description=Optional add-on for Perishable Foods. Needs Vanilla Foods Expanded. It gives the foods and drinks of that mod that never spoil a realistic but arcade shelf life, with the same rules as the main mod: spices last 2 years, candy, snacks and dry goods 1 year, cereal 6 months, packaged cakes 1 month, milk 2 months, juice 1 month, and fridges and freezers slow it down. Canned goods, sealed alcohol, sugar and salt are left alone. Turn it on only when both other mods are active.
+author=Celi Herstal
+modversion=0.0.1
+versionMin=42.20
+require=\PerishableFoods,\VanillaFoodsExpanded
+poster=poster.png
+icon=icon.png

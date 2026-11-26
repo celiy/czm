@@ -118,6 +118,12 @@ function ILB.processBuilding(def, fresh, why)
         return 0
     end
     local t = ILB.day()
+    -- Traces of a player base (a running generator, furniture moved by a
+    -- player): the shop becomes a base and loses nothing.
+    if ILB.scanBaseTraces and not ILB.isBase(ILB.record(def)) then
+        local reason = ILB.scanBaseTraces(def)
+        if reason then ILB.markBase(def, reason .. " (found at load)", t) end
+    end
     local vanilla = ILB.isVanillaLooted(def)
     local removed = 0
     ILB.forEachContainer(def, function(c, tier)

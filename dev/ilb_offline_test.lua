@@ -44,6 +44,9 @@ getSandboxOptions = function() return { getTimeSinceApo = function() return time
 isServer = function() return false end
 instanceof = function(o, cls) return cls == "Key" and o.key == true end
 print_ = print
+isClient = function() return false end
+Events = setmetatable({}, { __index = function() return { Add = function() end, Remove = function() end } end })
+package.preload["ImmersiveLootedBuildings/ILB_Core"] = function() return true end -- loaded with dofile below
 
 dofile(MOD .. "/lua/shared/ImmersiveLootedBuildings/ILB_Core.lua")
 local ILB = ImmersiveLootedBuildings
@@ -476,6 +479,87 @@ do
     timeSinceApo, worldHours = 4, 0
     check("6.1 TimeSinceApo 4: day() = 90 at the start", near(ILB.day(), 90))
     timeSinceApo = 1
+end
+
+-- 11. Signs of a player base (ILB_Base) ----------------------------------------
+do
+    store = {}
+    ILB.data().seed = 424242
+    -- A tiny world: one shop building (10x10 at 1000,1000) with a grocery room.
+    local objectsAt = {}
+    local function mkRoomDef(name, x, y, w, h)
+        return { getName = function() return name end, getX = function() return x end, getY = function() return y end,
+            getX2 = function() return x + w end, getY2 = function() return y + h end, getZ = function() return 0 end }
+    end
+    local shopRooms = { mkRoomDef("grocery", 1000, 1000, 10, 10) }
+    local shop = { getX = function() return 1000 end, getY = function() return 1000 end, getW = function() return 10 end, getH = function() return 10 end,
+        getRooms = function() return { size = function() return #shopRooms end, get = function(_, i) return shopRooms[i + 1] end } end }
+    local building = { getDef = function() return shop end }
+    local function square(x, y)
+        local inside = x >= 1000 and x < 1010 and y >= 1000 and y < 1010
+        return { getX = function() return x end, getY = function() return y end, getZ = function() return 0 end,
+            getBuilding = function() return inside and building or nil end,
+            getObjects = function()
+                local list = objectsAt[x .. "," .. y] or {}
+                return { size = function() return #list end, get = function(_, i) return list[i + 1] end }
+            end }
+    end
+    getCell = function() return { getGridSquare = function(_, x, y) return square(x, y) end } end
+    ILB.shopIndex = function()
+        local idx = {}
+        for cx = 125, 126 do for cy = 125, 126 do idx[cx .. "," .. cy] = { shop } end end
+        return idx
+    end
+    local realInstanceof = instanceof
+    instanceof = function(o, cls) return o.class == cls or (cls == "Key" and o.key == true) end
+    dofile(MOD .. "/lua/shared/ImmersiveLootedBuildings/ILB_Base.lua")
+
+    check("11 the shop counts as a shop", ILB.isShop(shop))
+    check("11 no record: not a base", not ILB.isBase(ILB.record(shop)))
+    -- A barricade the world generator placed is just an object: no action, no sign.
+    objectsAt["1001,1001"] = { { class = "IsoBarricade" } }
+    check("11 a pre-generated barricade is not a sign", ILB.scanBaseTraces(shop) == nil)
+    -- The player barricades a window of the shop (the action handler).
+    local window = { getSquare = function() return square(1000, 1005) end, getOppositeSquare = function() return square(999, 1005) end }
+    ILB.onPlayerBarricade(window)
+    local r = ILB.record(shop)
+    check("11 barricading a window of the shop makes it a base", r and r.baseSignal == "barricade" and ILB.isBase(r))
+    check("11 a base keeps all its loot", ILB.keep(shop, "High", 360) == nil)
+    -- Furniture placed outside the shop does not count; inside it does.
+    store = {}; ILB.data().seed = 424242
+    ILB.onPlayerPlacedFurniture(square(1020, 1020))
+    check("11 furniture placed outside the shop: not a base", not ILB.isBase(ILB.record(shop)))
+    ILB.onPlayerPlacedFurniture(square(1003, 1003))
+    check("11 furniture placed inside: a base", ILB.record(shop) and ILB.record(shop).baseSignal == "furniture")
+    -- Built right against the wall (1 tile) counts; 3 tiles away does not.
+    store = {}; ILB.data().seed = 424242
+    ILB.onPlayerBuilt(1012, 1005, 0)
+    check("11 built 3 tiles away: not a base", not ILB.isBase(ILB.record(shop)))
+    ILB.onPlayerBuilt(1010, 1005, 0)
+    check("11 built against the wall: a base", ILB.record(shop) and ILB.record(shop).baseSignal == "built")
+    -- A generator next to the shop (3 tiles) counts; 6 tiles away does not.
+    store = {}; ILB.data().seed = 424242
+    ILB.onPlayerGenerator({ getSquare = function() return square(1015, 1005) end })
+    check("11 generator 6 tiles away: not a base", not ILB.isBase(ILB.record(shop)))
+    ILB.onPlayerGenerator({ getSquare = function() return square(1012, 1005) end })
+    check("11 generator 3 tiles away: a base", ILB.record(shop) and ILB.record(shop).baseSignal == "generator")
+    -- Traces found at load.
+    objectsAt["1002,1002"] = { { class = "IsoGenerator", isActivated = function() return false end } }
+    check("11 a generator that is off is not a trace", ILB.scanBaseTraces(shop) == nil)
+    objectsAt["1002,1002"] = { { class = "IsoGenerator", isActivated = function() return true end } }
+    check("11 a running generator inside is a trace", ILB.scanBaseTraces(shop) == "generator")
+    objectsAt["1002,1002"] = { { class = "IsoThumpable", isMovedThumpable = function() return false end } }
+    check("11 furniture from the map is not a trace", ILB.scanBaseTraces(shop) == nil)
+    objectsAt["1002,1002"] = { { class = "IsoThumpable", isMovedThumpable = function() return true end } }
+    check("11 furniture moved by a player is a trace", ILB.scanBaseTraces(shop) == "furniture")
+    -- The sign is permanent and keeps its first reason.
+    ILB.markBase(shop, "built")
+    check("11 the base sign keeps its first reason", ILB.record(shop).baseSignal == "generator")
+    -- A shop only visited: not a base, loses loot after the pause.
+    store = {}; ILB.data().seed = 424242
+    ILB.touch(shop, "enter", 0, 0)
+    check("11 only visited: not a base, loses loot after the pause", not ILB.isBase(ILB.record(shop)) and ILB.keep(shop, "High", 100) < 1)
+    instanceof = realInstanceof
 end
 
 print(string.format("DONE pass=%d fail=%d", pass, fail))

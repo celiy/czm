@@ -72,7 +72,9 @@ CZM_TEST_SUITES.perishable = function(t)
         t.check("existing old item is reset to fresh, not rotten", ctx.oldChoc:getAge() == 0 and ctx.oldChoc:getOffAge() == 365,
             string.format("age=%.2f offAge=%s", ctx.oldChoc:getAge(), tostring(ctx.oldChoc:getOffAge())))
         PF.patchItem(ctx.cheese, false)
-        t.check("item with its own script values is left alone", ctx.cheese:getOffAge() == 14 and ctx.cheese:getOffAgeMax() == 20)
+        local cheeseScript = getScriptManager():getItem("Base.Cheese") -- another mod may change cheese: compare with its own script
+        t.check("item with its own script values is left alone", ctx.cheese:getOffAge() == cheeseScript:getDaysFresh() and ctx.cheese:getOffAgeMax() == cheeseScript:getDaysTotallyRotten(),
+            string.format("offAge=%s script=%s", tostring(ctx.cheese:getOffAge()), tostring(cheeseScript:getDaysFresh())))
         PF.patchItem(ctx.sugar, false)
         t.check("sugar (never spoils) is left alone", ctx.sugar:getOffAge() >= 1000000000)
     end)

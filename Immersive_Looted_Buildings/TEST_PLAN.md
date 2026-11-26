@@ -4,15 +4,16 @@ Status: **implemented and tested (2026-11-26).** Design: [DESIGN.md](DESIGN.md).
 
 ## How to run
 
-- Offline (plain Lua 5.4, 2 seconds): `lua dev/ilb_offline_test.lua`, 70 checks of the formulas, groups, containers, bases, the visit clock and the options, with fake game objects.
+- Offline (plain Lua 5.4, 2 seconds): `lua dev/ilb_offline_test.lua`, 87 checks of the formulas, groups, containers, bases and base signs, the visit clock and the options, with fake game objects.
 - In game: `dev/run-autotest.sh` with `CZM_TEST_MODE=ilb2` (phases `full`, `series`, `vanilla`, `apo`), `ilb2_persist` (`save`, `load`) and `ilb2_midsave` (`prep`, `add`, `remove`, `readd`). The runner renames the test copies of the mods to `czmtest_<id>` so a Workshop subscription cannot replace them.
 
 ## Results
 
 | Run | Where | Result |
 |---|---|---|
-| Offline | | 70/70 |
+| Offline | | 87/87 |
 | `ilb2` full | West Point | 67/67 |
+| `ilb2` base (signs of a player base) | West Point | 21/21 |
 | `ilb2` series | Riverside 6270,5270 | 38/38 |
 | `ilb2` series with overrun | Muldraugh | 42/42 |
 | `ilb2` vanilla looted 100% | West Point | 3/3 |
@@ -21,7 +22,7 @@ Status: **implemented and tested (2026-11-26).** Design: [DESIGN.md](DESIGN.md).
 | `ilb2_midsave` without the mod, add, remove, add again | West Point | 2 + 4 + 2 + 3, all pass |
 | Gasoline Degradation and Perishable Foods suites | | 33/33 and 34/34 |
 
-Covered in game: 1.1-1.5, 2.1-2.5, 3.1-3.5, 3.9, 3.10, 4.1, 4.4, 4.6, 4.10, 5 (Enabled, respawn on and off, log decisions, radius), 6.1-6.4, 7.1, 8.1, 8.3, 8.4, 9.1-9.7, 9.10, 9.11, 10.1, 10.3-10.5. Covered offline only (the same functions, with fake objects): 3.6-3.8, 4.5, 4.7, 4.8, the curve, chance, peak, minimum, lucky range and room list options, 10.2, 10.6-10.9, 10.12, 10.13 arithmetic. Not covered: multiplayer (9.12), 5.4 (items entering by crafting are not tagged, documented).
+Covered in game: 1.1-1.5, 2.1-2.5, 3.1-3.5, 3.9, 3.10, 4.1, 4.4, 4.6, 4.10, 5 (Enabled, respawn on and off, log decisions, radius), 6.1-6.4, 7.1, 8.1, 8.3, 8.4, 9.1-9.7, 9.10, 9.11, 10.1, 10.3-10.5. Covered offline only (the same functions, with fake objects): 3.6-3.8, 4.5, 4.7, 4.8, the curve, chance, peak, minimum, lucky range and room list options, 10.2, 10.6-10.9, 10.12, 10.13 arithmetic. Base signs (4.11-4.18), in game: a barricade added without a player action is not a sign; the player barricading, placing furniture or plugging in a generator (the real, hooked vanilla actions) makes a base; a running generator and furniture moved by a player found at load make a base; building against the wall counts (handler of the hooked build action, the full build is not run in the test), 4 tiles away does not; a shop only visited is not a base. Not covered: multiplayer (9.12, no dedicated server installed), 5.4 (items entering by crafting are not tagged, documented).
 
 ## Principles
 

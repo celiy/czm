@@ -3,6 +3,7 @@
 
     Suites (TEST_PLAN.md):
       ilb2          phase "full" (default): sections 1-5, 9, 10, 3.10, 8.1
+                    phase "base": signs of a player base (4.11-4.18)
                     phase "series": the time series and overrun only (towns with few shops)
                     phase "vanilla": section 7.1 (run with MaximumLooted 100)
                     phase "apo": section 6.1 (run with TimeSinceApo 4)
@@ -430,6 +431,159 @@ CZM_TEST_SUITES.ilb2 = function(t)
             check("6.1 containers filled on day 90 hold day 90's loot", n > 0 and bad == 0, string.format("%d containers, %d off", n, bad))
             t.finish()
         end)
+        return
+    end
+
+    if phase == "base" then
+        -- 4.11-4.18: signs of a player base, one real shop reset between cases.
+        local function objectsOf(def, pred)
+            local out = {}
+            local rooms = def:getRooms()
+            for i = 0, rooms:size() - 1 do
+                local rd = rooms:get(i)
+                for x = rd:getX(), rd:getX2() - 1 do
+                    for y = rd:getY(), rd:getY2() - 1 do
+                        local sq = getCell():getGridSquare(x, y, rd:getZ())
+                        if sq then
+                            local objs = sq:getObjects()
+                            for oi = 0, objs:size() - 1 do
+                                local obj = objs:get(oi)
+                                if pred(obj, sq) then out[#out + 1] = obj end
+                            end
+                        end
+                    end
+                end
+            end
+            return out
+        end
+        local function reset()
+            local X = ctx.X
+            ILB.data().used[X.key] = nil
+            ILB.seen[X.key] = nil
+            ILB.deferred[X.key] = nil
+            fillWith(C(ctx.e), 100)
+            ILB.setState(C(ctx.e), 1, math.floor(ILB.day()))
+        end
+        -- 20 days later, away from the shop: a base keeps everything, a shop
+        -- without signs loses loot as the curve says (after the visit pause).
+        local function lossCheck(isBase, label)
+            t.jumpDays(20)
+            ILB.checkDeferred()
+            ILB.processBuilding(ctx.X.def, false, "base-test")
+            local n = C(ctx.e):getItems():size()
+            local expect = 100
+            if not isBase then
+                local r = ILB.record(ctx.X.def)
+                local E = r and r.E or ILB.day()
+                expect = 100 * oK(ctx.X.def, ctx.e.tier, E)
+            end
+            check(label, math.abs(n - expect) <= 2, string.format("%d vs %.1f", n, expect))
+        end
+        t.queue(1, function()
+            check("base: hooks on the vanilla actions are installed", ILB.baseHooks and ILB.baseHooks.barricade and ILB.baseHooks.furniture
+                and ILB.baseHooks.generatorOn and ILB.baseHooks.generatorPlug and ILB.baseHooks.built)
+            ctx.list = tierContainers(110)
+            ctx.buildings = eligibleBuildings(ctx.list)
+            check("base: a shop to test with", #ctx.buildings >= 1)
+            ctx.X = ctx.buildings[1]
+            if not ctx.X then return end
+            ctx.e = ctx.X.containers[1]
+            ctx.barricadeAble = objectsOf(ctx.X.def, function(o) return instanceof(o, "BarricadeAble") end)
+            ctx.inside = freeSquareInside(ctx.X.def)
+            check("base: two doors or windows and a free square in the shop", #ctx.barricadeAble >= 2 and ctx.inside ~= nil, tostring(#ctx.barricadeAble))
+            teleport(outdoorSquare(60))
+            o.ProtectRadius = 0
+        end)
+        -- a) a barricade the world generator could have made: no player action
+        t.queue(120, function()
+            if #(ctx.barricadeAble or {}) < 2 then return end
+            reset()
+            local b = IsoBarricade.AddBarricadeToObject(ctx.barricadeAble[1], true)
+            check("4.11 setup: a barricade added without a player action", b ~= nil)
+            ILB.processBuilding(ctx.X.def, true, "load") -- the shop loads with it
+            check("4.11 a barricade made without a player is not a base sign", not ILB.isBase(ILB.record(ctx.X.def)))
+            lossCheck(false, "4.11 that shop loses loot normally")
+        end)
+        -- b) the player barricades (the real, hooked ISBarricadeAction:complete)
+        t.queue(30, function()
+            if #(ctx.barricadeAble or {}) < 2 then return end
+            reset()
+            ISBarricadeAction.complete({ character = getSpecificPlayer(0), item = ctx.barricadeAble[2] })
+            local r = ILB.record(ctx.X.def)
+            check("4.12 the player barricading a door or window makes the shop a base", r and r.baseSignal == "barricade", r and tostring(r.baseSignal) or "no record")
+            lossCheck(true, "4.12 a barricaded base keeps all its loot")
+        end)
+        -- c) the player places furniture inside (the real, hooked ISMoveablesAction:complete)
+        t.queue(30, function()
+            if not ctx.inside then return end
+            reset()
+            ISMoveablesAction.complete({ character = getSpecificPlayer(0), mode = "place", square = ctx.inside })
+            local r = ILB.record(ctx.X.def)
+            check("4.13 placing furniture inside makes the shop a base", r and r.baseSignal == "furniture", r and tostring(r.baseSignal) or "no record")
+            lossCheck(true, "4.13 that base keeps all its loot")
+        end)
+        -- d) the player plugs in a generator in the shop (the real, hooked ISPlugGenerator:complete)
+        t.queue(30, function()
+            if not ctx.inside then return end
+            reset()
+            local item = instanceItem("Base.Generator")
+            local gen = IsoGenerator.new(item, getCell(), ctx.inside)
+            ctx.gen = gen
+            ISPlugGenerator.complete({ character = getSpecificPlayer(0), generator = gen, plug = true })
+            local r = ILB.record(ctx.X.def)
+            check("4.14 plugging in a generator in the shop makes it a base", r and r.baseSignal == "generator", r and tostring(r.baseSignal) or "no record")
+            lossCheck(true, "4.14 that base keeps all its loot")
+            pcall(function() gen:setConnected(false); gen:remove() end)
+        end)
+        -- e) a running generator found when the shop loads (a base made before the mod)
+        t.queue(30, function()
+            if not ctx.inside then return end
+            reset()
+            local item = instanceItem("Base.Generator")
+            local gen = IsoGenerator.new(item, getCell(), ctx.inside)
+            pcall(function() gen:setFuel(100) end)
+            gen:setActivated(true)
+            check("4.15 setup: the generator is running", gen:isActivated())
+            ILB.processBuilding(ctx.X.def, true, "load")
+            local r = ILB.record(ctx.X.def)
+            check("4.15 a running generator found at load makes the shop a base", r and r.baseSignal and r.baseSignal:find("generator") ~= nil, r and tostring(r.baseSignal) or "no record")
+            lossCheck(true, "4.15 that base keeps all its loot")
+            pcall(function() gen:setActivated(false); gen:remove() end)
+        end)
+        -- f) furniture marked as moved by a player, found at load
+        t.queue(30, function()
+            if not ctx.inside then return end
+            reset()
+            local th = IsoThumpable.new(getCell(), ctx.inside, "furniture_shelving_01_0", false, {})
+            ctx.inside:AddSpecialObject(th)
+            local before = ILB.scanBaseTraces(ctx.X.def)
+            th:setMovedThumpable(true)
+            ILB.processBuilding(ctx.X.def, true, "load")
+            local r = ILB.record(ctx.X.def)
+            check("4.16 furniture from the map is not a sign; moved by a player it is", before == nil and r and r.baseSignal and r.baseSignal:find("furniture") ~= nil,
+                string.format("before %s, after %s", tostring(before), r and tostring(r.baseSignal) or "no record"))
+            lossCheck(true, "4.16 that base keeps all its loot")
+            pcall(function() ctx.inside:transmitRemoveItemFromSquare(th) end)
+        end)
+        -- g) something built against the wall (the handler of the hooked ISBuildIsoEntity:create)
+        t.queue(30, function()
+            reset()
+            local def = ctx.X.def
+            local n = ILB.onPlayerBuilt(def:getX() - 1, def:getY() + 1, 0)
+            local r = ILB.record(def)
+            check("4.17 building against the shop's wall makes it a base", n > 0 and r and r.baseSignal == "built", r and tostring(r.baseSignal) or "no record")
+            reset()
+            ILB.onPlayerBuilt(def:getX() - 4, def:getY() + 1, 0)
+            check("4.17 building 4 tiles away does not", not ILB.isBase(ILB.record(def)))
+        end)
+        -- h) only visited (entered), no signs: loses loot after the 14-day pause
+        t.queue(30, function()
+            reset()
+            ILB.touch(ctx.X.def, "enter")
+            check("4.18 only visited: not a base", not ILB.isBase(ILB.record(ctx.X.def)))
+            lossCheck(false, "4.18 only visited: loses loot, counted after the visit pause")
+        end)
+        t.queue(1, function() o.ProtectRadius = 200; t.finish() end)
         return
     end
 

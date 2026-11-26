@@ -252,8 +252,11 @@ function ILB.record(def)
     return ILB.data().used[ILB.buildingKey(def)]
 end
 
+-- A base: a sign the player lives there (ILB_Base: barricades, furniture,
+-- building, generator), or enough items stored, or enough days of use.
 function ILB.isBase(r)
     if not r then return false end
+    if r.baseSignal then return true end
     return (r.stored or 0) >= ILB.opt("BaseItems", 3) or (r.days or 0) >= ILB.opt("BaseActiveDays", 3)
 end
 

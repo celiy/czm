@@ -6,6 +6,7 @@
 #   CZM_TEST_TIMEOUT=900 ...       seconds before giving up (default 600)
 #   CZM_TEST_MODE / _WORLD / _APO / _SPAWN=x,y / _SB=Key:Value;...   suite and world
 #   CZM_TEST_MODS=A,B ...          active mods (default: all czm mods)
+#   CZM_TEST_EXTERNAL=A,B ...      Workshop mods to activate as they are (not copied)
 #   CZM_TEST_CONTINUE=1 ...        load the save of an earlier run (same _WORLD)
 #                                  with this run's mod list; CZM_TEST_PHASE=<name>
 #                                  tells two-launch suites which launch this is
@@ -61,10 +62,20 @@ done
 
 # The test copies get their own mod id (czmtest_<id>): a Workshop subscription
 # with the same id would otherwise be loaded instead of the repo version.
+# "require=" lines that name one of our mods follow the rename.
+REPO_IDS=()
+for info in "$CACHE"/mods/*/42/mod.info; do
+    [ -f "$info" ] || continue
+    id="$(sed -n 's/^id=//p' "$info" | head -n1)"
+    [ "$id" = "CZMAutoTest" ] || REPO_IDS+=("$id")
+done
 for info in "$CACHE"/mods/*/42/mod.info; do
     [ -f "$info" ] || continue
     grep -q '^id=CZMAutoTest$' "$info" && continue
     sed -i 's/^id=\(.*\)$/id=czmtest_\1/' "$info"
+    for rid in "${REPO_IDS[@]}"; do
+        sed -i "/^require=/ s/\\\\$rid\\b/\\\\czmtest_$rid/" "$info"
+    done
 done
 
 # Mods active in the test (CZM_TEST_MODS, comma separated; CZMAutoTest is always added).
@@ -73,6 +84,9 @@ write_mods() { # <file>
     {
         printf 'VERSION = 1,\n\nmods\n{\n'
         for m in ${MODLIST//,/ }; do printf '    mod = czmtest_%s,\n' "$m"; done
+        # Workshop mods the test needs as they are (CZM_TEST_EXTERNAL, comma separated).
+        EXT="${CZM_TEST_EXTERNAL:-}"
+        for m in ${EXT//,/ }; do printf '    mod = %s,\n' "$m"; done
         printf '    mod = CZMAutoTest,\n'
         printf '}\n\nmaps\n{\n}\n'
     } > "$1"

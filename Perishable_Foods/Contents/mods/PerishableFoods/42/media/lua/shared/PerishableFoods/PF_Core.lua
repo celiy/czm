@@ -132,7 +132,8 @@ function PF.patchItem(item, worldGenerated)
     local fresh = script and script:getDaysFresh() or PF.NEVER
     local rotten = script and script:getDaysTotallyRotten() or PF.NEVER
     if fresh >= PF.NEVER then
-        md[PF.DONE_KEY] = true -- genuinely non-perishable, nothing to do
+        -- Non-perishable for now. Not marked as done: an add-on or another mod may give
+        -- this item a shelf life later, and then it has to be patched.
         return false
     end
 

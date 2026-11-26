@@ -35,8 +35,12 @@ end
 
 function PF.spoilDrink(item, fc)
     local amount = fc:getAmount()
+    local spoiled = Fluid.Get(PF.SPOILED_FLUID)
     fc:Empty()
-    fc:addFluid(Fluid.Get(PF.SPOILED_FLUID), amount)
+    -- A sealed container (cans of other mods) refuses new fluid: the sealed drink is opened
+    -- by the spoilage.
+    if not fc:canAddFluid(spoiled) then fc:unseal() end
+    fc:addFluid(spoiled, amount)
     item:getModData()[PF.SPOILED_KEY] = true
     if isServer() then
         item:syncItemFields()
