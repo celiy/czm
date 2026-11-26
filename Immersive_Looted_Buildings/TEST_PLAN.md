@@ -1,6 +1,27 @@
 # Immersive Looted Buildings — test plan v2
 
-Status: **plan only**, for the v2 design in [DESIGN.md](DESIGN.md). The v1 plan and its results are in [archive/TEST_PLAN_v1.md](archive/TEST_PLAN_v1.md).
+Status: **implemented and tested (2026-11-26).** Design: [DESIGN.md](DESIGN.md). The v1 plan and its results are in [archive/TEST_PLAN_v1.md](archive/TEST_PLAN_v1.md).
+
+## How to run
+
+- Offline (plain Lua 5.4, 2 seconds): `lua dev/ilb_offline_test.lua`, 70 checks of the formulas, groups, containers, bases, the visit clock and the options, with fake game objects.
+- In game: `dev/run-autotest.sh` with `CZM_TEST_MODE=ilb2` (phases `full`, `series`, `vanilla`, `apo`), `ilb2_persist` (`save`, `load`) and `ilb2_midsave` (`prep`, `add`, `remove`, `readd`). The runner renames the test copies of the mods to `czmtest_<id>` so a Workshop subscription cannot replace them.
+
+## Results
+
+| Run | Where | Result |
+|---|---|---|
+| Offline | | 70/70 |
+| `ilb2` full | West Point | 67/67 |
+| `ilb2` series | Riverside 6270,5270 | 38/38 |
+| `ilb2` series with overrun | Muldraugh | 42/42 |
+| `ilb2` vanilla looted 100% | West Point | 3/3 |
+| `ilb2` start 3 months after the apocalypse | West Point | 2/2 |
+| `ilb2_persist` save and load | West Point | 3/3 + 6/6 |
+| `ilb2_midsave` without the mod, add, remove, add again | West Point | 2 + 4 + 2 + 3, all pass |
+| Gasoline Degradation and Perishable Foods suites | | 33/33 and 34/34 |
+
+Covered in game: 1.1-1.5, 2.1-2.5, 3.1-3.5, 3.9, 3.10, 4.1, 4.4, 4.6, 4.10, 5 (Enabled, respawn on and off, log decisions, radius), 6.1-6.4, 7.1, 8.1, 8.3, 8.4, 9.1-9.7, 9.10, 9.11, 10.1, 10.3-10.5. Covered offline only (the same functions, with fake objects): 3.6-3.8, 4.5, 4.7, 4.8, the curve, chance, peak, minimum, lucky range and room list options, 10.2, 10.6-10.9, 10.12, 10.13 arithmetic. Not covered: multiplayer (9.12), 5.4 (items entering by crafting are not tagged, documented).
 
 ## Principles
 
@@ -63,8 +84,9 @@ Real shop containers near the spawn (West Point: about 116 High containers; Muld
 | 4.3 | Keys in a container | Never removed |
 | 4.4 | 2 items stored, then 3 | Not a base, then a base |
 | 4.5 | Activity on 2 days, then 3 | Not a base, then a base |
-| 4.6 | A base building, the clock moved 30, 90, 360 days, containers looked at | Nothing removed, from any container of the building, ever |
-| 4.7 | A building the player only passed through (1 look, nothing stored) | Keeps losing loot normally on later days |
+| 4.6 | A base building, the clock moved 30, 90, 360 days, containers looked at and the building entered | Nothing removed, from any container of the building, ever |
+| 4.10 | A non-base building that loses loot, then becomes a base (3 items stored) | Loss stops from that day on; the loss already done stays; no further removal |
+| 4.7 | A non-base building the player only looked at once (see section 10) | Loses loot as the curve says, after the 14-day pause, from where the clock stopped |
 | 4.8 | Base thresholds changed (1 and 10) | Classes change at the new values |
 | 4.9 | The real loot window: standing next to a container on a new day | The update runs before the items are shown |
 
@@ -90,6 +112,8 @@ Each option set to at least two other values, checked through the functions (fas
 | Update when looking | off | After the fill, nothing changes on later days |
 | Apply on loot respawn | on / off | Refill goes to `K(t)` and gets the overrun bonus / refill left as the game made it |
 | Base thresholds | 1, 10 | 4.8 |
+| Protect radius | 0, 50, 400 | 9.7 |
+| Recent visit pause (days) | 0, 1, 30 | 10.12 |
 | Log decisions | on | One line per update, none when off |
 
 ## 6. Time, saves and mid-save
@@ -112,12 +136,34 @@ Each option set to at least two other values, checked through the functions (fas
 | 9.4 | Player walks out past `ProtectRadius` | Due containers of that building updated; item count equals `K(today)` within rounding; deferred set entry removed |
 | 9.5 | Leaving the building again, and coming back the same day | No second removal; the same day never removes twice |
 | 9.6 | Items shown in the window | Count equals the count before the step, every time the window is open |
-| 9.7 | Radius option 0, 5, 30 | 0: removal as soon as the player is outside the building; 30: wider wait |
+| 9.7 | Radius option 0, 50, 200 (default), 400 | 0: removal as soon as the player is outside the building; larger values wait longer, same final count |
 | 9.8 | Two buildings, player close to one and away from the other | Only the away building is updated |
 | 9.9 | The player's own tagged items during deferred removal | Never removed |
 | 9.10 | Save while a removal is deferred, quit, load, walk away | Removal happens on leaving; final count equals the one of 9.4 |
 | 9.11 | Cost with an empty deferred set | `OnPlayerMove` returns at once (measured per call, microseconds) |
 | 9.12 | Multiplayer (if a server is available): second client nearby | Server does not remove while any player is near; untested if no server |
+
+## 10. Recent visit: the loss pauses, then restarts gradually
+
+Use a building the player did not use before the test, unless the case needs a base.
+
+| # | Check | Expected |
+|---|---|---|
+| 10.1 | Visit on day 0 (container opened), clock moved to day 13 | Nothing removed; `E = 0` |
+| 10.2 | Clock at day 14 | Still nothing removed; `E = 0` |
+| 10.3 | Clock at day 20 | `E = 6`: containers go to `K(6)`, not `K(20)` |
+| 10.4 | Clock at day 30 | `E = 16`: containers go to `K(16)`; the loss is gradual, no jump at day 14 |
+| 10.5 | Only entering on day 0 (no container opened) | Same as 10.1 to 10.4: entering counts as a visit |
+| 10.6 | Visit on day 0, then on day 10, clock at day 23 | `E = 0` until day 24; `E = 9` on day 33 (the pause restarted on day 10) |
+| 10.7 | Building never visited, clock at day 90 | `E = 90`: follows the calendar, no pause |
+| 10.8 | First visit on day 60, then the clock at day 74 and 100 | `E = 60` at the first visit, still 60 at 74, `E = 86` at 100 |
+| 10.9 | Continuous visits every 14 days for 360 days | `E` never moves; no removal in the whole run |
+| 10.10 | Base building (3 items stored) with a long clock | Nothing removed; `E` not used |
+| 10.11 | Non-base building loses loot on day 30, then becomes a base (3 items stored) on day 40 | Nothing removed after day 40; loss before day 40 stays |
+| 10.12 | `RecentVisitDays` 0, 1, 30 | 0: no pause, `E` = calendar; others move the restart day |
+| 10.13 | Visit on day 0, save on day 20 (stored E = 0, S = 0, L = 0, no sync yet), load on day 25 | The first sync after the load gives `E = 11` (25 minus the 14-day pause); the same as a run without the save |
+| 10.14 | Player's tagged items during and after the pause | Never removed |
+| 10.15 | Cost of the visit check and the sync (a few thousand building updates) | A few microseconds each; no timer |
 
 ## 7. Buildings the game itself looted
 
@@ -139,7 +185,7 @@ Each option set to at least two other values, checked through the functions (fas
 
 About six launches, run one after another by a subagent:
 
-1. Main suite (sections 1, 2, 3, 4, 5, 7.2, 8.1-8.2, 9) in West Point, new game, vanilla looted off.
+1. Main suite (sections 1, 2, 3, 4, 5, 7.2, 8.1-8.2, 9, 10) in West Point, new game, vanilla looted off.
 2. Main suite in Muldraugh (Medium and Overrun rooms).
 3. Vanilla looted at 100% (section 7.1).
 4. Game started 3 months after the apocalypse (6.1).

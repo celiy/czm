@@ -59,12 +59,21 @@ for src in "$REPO"/*/Contents/mods/*/ "$REPO"/dev/*/Contents/mods/*/; do
     cp -r -- "${src%/}" "$CACHE/mods/"
 done
 
+# The test copies get their own mod id (czmtest_<id>): a Workshop subscription
+# with the same id would otherwise be loaded instead of the repo version.
+for info in "$CACHE"/mods/*/42/mod.info; do
+    [ -f "$info" ] || continue
+    grep -q '^id=CZMAutoTest$' "$info" && continue
+    sed -i 's/^id=\(.*\)$/id=czmtest_\1/' "$info"
+done
+
 # Mods active in the test (CZM_TEST_MODS, comma separated; CZMAutoTest is always added).
 MODLIST="${CZM_TEST_MODS:-GasolineDegradation,PerishableFoods,ImmersiveLootedBuildings}"
 write_mods() { # <file>
     {
         printf 'VERSION = 1,\n\nmods\n{\n'
-        for m in ${MODLIST//,/ } CZMAutoTest; do printf '    mod = %s,\n' "$m"; done
+        for m in ${MODLIST//,/ }; do printf '    mod = czmtest_%s,\n' "$m"; done
+        printf '    mod = CZMAutoTest,\n'
         printf '}\n\nmaps\n{\n}\n'
     } > "$1"
 }

@@ -24,10 +24,10 @@ local function onTransfer(item, src, dest)
     local destDef = tierBuilding(dest)
     if destDef then
         item:getModData()[ILB.TAG] = true
-        ILB.touch(destDef, 1)
+        ILB.touch(destDef, "use", 1)
     end
     local srcDef = tierBuilding(src)
-    if srcDef and srcDef ~= destDef then ILB.touch(srcDef, 0) end
+    if srcDef and (not destDef or ILB.buildingKey(srcDef) ~= ILB.buildingKey(destDef)) then ILB.touch(srcDef, "use", 0) end
 end
 
 local function hook()

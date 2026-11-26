@@ -20,21 +20,6 @@ option ImmersiveLootedBuildings.EndDay = {
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.EndDay,
 }
 
-option ImmersiveLootedBuildings.HighPeakShare = {
-    type = double, min = 0, max = 100, default = 57.1,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighPeakShare,
-}
-
-option ImmersiveLootedBuildings.MediumPeakShare = {
-    type = double, min = 0, max = 100, default = 60,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumPeakShare,
-}
-
-option ImmersiveLootedBuildings.LowPeakShare = {
-    type = double, min = 0, max = 100, default = 66.7,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowPeakShare,
-}
-
 option ImmersiveLootedBuildings.Slowdown = {
     type = double, min = 0.1, max = 30.0, default = 6.4,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.Slowdown,
@@ -55,9 +40,14 @@ option ImmersiveLootedBuildings.HighChance = {
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighChance,
 }
 
-option ImmersiveLootedBuildings.HighCut = {
-    type = double, min = 0, max = 100, default = 100,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighCut,
+option ImmersiveLootedBuildings.HighPeakLoot = {
+    type = integer, min = 0, max = 100, default = 60,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighPeakLoot,
+}
+
+option ImmersiveLootedBuildings.HighMinLoot = {
+    type = integer, min = 0, max = 100, default = 30,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.HighMinLoot,
 }
 
 option ImmersiveLootedBuildings.MediumChance = {
@@ -65,9 +55,14 @@ option ImmersiveLootedBuildings.MediumChance = {
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumChance,
 }
 
-option ImmersiveLootedBuildings.MediumCut = {
-    type = double, min = 0, max = 100, default = 100,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumCut,
+option ImmersiveLootedBuildings.MediumPeakLoot = {
+    type = integer, min = 0, max = 100, default = 70,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumPeakLoot,
+}
+
+option ImmersiveLootedBuildings.MediumMinLoot = {
+    type = integer, min = 0, max = 100, default = 50,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.MediumMinLoot,
 }
 
 option ImmersiveLootedBuildings.LowChance = {
@@ -75,9 +70,24 @@ option ImmersiveLootedBuildings.LowChance = {
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowChance,
 }
 
-option ImmersiveLootedBuildings.LowCut = {
-    type = double, min = 0, max = 100, default = 100,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowCut,
+option ImmersiveLootedBuildings.LowPeakLoot = {
+    type = integer, min = 0, max = 100, default = 80,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowPeakLoot,
+}
+
+option ImmersiveLootedBuildings.LowMinLoot = {
+    type = integer, min = 0, max = 100, default = 70,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LowMinLoot,
+}
+
+option ImmersiveLootedBuildings.LuckyLossMin = {
+    type = integer, min = 0, max = 100, default = 70,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LuckyLossMin,
+}
+
+option ImmersiveLootedBuildings.LuckyLossMax = {
+    type = integer, min = 0, max = 100, default = 85,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LuckyLossMax,
 }
 
 option ImmersiveLootedBuildings.OverrunBonus = {
@@ -105,39 +115,19 @@ option ImmersiveLootedBuildings.OverrunRooms = {
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.OverrunRooms,
 }
 
-option ImmersiveLootedBuildings.CutVariation = {
-    type = integer, min = 0, max = 100, default = 0,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.CutVariation,
-}
-
-option ImmersiveLootedBuildings.StrippedChance = {
-    type = integer, min = 0, max = 100, default = 0,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.StrippedChance,
-}
-
 option ImmersiveLootedBuildings.UsefulFirst = {
     type = boolean, default = false,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.UsefulFirst,
 }
 
-option ImmersiveLootedBuildings.CountVanillaLooted = {
-    type = boolean, default = true,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.CountVanillaLooted,
+option ImmersiveLootedBuildings.ProtectRadius = {
+    type = integer, min = 0, max = 1000, default = 200,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.ProtectRadius,
 }
 
-option ImmersiveLootedBuildings.LateCut = {
-    type = boolean, default = true,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.LateCut,
-}
-
-option ImmersiveLootedBuildings.PassingDays = {
-    type = integer, min = 0, max = 3650, default = 30,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.PassingDays,
-}
-
-option ImmersiveLootedBuildings.BaseDays = {
-    type = integer, min = 0, max = 3650, default = 60,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.BaseDays,
+option ImmersiveLootedBuildings.RecentVisitDays = {
+    type = integer, min = 0, max = 365, default = 14,
+    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.RecentVisitDays,
 }
 
 option ImmersiveLootedBuildings.BaseItems = {
@@ -148,11 +138,6 @@ option ImmersiveLootedBuildings.BaseItems = {
 option ImmersiveLootedBuildings.BaseActiveDays = {
     type = integer, min = 1, max = 365, default = 3,
     page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.BaseActiveDays,
-}
-
-option ImmersiveLootedBuildings.CutAbandoned = {
-    type = boolean, default = true,
-    page = ImmersiveLootedBuildings, translation = ImmersiveLootedBuildings.CutAbandoned,
 }
 
 option ImmersiveLootedBuildings.ApplyOnRespawn = {

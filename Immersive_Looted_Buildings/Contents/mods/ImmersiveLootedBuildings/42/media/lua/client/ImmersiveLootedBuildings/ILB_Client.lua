@@ -1,12 +1,11 @@
 --[[
-    Immersive Looted Buildings - late cut (singleplayer)
+    Immersive Looted Buildings - the loot window (singleplayer)
 
-    When the loot window lists the containers next to the player, after the
-    container buttons are added and before their items are shown, each
-    container of a tier room gets today's decision if it was not cut yet:
-    containers filled before the mod was added, or checked on a day the
-    building was not looted yet. Buildings the player used are left alone
-    until abandoned (see ILB.mayChange). Then the visit is recorded.
+    When the loot window lists the containers next to the player, nothing is
+    removed: the player is in front of them. Each shop whose containers are
+    listed is marked as seen (no removal until the player is away or the
+    shop is loaded again) and the visit is recorded (recent-visit pause, and
+    a day of activity for the base rule).
 
     Multiplayer clients do nothing here: the server owns the containers.
 ]]
@@ -15,41 +14,28 @@ require "ImmersiveLootedBuildings/ILB_Core"
 
 local ILB = ImmersiveLootedBuildings
 
-local function lateCheck(container, now, today, touched)
-    local def, room, square = ILB.locate(container)
-    if not def then return end
-    local tier = ILB.tierOf(room)
-    if not tier then return end
-    local key = ILB.buildingKey(def)
-    if not touched[key] then
-        touched[key] = { def = def, may = ILB.mayChange(def, now) }
-    end
-    if tier ~= "Overrun" and ILB.opt("LateCut", true) and touched[key].may then
-        local state, day = ILB.getState(container)
-        -- Cut and skipped containers are final; a container checked today is
-        -- not checked again until tomorrow.
-        if state == nil or (state == ILB.STATE.CHECKED and day < today) then
-            ILB.apply(container, def, tier, square, "late")
-        end
-    end
-end
-
 local function onRefresh(page, step)
     if step ~= "buttonsAdded" or isClient() or page.onCharacter then return end
     if not ILB.isEnabled() then return end
-    local now = ILB.day()
-    local today = math.floor(now)
     local touched = {}
     for _, button in ipairs(page.backpacks or {}) do
         local c = button.inventory
         if c and c:getType() ~= "floor" then
-            local ok, err = pcall(lateCheck, c, now, today, touched)
-            if not ok then print("[ImmersiveLootedBuildings] late check failed: " .. tostring(err)) end
+            local ok, err = pcall(function()
+                local def, room = ILB.locate(c)
+                if not def or not ILB.tierOf(room) then return end
+                local key = ILB.buildingKey(def)
+                -- A load or fill still waiting for this building runs first,
+                -- before the items are shown; then the building counts as seen.
+                if not touched[key] and ILB.flushBuilding then ILB.flushBuilding(def) end
+                ILB.seen[key] = true
+                ILB.deferred[key] = def -- watched until the player is away or it unloads
+                touched[key] = def
+            end)
+            if not ok then print("[ImmersiveLootedBuildings] loot window check failed: " .. tostring(err)) end
         end
     end
-    -- Record the visit after deciding, so the decision uses the activity
-    -- before this visit.
-    for _, t in pairs(touched) do ILB.touch(t.def, 0) end
+    for _, def in pairs(touched) do ILB.touch(def, "use") end
 end
 
 Events.OnRefreshInventoryWindowContainers.Add(onRefresh)

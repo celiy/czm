@@ -1,6 +1,6 @@
 # Immersive Looted Buildings — design v2 (gradual loot loss)
 
-Status: **design only.** The code in `Contents/` still implements v1 (a building is either raided or intact). v1 is archived in [archive/DESIGN_v1.md](archive/DESIGN_v1.md) and [archive/TEST_PLAN_v1.md](archive/TEST_PLAN_v1.md). Research and evidence about the game's loot system: [RESEARCH.md](RESEARCH.md). Tests: [TEST_PLAN.md](TEST_PLAN.md).
+Status: **implemented (code in `Contents/`), being tested in game.** The offline checks are in `dev/ilb_offline_test.lua`, the in-game suites in `dev/CZMAutoTest` (`ilb2`, `ilb2_persist`, `ilb2_midsave`). v1 is archived in [archive/DESIGN_v1.md](archive/DESIGN_v1.md) and [archive/TEST_PLAN_v1.md](archive/TEST_PLAN_v1.md). Research and evidence about the game's loot system: [RESEARCH.md](RESEARCH.md). Tests: [TEST_PLAN.md](TEST_PLAN.md).
 
 ## What the user asked for (2026-11-25)
 
@@ -87,29 +87,27 @@ Because the removal is a share of what is left, a player who takes half the item
 
 Loot is never added back, except the overrun bonus.
 
-**When a container is updated:**
+**When a container is updated.** Only at moments when nobody has seen its contents:
 
-- **At the fill** (`OnFillContainer`): the container goes to today's `K(t)`, once the building is fully loaded (the queue from v1 stays). The items are created by this step, so nothing visible is removed.
-- **When the player looks at it** (the loot window, `buttonsAdded`): the update of the day is **not** run while the player is in front of the building. See "Never in front of the player" below.
-- At most **once per in-game day** per container.
+- **Fill** (`OnFillContainer`): the game just created the contents. The container goes to today's `K`. The entry waits in a queue until the building is fully loaded, so buildings the game itself looted are recognised (see below).
+- **Building load** (`LoadChunk`): a chunk with part of a shop was loaded, so the shop was out of reach until now. The shop is queued the same way and, once fully loaded, every container of its tier rooms goes to today's `K`. Which shops touch which chunk comes from an index built once from the map data (`getMetaGrid():getBuildings()`), so the event costs one table lookup.
+- **Away**: a shop the player looked at is watched; when no player is within `ProtectRadius` while it is still loaded, its due containers are updated.
+- At most **once per in-game day** per container (a fresh fill or refill excepted).
 
 ### Never in front of the player
 
-The mod never removes items while the player is close to the building. "Close" means within `ProtectRadius` tiles of any square of the building (default 12, sandbox option). This also covers teleporting into a shop: the player is close, so nothing is removed, and the removal happens when they leave.
+This follows the user's idea: a system that processes a shop when it loads (when the player arrives or it renders), and after that removes nothing while the player is close or looting.
 
-How it works:
+- **Seen.** When the loot window lists a container of a shop, the shop is marked *seen* (in memory). A seen shop gets no removal at all until the player is farther than `ProtectRadius` (default 200 tiles) or the shop unloads.
+- **First the load, then the player.** The loot window runs, before it shows the items, anything still waiting in the queue for that shop: its load and any fill. So teleporting next to a shelf still gives the shop its loss first, and then nothing more while the player stays.
+- **Due, not done.** A removal that cannot run (the shop is seen) leaves `A` where it was; the container is *due* (`A > K(today)`), which needs no extra saved data. The shop goes into the in-memory watch set.
+- **Leaving.** `OnPlayerMove` checks the watch set every 30 moves, and only when it is not empty. A shop that is no longer loaded is dropped from it (its next load handles it). A loaded shop with no player within `ProtectRadius` is updated and dropped. With the default 200 tiles the shop is usually unloaded before the player is that far, so in practice the loss is applied at the shop's next load, which is the same moment for the player: they come back and find the shop already changed.
+- **Reload of a save.** The watch set is not saved. Loading the save loads the shops again, so due containers are updated at that load, before the player looks.
+- **Multiplayer.** "Near" uses every online player's position on the server; the loot-window part runs only in singleplayer for now.
 
-1. **Due, not done.** When an update would remove items but the player is close, nothing is removed and `A` stays where it was. The container is now *due*: `A > K(today)`. This needs no extra saved data, because "due" is just that comparison.
-2. **Deferred set.** The building is added to an in-memory set `ILB.deferred` (building key only, not saved). Adding it costs one table write.
-3. **Leaving.** The `OnPlayerMove` event checks the set only when it is not empty. When the player is more than `ProtectRadius` away from every deferred building, the mod runs the update on each container of that building that is due, and removes the set entry. The removal is the share `1 - K(today) / A`, so the result is exactly today's `K(t)`; nothing is lost twice.
-4. **Reload.** The set is not saved. After a reload the set is empty, and a due container is handled the next time the player is away from its building and comes back, or leaves it. Nothing is lost: `A` is still the old value, so the target is reached at that point.
-5. **Multiplayer.** The server knows every player's position, so the same check runs there for each building in the set.
+The loss is never smaller because of this, only later: the removal always goes to today's `K`.
 
-Items are never removed in front of the player, and a deferred removal does not change the total loss: the loss is applied later, not less.
-
-Why not at the look: opening a container means standing in front of it, so an update at the window would remove items the player is looking at. The cost is that the first look of the day shows the previous day's loot, and the loss appears when the player walks away. For a container the player stays next to, the loss can wait as long as they stay.
-
-Containers filled before the mod was added have no `A`: they start at `A = 1` on their first update.
+Containers filled before the mod was added have no `A`: they start at `A = 1` at their first update, which happens when their shop loads (adding the mod to a save loads every shop near the player again).
 
 ### Overrun places
 
@@ -122,11 +120,47 @@ A building is a **base** once the player, in its tier rooms:
 - stores `BaseItems` items or more (default 3), **or**
 - has activity on `BaseActiveDays` different days or more (default 3).
 
-Activity is opening a container (loot window), taking an item out or putting one in, the same events as v1.
+Activity for the base rule is a container listed in the loot window, an item taken out, or an item put in. **Entering the building counts as a visit for the recent-visit pause, but not as a day of activity**: otherwise walking through a shop on three days would make it a base that never loses loot. Entering is checked only when the player's building changes, so it costs one lookup per move.
 
-**A base is never touched again by the mod**, no matter how long the player is away. This is simpler than v1: no 30 / 60 day windows, no "abandoned" state.
+**A base never loses loot.** The mod gives it no removal at all, from the day it becomes a base on. Loss it had already caused before that stays, and nothing is added back. This is simpler than v1: no 30 / 60 day windows, no "abandoned" state for bases.
 
-A building the player only passed through (fewer items and days than the thresholds) keeps losing loot normally. A claimed safehouse (multiplayer) counts as a base.
+If a building becomes a base later (the player stores items or comes back on several days), its loss stops from that day on. It is evaluated at each update, so the change is picked up the first time the building is updated after it becomes a base.
+
+A claimed safehouse (multiplayer) counts as a base.
+
+### Recent visit: the loss pauses and then restarts gradually
+
+A building that is not a base, and that the player has recently visited, pauses its loss. A **visit** is either:
+
+- opening a container of one of its tier rooms (loot window), taking or putting an item, **or**
+- entering the building (the player's position moves from outside into one of its squares).
+
+After a visit, the building counts as visited for `RecentVisitDays` days (default **14**). During those days its loss clock does not run.
+
+**The loss clock.** Each non-base building that has ever been visited has an effective day `E`, which is the day the loss curve reads, instead of the calendar day. Three saved values:
+
+- `E`: the effective day.
+- `S`: the calendar day `E` was last brought up to date (the sync day).
+- `L`: the day of the last visit.
+
+Rules:
+
+1. **Sync** at a day `t`: `E = E + max(0, t - max(S, L + RecentVisitDays))`, then `S = t`. Only the days after the recent-visit window count.
+2. **Visit** on day `t`: sync to `t` first (with the old `L`), then `L = t`.
+3. **Update** of a container on day `t`: sync to `t`, then the target is `K(E)`, not `K(t)`.
+4. **First visit** of a building (no record): `E = S = L = t`. Before it, the building followed the calendar, so nothing changes at that moment.
+
+So a building visited on day 0 and not again: `E` stays 0 until day 14, then grows one day for each day from then on. On day 20 it reads the curve at day 6, on day 30 at day 16. The loss restarts from where it stopped, with no jump. The loss rate after the restart is the normal rate of the curve.
+
+A building that is visited every 14 days or less never loses loot while it stays a non-base, because `E` never moves. A building the player never visited follows the calendar from day 0.
+
+Each step is a few arithmetic operations and one table write per building. Nothing runs on a timer.
+
+**Base.** A base does not use `E` at all: its loss stops on the day it becomes a base, and nothing is removed afterwards. Loss it caused before that stays.
+
+**What is saved.** The v1 activity record `used[buildingKey] = {last, days, stored}` gets two more fields: `E` and `S`. `last` is `L`. The record is saved with the world, so the clock survives save and load.
+
+The recent-visit pause and the protect radius work together. A removal that is due only waits for the player to be farther than `ProtectRadius` from the building. The recent-visit pause changes what is due, not when it is applied.
 
 Items the player puts in any tier container get the `ILB_player` tag and are never removed, base or not.
 
@@ -187,9 +221,10 @@ These are shares of the **items the game put in the container**. Containers are 
 | Overrun: extra loot (%) | 25 | Once, at the first fill |
 | Room lists (High, Medium, Low, Overrun) | v1 lists | Text, `;` or `,` separated |
 | Looters take useful items first | off | Same amount removed, food, medicine, tools and weapons go first |
-| Protect radius (tiles) | 12 | No item is removed while the player is this close to the building; removal waits until they leave |
+| Protect radius (tiles) | 200 | No item is removed while the player is this close to the building; removal waits until they are farther away |
 | Apply on the game's loot respawn | on | A refill goes to the building's `K(t)` and the overrun bonus is given again |
 | Items stored to count as a base | 3 | |
+| Recent visit: days the loss pauses after a visit (non-base) | 14 | `RecentVisitDays`. 0 turns the pause off |
 | Days of activity to count as a base | 3 | |
 | Log decisions | off | One console line per building and update |
 
@@ -221,23 +256,24 @@ Unchanged from v1, as it was measured (1.7 microseconds per fill for a house con
 - No timer: no tick, minute or square-load handler. The fill queue ticks only while it has entries.
 - Fill: one table lookup for houses.
 - Loot window: one lookup per listed container. Nothing is removed there.
-- Player move: `OnPlayerMove` does one check of the deferred set, which returns at once when it is empty. Only buildings with a due container are in the set.
+- Player move: `OnPlayerMove` looks up the player's building (visit) and checks the watch set every 30 moves, only when it has entries.
+- Building load: one table lookup per loaded chunk in the shop index.
 - Saved data: the seed, the small activity table (only buildings the player used) and one number per tier container.
 
 ## Compatibility and limits
 
-- Deferred removals are not saved: after a reload they happen the next time the player leaves the building (see "Never in front of the player").
-- Safe to add mid-save: containers already filled start at `A = 1` and go to today's loot the first time the player looks at them. Safe to remove: tags and numbers stay in the save, inert.
+- The watch set is not saved: after a reload, due containers are updated when their shop loads.
+- Safe to add mid-save: containers already filled start at `A = 1` and go to today's loot when their shop loads. Items the player stored before the mod existed have no tag and cannot be told apart from the original loot. Safe to remove: tags and numbers stay in the save, inert.
 - Loot other mods add to the same rooms is counted in the same share.
 - Not covered: the 17 rooms the game fills from the map (clothing stores, bookstores, army surplus...), zombies, vehicles, items on the floor.
 - A container the player never looks at after its fill keeps the fill-day loot until the player comes to it; the loss is applied before the player sees it, so the result looks the same.
 - Items that enter a container by crafting or other non-transfer means are not tagged.
-- Multiplayer: fill and transfer run on the server; the loot-window update runs only in singleplayer until an open event is sent to the server.
+- Multiplayer: fill, load, transfer and the watch run on the server; the loot-window part (seen marks) runs only in singleplayer until an open event is sent to the server.
 
 ## Questions for the user
 
 1. Medium and Low: are the minimum 50 / 70 and peak 70 / 80 right for v2?
 2. The lucky range: 70 to 85% of the hit loss gives a High lucky building 40.5 to 51% on day 360, as in the example. Keep it?
 3. Should buildings the game already looted stay untouched (as planned) or also lose loot gradually?
-4. The protect radius is 12 tiles by default. Is that the distance you mean by "muito perto", or should it be the building only (inside the walls)?
-5. Removal waits until the player leaves, so the first look of a day shows the previous day's loot. Is that acceptable, or should the removal run at the look when the player is not looting that container (for example, the window was only opened to see)?
+4. Decided: the loss happens only when the player is outside the building and beyond the protect radius. The radius defaults to 200 tiles, and is a sandbox option.
+5. Decided: removal waits until the player leaves. The first look of a day shows the previous day's loot, and the loss appears when the player walks away.
